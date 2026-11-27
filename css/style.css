@@ -1,5 +1,5 @@
 :root {
-  --rt: #1e5d8c; --rt-hell: #e6f0f8;
+  --rt: #1e5d8c; --rt-hell: #e6f0f8; --rt-wahl: #c9dceb; --rt-blass: #f3f7fb; --rt-dunkel: #123c5e;
   --text: #1c2b3a; --grau: #64748b; --rand: #dde4ec; --flaeche: #eef2f6; --weiss: #fff;
   --font: "Montserrat", "Avenir Next", "Segoe UI", -apple-system, system-ui, sans-serif;
 }
@@ -62,6 +62,15 @@ ol.legende small { color: var(--grau); font-size: .72rem; }
 .mtitel { font-size: 15px; font-weight: 800; letter-spacing: .08em; fill: var(--text); }
 .msub { font-size: 8.5px; letter-spacing: .12em; fill: var(--grau); }
 .tipp { text-align: center; color: var(--grau); font-size: .85rem; margin: 4px 0 12px; }
+.tpflicht, .twahl { font-weight: 700; }
+
+/* Pflicht- und Wahlmodul */
+.modlegende { display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap; font-size: .82rem; color: var(--grau); margin: 8px 0 0; }
+.mk { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
+.mk.pflicht { background: var(--rt); }
+.mk.wahl { background: var(--rt-wahl); border: 2px solid var(--rt); margin-left: 12px; }
+ol.legende a.wahl .lnr2 { background: var(--rt-wahl); border-radius: 4px; padding: 0 3px; }
+ol.legende a.pflicht .lnr2 { background: var(--rt); color: #fff !important; border-radius: 4px; padding: 0 3px; }
 
 /* Clusterpanel */
 .clusterpanel:empty { display: none; }
@@ -70,6 +79,11 @@ ol.legende small { color: var(--grau); font-size: .72rem; }
 .cnr { font-size: 2.2rem; font-weight: 800; color: var(--rt); line-height: 1; }
 .ckopf h3 { margin: 0; text-transform: uppercase; letter-spacing: .06em; font-size: 1.15rem; }
 .badge { display: inline-block; font-size: .78rem; padding: 2px 10px; border-radius: 10px; background: var(--rt-hell); color: var(--rt); margin-top: 4px; font-weight: 600; }
+.badge.pflicht { background: var(--rt); color: #fff; }
+.badge.wahl { background: var(--rt-wahl); color: var(--rt-dunkel); border: 1px solid var(--rt); }
+.clusterpanel.wahl { background: var(--rt-blass); border-top-color: var(--rt-wahl); }
+.clusterpanel.wahl .cnr { color: var(--rt-dunkel); -webkit-text-stroke: 0; }
+.clusterpanel.wahl .kachel { border-color: var(--rt-wahl); }
 .kacheln { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
 .kachel { display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px solid var(--rand); border-radius: 12px; text-decoration: none; color: var(--rt); background: var(--weiss); transition: border-color .15s, background .15s; }
 .kachel:hover { border-color: var(--rt); background: var(--rt-hell); }
@@ -107,9 +121,15 @@ dialog.karte::backdrop { background: #0f172a88; }
 .block { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 12px; margin-bottom: 10px; }
 .block p { margin: 0; }
 .block .ic { margin-top: 2px; }
+.block strong { font-weight: 700; }
+.btitel { display: block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #2563eb; margin-bottom: 2px; }
 .erkl { background: var(--flaeche); } .erkl .ic { color: #ca8a04; }
-.achtung { background: #fff4e6; } .achtung .ic { color: #ea580c; }
+.beispiel { background: #e9f7ef; } .beispiel .ic { color: #15803d; }
+.achtung { background: #fff1e6; border-left: 4px solid #ea580c; } .achtung .ic { color: #ea580c; }
 .pos { background: #eaf2fd; } .pos .ic { color: #2563eb; }
+.quer { background: var(--flaeche); } .quer .ic { color: var(--grau); }
+.dmodul { display: inline-block; margin-left: 6px; padding: 0 8px; border-radius: 8px; font-size: .7rem; letter-spacing: .06em; background: #ffffff33; }
+.dmodul.wahl { background: transparent; border: 1px solid #ffffffaa; }
 .dinhalt h4 { margin: 18px 0 8px; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--grau); }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 16px; border: 1px solid var(--rand); text-decoration: none; font-size: .88rem; color: var(--text); }

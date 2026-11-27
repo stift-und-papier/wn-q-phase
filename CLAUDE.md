@@ -14,8 +14,9 @@ Die Lehrkraft (Jazz) arbeitet als Co-Lehrkraft mit Claude: Ergebnisse sollen did
 - `data/matrix.json`: alle Inhalte. Wird sowohl von der Schülerseite als auch vom Lehrerbereich genutzt. Struktur:
   - `rahmenthemen[]`: `id, nr, name, farbe (blau|violett|tuerkis|koralle), aktiv, pflichtmodul, wahlmodul, cluster[]`
   - `cluster`: `id, name, icon, modul (pflicht|wahl), begriffe[] (IDs, Reihenfolge = Anzeige)`
-  - `begriffe{id}`: `name, kurz, icon, erkl, achtung, positionen, links[] (Begriff-IDs), personen[] (Personen-IDs), material[] {typ: ab|tb|video|web, titel, url}`
-  - `personen{id}`: `name, daten, idee, auch, begriffe[]`
+  - `begriffe{id}`: `name, kurz, icon, erkl, beispiel, achtung, positionen, links[] (Begriff-IDs), personen[] (Personen-IDs), material[] {typ: ab|tb|video|web, titel, url}`
+  - `personen{id}`: `name, daten, idee, achtung, auch (Querverbindung), begriffe[]`
+  - In allen Textfeldern setzt `**…**` Fettdruck (Funktion `fmt` in `js/icons.js`).
   - `allgemein[]`: Material für alle Rahmenthemen (Operatoren, Abiturhinweise)
 
 ## Feste Regeln
@@ -26,6 +27,8 @@ Die Lehrkraft (Jazz) arbeitet als Co-Lehrkraft mit Claude: Ergebnisse sollen did
 - IServ selbst blockiert JavaScript; deshalb läuft die Matrix auf GitHub Pages, in IServ liegt nur ein Link darauf.
 - Fachliche Erklärungen sind Entwürfe, bis die Lehrkraft sie freigibt. Rechtsstand (§§ 216, 218, 219 StGB, Suizidhilfe) vor Änderungen aktuell recherchieren.
 - Gestaltung: sachlich, klare serifenlose Schrift, Großbuchstaben mit Sperrung für Überschriften, keine verspielten Schriften, nicht überfrachten. Überblick und Clustern stehen im Vordergrund.
+- Pflicht- und Wahlmodul farblich absetzen: Pflicht-Cluster in kräftigen Tönen der Themenfarbe, Wahl-Cluster hell getönt mit farbigem Rand (Halbkreis, Legende, Badge, Clusterbereich).
+- Kartentexte: Wichtige Fachbegriffe in der Erklärung **fett**. Beispiele gehören ins Feld `beispiel` (grüner Kasten), nicht in Erklärung oder Achtung. `achtung` (orange) nur für echte Fehlerquellen und Verwechslungen. Kritik und Einwände gehören in `positionen`.
 
 ## Fachliche Grundlagen
 - Kerncurriculum Werte und Normen, gymnasiale Oberstufe (2018), und Hinweise zur Abiturprüfung 2027 (Niedersachsen).

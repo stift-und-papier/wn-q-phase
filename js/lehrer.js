@@ -161,7 +161,7 @@ function tabBegriffe() {
 
 function begriffFormular(id) {
   const neu = id === 'neu';
-  const b = neu ? { name: '', kurz: '', icon: 'info', erkl: '', achtung: '', positionen: '', links: [], personen: [], material: [] } : D.begriffe[id];
+  const b = neu ? { name: '', kurz: '', icon: 'info', erkl: '', beispiel: '', achtung: '', positionen: '', links: [], personen: [], material: [] } : D.begriffe[id];
   const lage = neu ? null : clusterVon(id);
   const cl = alleCluster();
   return `<form id="bform" data-id="${id}">
@@ -174,9 +174,11 @@ function begriffFormular(id) {
       <label>Bereich<select name="cluster">${cl.map(({ r, c }) => `<option value="${r.id}|${c.id}" ${lage && lage.c.id === c.id ? 'selected' : ''}>${esc(r.name + ' › ' + c.name)}</option>`).join('')}</select></label>
       <label>Piktogramm${iconSelect('icon', b.icon)}</label>
     </div>
+    <p class="hinweis-klein">Wichtige Begriffe mit zwei Sternchen fett setzen: <code>**Fachbegriff**</code></p>
     <label>Erklärung<textarea name="erkl" required>${esc(b.erkl)}</textarea></label>
-    <label>Achtung / Abgrenzung<textarea name="achtung">${esc(b.achtung)}</textarea></label>
-    <label>Positionen (optional, z. B. Pro und Contra)<textarea name="positionen" style="min-height:60px">${esc(b.positionen)}</textarea></label>
+    <label>Beispiel (optional, grüner Kasten)<textarea name="beispiel" style="min-height:60px">${esc(b.beispiel || '')}</textarea></label>
+    <label>Achtung (optional, nur für typische Fehlerquellen und Verwechslungen)<textarea name="achtung">${esc(b.achtung)}</textarea></label>
+    <label>Positionen und Kritik (optional, z. B. Pro und Contra, Einwände)<textarea name="positionen" style="min-height:60px">${esc(b.positionen)}</textarea></label>
     <div class="reihe">
       <label>Hängt zusammen mit${checkliste('links', Object.entries(D.begriffe).filter(([k]) => k !== id).map(([k, v]) => [k, v.kurz || v.name]).sort((a, c) => a[1].localeCompare(c[1])), b.links || [])}</label>
       <label>Personen${checkliste('personen', Object.entries(D.personen).map(([k, v]) => [k, v.name]), b.personen || [])}</label>
@@ -201,7 +203,7 @@ function begriffVerdrahten(f) {
     const neuId = id === 'neu' ? neueId(name, D.begriffe) : id;
     const vorher = D.begriffe[neuId] || {};
     D.begriffe[neuId] = { ...vorher, name, kurz: fd.get('kurz').trim() || name, icon: fd.get('icon'), erkl: fd.get('erkl').trim(),
-      achtung: fd.get('achtung').trim(), positionen: fd.get('positionen').trim(), links: werte(f, 'links'), personen: werte(f, 'personen'), material: materialAuslesen(f) };
+      beispiel: fd.get('beispiel').trim(), achtung: fd.get('achtung').trim(), positionen: fd.get('positionen').trim(), links: werte(f, 'links'), personen: werte(f, 'personen'), material: materialAuslesen(f) };
     // Bereich zuordnen
     const [rid, cid] = fd.get('cluster').split('|');
     const alt = clusterVon(neuId);
@@ -253,7 +255,7 @@ function tabPersonen() {
     if (!name) return melden('Bitte einen Namen eintragen.', true);
     const id = f.dataset.id === 'neu' ? neueId(name, D.personen) : f.dataset.id;
     const begriffe = werte(f, 'begriffe');
-    D.personen[id] = { name, daten: fd.get('daten').trim(), idee: fd.get('idee').trim(), auch: fd.get('auch').trim(), begriffe };
+    D.personen[id] = { name, daten: fd.get('daten').trim(), idee: fd.get('idee').trim(), achtung: fd.get('achtung').trim(), auch: fd.get('auch').trim(), begriffe };
     Object.entries(D.begriffe).forEach(([k, b]) => {
       b.personen = (b.personen || []).filter((x) => x !== id);
       if (begriffe.includes(k)) b.personen.push(id);
@@ -271,12 +273,14 @@ function tabPersonen() {
 
 function personFormular(id) {
   const neu = id === 'neu';
-  const p = neu ? { name: '', daten: '', idee: '', auch: '', begriffe: [] } : D.personen[id];
+  const p = neu ? { name: '', daten: '', idee: '', achtung: '', auch: '', begriffe: [] } : D.personen[id];
   return `<form id="pform" data-id="${id}"><h2>${neu ? 'Neue Person' : esc(p.name)}</h2>
     <div class="reihe"><label>Name<input type="text" name="name" value="${esc(p.name)}"></label>
       <label>Lebensdaten<input type="text" name="daten" placeholder="1724 bis 1804" value="${esc(p.daten)}"></label></div>
+    <p class="hinweis-klein">Wichtige Begriffe mit zwei Sternchen fett setzen: <code>**Fachbegriff**</code></p>
     <label>Kernidee<textarea name="idee">${esc(p.idee)}</textarea></label>
-    <label>Hinweis (optional, z. B. „Nicht verwechseln mit …“)<textarea name="auch" style="min-height:60px">${esc(p.auch)}</textarea></label>
+    <label>Achtung (optional, z. B. „Nicht verwechseln mit …“)<textarea name="achtung" style="min-height:60px">${esc(p.achtung || '')}</textarea></label>
+    <label>Querverbindung (optional, z. B. „Begegnet dir auch bei …“)<textarea name="auch" style="min-height:60px">${esc(p.auch)}</textarea></label>
     <label>Begriffe${checkliste('begriffe', Object.entries(D.begriffe).map(([k, v]) => [k, v.kurz || v.name]).sort((a, b) => a[1].localeCompare(b[1])), p.begriffe || [])}</label>
     <div class="leiste"><button type="submit" class="knopf primaer">Übernehmen</button>
       ${neu ? '' : `<button type="button" class="knopf gefahr rechts" data-akt="loeschen">${icon('muell')} Person löschen</button>`}</div></form>`;

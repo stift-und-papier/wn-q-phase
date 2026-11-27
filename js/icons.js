@@ -29,6 +29,7 @@ export const ICONS = {
   web: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
   info: '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5V16h8v-2.5A6 6 0 0 0 12 3z"/>',
   achtung: '<path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17v.5"/>',
+  beispiel: '<circle cx="12" cy="12" r="9"/><path d="M8 12h8M13 8l4 4-4 4"/>',
   kette: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
   person: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
   pro: '<path d="M5 12h14M12 5v14"/>',
@@ -63,5 +64,15 @@ export const FARBEN = {
   tuerkis: ['#5cc9b5', '#38ad9a', '#239381', '#1a7a6b', '#156357', '#104e45', '#0c3b34'],
   koralle: ['#f2a48a', '#e8826a', '#d6654c', '#bb4f38', '#9d402d', '#7f3324', '#62271b'],
 };
+
+// Farbe mit Weiß mischen (a = Anteil Weiß, 0 bis 1), z. B. für Wahlmodul-Segmente
+export function hell(hex, a) {
+  const n = parseInt(hex.slice(1), 16);
+  const m = (c) => Math.round(c + (255 - c) * a).toString(16).padStart(2, '0');
+  return '#' + m(n >> 16) + m((n >> 8) & 255) + m(n & 255);
+}
+
+// Text sicher ausgeben; **so** wird fett
+export const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

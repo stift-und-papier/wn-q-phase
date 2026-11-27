@@ -1,4 +1,4 @@
-import { icon, iconPfad, esc, FARBEN, MATERIAL_TYPEN } from './icons.js';
+import { icon, iconPfad, esc, fmt, hell, FARBEN, MATERIAL_TYPEN } from './icons.js';
 
 let D = null;            // Daten aus data/matrix.json
 let aktivRT = null;      // id des Rahmenthemas
@@ -71,25 +71,30 @@ function halbkreis(r) {
   const mitText = !schmal();
   const H = 540, cx = 100, cy = H / 2, ri = 96, ra = 172, W = mitText ? 640 : cx + ra + 20;
   const schritt = 180 / n;
+  // Pflichtmodul: kräftige Töne der Themenfarbe. Wahlmodul: hell getönt mit farbigem Rand.
+  const pf = cl.filter((c) => c.modul !== 'wahl'), wa = cl.filter((c) => c.modul === 'wahl');
+  const ton = (liste, c, von, bis) => { const k = liste.indexOf(c), m = Math.max(liste.length - 1, 1); return farben[Math.round(von + (k / m) * (bis - von))]; };
   let s = `<svg class="halbkreis ${mitText ? '' : 'klein'}" viewBox="0 0 ${W} ${H}" role="list" aria-label="Themenbereiche ${esc(r.name)}">`;
   cl.forEach((c, i) => {
     const g0 = -90 + i * schritt + 0.8, g1 = -90 + (i + 1) * schritt - 0.8, gm = (g0 + g1) / 2;
-    const farbe = farben[Math.round((i / Math.max(n - 1, 1)) * (farben.length - 2))];
+    const wahl = c.modul === 'wahl';
+    const farbe = wahl ? hell(ton(wa, c, 1, 4), 0.72) : ton(pf, c, 2, 5);
+    const linie = wahl ? farben[4] : '#fff';
     const [ix, iy] = polar(cx, cy, (ri + ra) / 2, gm);
     const [px, py] = polar(cx, cy, ra + 14, gm);
     const ly = n === 1 ? cy : 44 + i * ((H - 88) / (n - 1));
     const lx = 300;
     const aktiv = c.id === aktivCluster;
-    s += `<g class="seg ${aktiv ? 'aktiv' : ''}" role="listitem" tabindex="0" data-cluster="${c.id}">
-      <path d="${segment(cx, cy, ri, ra, g0, g1)}" fill="${farbe}"/>
-      <svg x="${ix - 15}" y="${iy - 15}" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${iconPfad(c.icon)}</svg>
+    s += `<g class="seg ${aktiv ? 'aktiv' : ''} ${wahl ? 'wahl' : 'pflicht'}" role="listitem" tabindex="0" data-cluster="${c.id}">
+      <path d="${segment(cx, cy, ri + (wahl ? 1 : 0), ra - (wahl ? 1 : 0), g0 + (wahl ? 0.3 : 0), g1 - (wahl ? 0.3 : 0))}" fill="${farbe}" ${wahl ? `stroke="${farben[3]}" stroke-width="2"` : ''}/>
+      <svg x="${ix - 15}" y="${iy - 15}" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="${linie}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${iconPfad(c.icon)}</svg>
       ${mitText ? `<circle cx="${px}" cy="${py}" r="4" class="punkt"/>
       <polyline points="${px},${py} ${lx - 26},${ly} ${lx - 8},${ly}" class="leitung"/>
       <circle cx="${lx - 8}" cy="${ly}" r="3" class="punkt"/>
       <text x="${lx}" y="${ly - 4}" class="lnr" fill="${farben[3]}">${nr2(i + 1)}</text>
       <text x="${lx + 40}" y="${ly - 4}" class="lname">${esc(c.name.toUpperCase())}</text>
       <line x1="${lx}" y1="${ly + 4}" x2="${W - 6}" y2="${ly + 4}" class="unterstrich"/>
-      <text x="${lx}" y="${ly + 22}" class="lmeta">${anzahl(c.begriffe.length)} · ${c.modul === 'wahl' ? 'Wahlmodul' : 'Pflichtmodul'}</text>` : ''}
+      <text x="${lx}" y="${ly + 22}" class="lmeta">${anzahl(c.begriffe.length)} · <tspan class="${wahl ? 'twahl' : 'tpflicht'}" fill="${farben[wahl ? 3 : 4]}">${wahl ? 'Wahlmodul' : 'Pflichtmodul'}</tspan></text>` : ''}
     </g>`;
   });
   s += `<circle cx="${cx}" cy="${cy}" r="${ri - 10}" class="mitte-ring"/>
@@ -101,8 +106,12 @@ function halbkreis(r) {
 }
 function legende(r) {
   const f = FARBEN[r.farbe];
-  return `<ol class="legende">${r.cluster.map((c, i) => `<li><a href="#${r.id}/${c.id}" class="${c.id === aktivCluster ? 'aktiv' : ''}">
-    <span class="lnr2" style="color:${f[3]}">${nr2(i + 1)}</span><span><b>${esc(c.name)}</b><small>${anzahl(c.begriffe.length)}</small></span></a></li>`).join('')}</ol>`;
+  return `<ol class="legende">${r.cluster.map((c, i) => `<li><a href="#${r.id}/${c.id}" class="${c.id === aktivCluster ? 'aktiv' : ''} ${c.modul === 'wahl' ? 'wahl' : 'pflicht'}">
+    <span class="lnr2" style="color:${f[3]}">${nr2(i + 1)}</span><span><b>${esc(c.name)}</b><small>${anzahl(c.begriffe.length)} · ${c.modul === 'wahl' ? 'Wahl' : 'Pflicht'}</small></span></a></li>`).join('')}</ol>`;
+}
+function modulLegende(r) {
+  const hatWahl = r.cluster.some((c) => c.modul === 'wahl');
+  return `<p class="modlegende"><span class="mk pflicht"></span>Pflichtmodul${hatWahl ? `<span class="mk wahl"></span>Wahlmodul` : ''}</p>`;
 }
 function kurzname(n) { return n.length > 12 ? n.split(' ')[0].toUpperCase() : n.toUpperCase(); }
 
@@ -113,6 +122,9 @@ function zeigeRT(id, clusterId) {
   markiereTab(id);
   document.documentElement.style.setProperty('--rt', FARBEN[r.farbe][3]);
   document.documentElement.style.setProperty('--rt-hell', FARBEN[r.farbe][0] + '22');
+  document.documentElement.style.setProperty('--rt-wahl', hell(FARBEN[r.farbe][2], 0.72));
+  document.documentElement.style.setProperty('--rt-blass', hell(FARBEN[r.farbe][2], 0.93));
+  document.documentElement.style.setProperty('--rt-dunkel', FARBEN[r.farbe][5]);
   const m = $('#main');
   if (!r.aktiv || !r.cluster.length) {
     m.innerHTML = `<section class="leer"><h2>${esc(r.name)}</h2><p>Dieses Rahmenthema wird noch ergänzt.</p></section>`;
@@ -126,6 +138,7 @@ function zeigeRT(id, clusterId) {
         <p class="module">${icon('buch')} <b>Pflichtmodul:</b> ${esc(r.pflichtmodul)}${r.wahlmodul ? ` · <b>Wahlmodul:</b> ${esc(r.wahlmodul)}` : ''}</p>
       </div>
       <div class="hk-wrap">${halbkreis(r)}${schmal() ? legende(r) : ''}</div>
+      ${modulLegende(r)}
       <p class="tipp">Tippe auf einen Bereich, um seine Begriffe zu sehen.</p>
     </section>
     <section id="clusterpanel" class="clusterpanel"></section>`;
@@ -140,6 +153,7 @@ function zeigeRT(id, clusterId) {
 function zeigeCluster(r, cid) {
   const i = r.cluster.findIndex((c) => c.id === cid), c = r.cluster[i];
   const p = $('#clusterpanel');
+  p.className = 'clusterpanel ' + (c.modul === 'wahl' ? 'wahl' : 'pflicht');
   p.innerHTML = `
     <div class="ckopf">
       <span class="cnr">${nr2(i + 1)}</span>
@@ -196,13 +210,14 @@ function oeffneBegriff(bid) {
   dialogZeigen(`
     <div class="dkopf" style="--f:${farbe}">
       ${icon(b.icon, 'ic riesig')}
-      <div><small>${lage ? esc(lage.r.name + ' · ' + lage.c.name) : ''}</small><h3>${esc(b.name)}</h3></div>
+      <div><small>${lage ? esc(lage.r.name + ' · ' + lage.c.name) : ''}${lage ? ` <span class="dmodul ${lage.c.modul === 'wahl' ? 'wahl' : 'pflicht'}">${lage.c.modul === 'wahl' ? 'Wahlmodul' : 'Pflichtmodul'}</span>` : ''}</small><h3>${esc(b.name)}</h3></div>
       <button class="zu" aria-label="Schließen">${icon('schliessen')}</button>
     </div>
     <div class="dinhalt">
-      <div class="block erkl">${icon('info')}<p>${esc(b.erkl)}</p></div>
-      ${b.achtung ? `<div class="block achtung">${icon('achtung')}<p><b>Achtung:</b> ${esc(b.achtung)}</p></div>` : ''}
-      ${b.positionen ? `<div class="block pos">${icon('pro')}<p><b>Positionen:</b> ${esc(b.positionen)}</p></div>` : ''}
+      <div class="block erkl">${icon('info')}<p>${fmt(b.erkl)}</p></div>
+      ${b.beispiel ? `<div class="block beispiel">${icon('beispiel')}<p><b>Beispiel:</b> ${fmt(b.beispiel)}</p></div>` : ''}
+      ${b.achtung ? `<div class="block achtung">${icon('achtung')}<p><b>Achtung:</b> ${fmt(b.achtung)}</p></div>` : ''}
+      ${b.positionen ? `<div class="block pos">${icon('pro')}<p><span class="btitel">Positionen und Kritik</span>${fmt(b.positionen)}</p></div>` : ''}
       ${chips ? `<h4>Hängt zusammen mit</h4><div class="chips">${chips}</div>` : ''}
       ${pers ? `<h4>Personen</h4><div class="chips">${pers}</div>` : ''}
       ${b.material?.length ? `<h4>Material</h4>${materialListe(b.material)}` : ''}
@@ -220,8 +235,9 @@ function oeffnePerson(pid) {
       <button class="zu" aria-label="Schließen">${icon('schliessen')}</button>
     </div>
     <div class="dinhalt">
-      <div class="block erkl">${icon('info')}<p>${esc(p.idee)}</p></div>
-      ${p.auch ? `<div class="block achtung">${icon('achtung')}<p>${esc(p.auch)}</p></div>` : ''}
+      <div class="block erkl">${icon('info')}<p>${fmt(p.idee)}</p></div>
+      ${p.achtung ? `<div class="block achtung">${icon('achtung')}<p><b>Achtung:</b> ${fmt(p.achtung)}</p></div>` : ''}
+      ${p.auch ? `<div class="block quer">${icon('kette')}<p>${fmt(p.auch)}</p></div>` : ''}
       ${chips ? `<h4>Begriffe</h4><div class="chips">${chips}</div>` : ''}
     </div>`);
 }
@@ -231,9 +247,9 @@ function suchen(q) {
   q = q.trim().toLowerCase();
   const erg = $('#suchergebnis');
   if (q.length < 2) { erg.hidden = true; erg.innerHTML = ''; return; }
-  const treffer = Object.entries(D.begriffe).filter(([, b]) => (b.name + ' ' + (b.kurz || '') + ' ' + b.erkl).toLowerCase().includes(q))
+  const treffer = Object.entries(D.begriffe).filter(([, b]) => (b.name + ' ' + (b.kurz || '') + ' ' + b.erkl).replace(/\*\*/g, '').toLowerCase().includes(q))
     .sort((a, b) => (a[1].name.toLowerCase().includes(q) ? 0 : 1) - (b[1].name.toLowerCase().includes(q) ? 0 : 1)).slice(0, 12);
-  const pt = Object.entries(D.personen).filter(([, p]) => (p.name + ' ' + p.idee).toLowerCase().includes(q)).slice(0, 5);
+  const pt = Object.entries(D.personen).filter(([, p]) => (p.name + ' ' + p.idee).replace(/\*\*/g, '').toLowerCase().includes(q)).slice(0, 5);
   erg.innerHTML = (treffer.map(([id, b]) => `<a href="#begriff/${id}">${icon(b.icon)}<span>${esc(b.name)}</span></a>`).join('') +
     pt.map(([id, p]) => `<a href="#person/${id}">${icon('person')}<span>${esc(p.name)}</span></a>`).join('')) || '<p class="nix">Nichts gefunden.</p>';
   erg.hidden = false;
