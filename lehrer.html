@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lehrerbereich · Lernmatrix</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lehrer.css">
+</head>
+<body>
+<header class="seitenkopf">
+  <div class="wrap kopfzeile">
+    <div>
+      <h1>Lehrerbereich</h1>
+      <p class="unter">Lernmatrix bearbeiten · <a href="index.html" target="_blank">Schülerseite ansehen</a></p>
+    </div>
+    <div id="status" class="status" hidden>
+      <span id="aenderungen">Keine ungespeicherten Änderungen</span>
+      <button id="veroeffentlichen" class="knopf primaer" disabled>Veröffentlichen</button>
+      <button id="abmelden" class="knopf leise">Abmelden</button>
+    </div>
+  </div>
+  <nav id="ltabs" class="wrap nav" hidden>
+    <a href="#begriffe" class="tab" data-tab="begriffe">Begriffe</a>
+    <a href="#personen" class="tab" data-tab="personen">Personen</a>
+    <a href="#bereiche" class="tab" data-tab="bereiche">Rahmenthemen und Bereiche</a>
+    <a href="#abitur" class="tab" data-tab="abitur">Abitur allgemein</a>
+  </nav>
+</header>
+
+<main class="wrap" id="lmain">
+  <section id="login" class="panel login">
+    <h2>Anmelden</h2>
+    <p>Zum Bearbeiten brauchst du einen GitHub-Zugangsschlüssel, der nur für dieses Repository gilt.</p>
+    <label>Zugangsschlüssel<input id="token" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+    <label class="check"><input id="merken" type="checkbox" checked> Auf diesem Gerät angemeldet bleiben</label>
+    <button id="anmelden" class="knopf primaer">Anmelden</button>
+    <p id="loginfehler" class="fehler" hidden></p>
+    <details class="hilfe">
+      <summary>So erstellst du den Zugangsschlüssel (einmalig)</summary>
+      <ol>
+        <li>Öffne auf github.com: Profilbild › Settings › Developer settings › Personal access tokens › <b>Fine-grained tokens</b> › Generate new token.</li>
+        <li>Name: z. B. „Lernmatrix“. Ablaufdatum: bis nach dem Abitur.</li>
+        <li>Repository access: <b>Only select repositories</b> › <b>wn-q-phase</b>.</li>
+        <li>Permissions › Repository permissions › <b>Contents</b>: <b>Read and write</b>.</li>
+        <li>Generate token, den Schlüssel kopieren und hier einfügen. Gib ihn an niemanden weiter.</li>
+      </ol>
+    </details>
+  </section>
+  <div id="editor" hidden></div>
+</main>
+<div id="meldung" class="meldung" hidden></div>
+<script type="module" src="js/lehrer.js"></script>
+</body>
+</html>

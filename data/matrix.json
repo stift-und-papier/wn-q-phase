@@ -1,0 +1,1063 @@
+{
+ "titel": "Lernmatrix Werte und Normen",
+ "untertitel": "Prüfungskurs Q2 · Abitur 2027",
+ "stand": "November 2026",
+ "rahmenthemen": [
+  {
+   "id": "anthropologie",
+   "nr": 1,
+   "name": "Anthropologie",
+   "farbe": "violett",
+   "aktiv": false,
+   "pflichtmodul": "Spezifische Dimensionen des Menschseins",
+   "wahlmodul": "Menschenbilder in den Wissenschaften",
+   "cluster": []
+  },
+  {
+   "id": "ethik",
+   "nr": 2,
+   "name": "Ethik",
+   "farbe": "blau",
+   "aktiv": true,
+   "pflichtmodul": "Normative Ethik",
+   "wahlmodul": "Ethik in Medizin und Wissenschaft",
+   "cluster": [
+    {
+     "id": "grundlagen",
+     "name": "Grundlagen",
+     "icon": "sprechen",
+     "modul": "pflicht",
+     "begriffe": [
+      "ethik-moral",
+      "deskriptiv",
+      "moralisches-urteil",
+      "normative-ethik",
+      "metaethik"
+     ]
+    },
+    {
+     "id": "teleo",
+     "name": "Teleologische Ethik",
+     "icon": "ziel",
+     "modul": "pflicht",
+     "begriffe": [
+      "teleologie",
+      "utilitarismus",
+      "handlung-regel",
+      "arten-util",
+      "kalkuel",
+      "hedonismus"
+     ]
+    },
+    {
+     "id": "deonto",
+     "name": "Deontologische Ethik",
+     "icon": "kompass",
+     "modul": "pflicht",
+     "begriffe": [
+      "deontologie",
+      "guter-wille",
+      "kategorischer-imperativ",
+      "maxime",
+      "mzf",
+      "autonomie",
+      "legalitaet"
+     ]
+    },
+    {
+     "id": "tugend",
+     "name": "Tugendethik",
+     "icon": "stern",
+     "modul": "pflicht",
+     "begriffe": [
+      "tugendethik"
+     ]
+    },
+    {
+     "id": "beginn",
+     "name": "Beginn des Lebens",
+     "icon": "keim",
+     "modul": "wahl",
+     "begriffe": [
+      "beginn-leben",
+      "skip",
+      "spezies",
+      "kontinuum",
+      "identitaet",
+      "potentialitaet",
+      "dammbruch",
+      "abbruch",
+      "pnd"
+     ]
+    },
+    {
+     "id": "ende",
+     "name": "Ende des Lebens",
+     "icon": "puls",
+     "modul": "wahl",
+     "begriffe": [
+      "sterbehilfe",
+      "aktive",
+      "passive",
+      "indirekte",
+      "assistierter-suizid"
+     ]
+    },
+    {
+     "id": "biotech",
+     "name": "Biotechnologie",
+     "icon": "dna",
+     "modul": "wahl",
+     "begriffe": [
+      "biotechnologie"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wahrheit",
+   "nr": 3,
+   "name": "Wahrheit und Wirklichkeit",
+   "farbe": "tuerkis",
+   "aktiv": false,
+   "pflichtmodul": "Wahrheitsansprüche",
+   "wahlmodul": "Wahrheit und Wirklichkeit in den Medien",
+   "cluster": []
+  },
+  {
+   "id": "lebensentwuerfe",
+   "nr": 4,
+   "name": "Lebensentwürfe",
+   "farbe": "koralle",
+   "aktiv": false,
+   "pflichtmodul": "Sinn, Glück und Krisenerfahrungen",
+   "wahlmodul": "",
+   "cluster": []
+  }
+ ],
+ "begriffe": {
+  "ethik-moral": {
+   "name": "Ethik und Moral",
+   "kurz": "Ethik / Moral",
+   "icon": "sprechen",
+   "erkl": "Moral ist die Gesamtheit der Normen und Werte, die in einer Gemeinschaft tatsächlich gelten und das Handeln leiten. Ethik ist die philosophische Reflexion über Moral: Sie fragt, ob und wie sich moralische Normen begründen lassen.",
+   "achtung": "Moral wird gelebt, Ethik denkt über Moral nach. Nicht verwechseln mit Moralität bei Kant: Das ist die Gesinnung, aus Pflicht zu handeln.",
+   "positionen": "",
+   "links": [
+    "normative-ethik",
+    "legalitaet"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Ethik und Moral",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/02.%20AB%20-%20Ethik%20und%20Moral.pdf"
+    }
+   ]
+  },
+  "deskriptiv": {
+   "name": "Deskriptive und präskriptive Aussagen",
+   "kurz": "deskriptiv / präskriptiv",
+   "icon": "sprechen",
+   "erkl": "Deskriptive Aussagen beschreiben, was der Fall ist. Präskriptive (nicht-deskriptive) Aussagen sind entweder evaluativ, sie bewerten etwas als gut oder schlecht, oder normativ, sie sagen, was getan werden soll (Signalwörter: sollen, müssen, dürfen).",
+   "achtung": "Aus rein deskriptiven Aussagen folgt keine normative Aussage (Sein-Sollen-Fehlschluss). Manche Aussagen meinen eine Norm nur mit, z. B. „Wenn du hilfst, sind wir schneller fertig.“",
+   "positionen": "",
+   "links": [
+    "moralisches-urteil",
+    "metaethik",
+    "spezies"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Deskriptive und präskriptive Aussagen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/01.%20AB%20-%20deskriptive%20und%20pra%CC%88skriptive%20Aussagen.pdf"
+    }
+   ]
+  },
+  "moralisches-urteil": {
+   "name": "Moralisches Urteil (praktischer Syllogismus)",
+   "kurz": "Moralisches Urteil",
+   "icon": "waage",
+   "erkl": "Ein moralisches Urteil lässt sich als praktischer Syllogismus begründen: Eine normative Prämisse (allgemeine Norm) und eine deskriptive Prämisse (Beschreibung der Situation) führen zur Schlussfolgerung, dem moralischen Urteil.",
+   "achtung": "Fehlt die normative Prämisse, ist der Schluss nicht gültig. Wer ein Urteil kritisiert, sollte angeben, welche Prämisse er angreift.",
+   "positionen": "",
+   "links": [
+    "deskriptiv",
+    "normative-ethik"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Moralische Urteile begründen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/03.%20AB%20-%20Moralische%20Urteile%20begru%CC%88nden.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Moralische Urteile",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/03.%20Moralische%20Urteile.pdf"
+    }
+   ]
+  },
+  "normative-ethik": {
+   "name": "Normative Ethik",
+   "kurz": "Normative Ethik",
+   "icon": "waage",
+   "erkl": "Die normative Ethik entwickelt und begründet Kriterien dafür, welche Handlungen moralisch richtig oder falsch sind. Die beiden Grundtypen sind die teleologische (folgenorientierte) und die deontologische (pflichtorientierte) Ethik. Daneben fragt die Tugendethik nach dem guten Charakter.",
+   "achtung": "Normative Ethik sagt, was man tun soll. Die Metaethik untersucht, was solche Sollensaussagen überhaupt bedeuten.",
+   "positionen": "",
+   "links": [
+    "teleologie",
+    "deontologie",
+    "tugendethik",
+    "metaethik"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "metaethik": {
+   "name": "Metaethik",
+   "kurz": "Metaethik",
+   "icon": "lupe",
+   "erkl": "Die Metaethik fragt nicht, was gut ist, sondern was moralische Aussagen bedeuten und ob sie wahr oder falsch sein können. Kognitivismus: Moralische Urteile sind wahrheitsfähig. Non-Kognitivismus: Sie drücken Gefühle, Einstellungen oder Aufforderungen aus.",
+   "achtung": "Die Metaethik ist eine Ebene über der normativen Ethik. Sie liefert keine Handlungsanweisung.",
+   "positionen": "",
+   "links": [
+    "normative-ethik",
+    "deskriptiv"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "teleologie": {
+   "name": "Teleologische Ethik (Teleologie)",
+   "kurz": "Teleologie",
+   "icon": "ziel",
+   "erkl": "Teleologische Ethik (griech. telos: Ziel) beurteilt eine Handlung nach ihren Folgen bzw. nach dem Ziel, das sie erreicht. Eine Handlung ist gut, wenn ihre Konsequenzen gut sind (Konsequenzialismus).",
+   "achtung": "Teleologisch heißt nicht egoistisch: Beim Utilitarismus zählen die Folgen für alle Betroffenen. Gegenbegriff: deontologisch.",
+   "positionen": "",
+   "links": [
+    "utilitarismus",
+    "deontologie",
+    "dammbruch"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Formen des Utilitarismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/04.%20TB%20-%20Formen%20des%20Utilitarismus.pdf"
+    }
+   ]
+  },
+  "utilitarismus": {
+   "name": "Utilitarismus",
+   "kurz": "Utilitarismus",
+   "icon": "waage",
+   "erkl": "Der Utilitarismus (lat. utilitas: Nutzen) ist eine teleologische Ethik: Richtig ist die Handlung, die für alle Betroffenen den größten Gesamtnutzen bringt. Vier Prinzipien: Konsequenzprinzip (die Folgen entscheiden), Utilitätsprinzip (Maßstab ist die Nützlichkeit), hedonistisches Prinzip (Nutzen bedeutet Lust und Glück, Unlust wird vermieden) und Sozialprinzip bzw. universalistisches Prinzip (das größtmögliche Glück der größtmöglichen Zahl, jeder zählt gleich).",
+   "achtung": "Typische Kritik: Rechte Einzelner können für den Gesamtnutzen geopfert werden, und die Folgen einer Handlung sind oft nicht sicher vorherzusagen.",
+   "positionen": "",
+   "links": [
+    "teleologie",
+    "handlung-regel",
+    "arten-util",
+    "kalkuel",
+    "hedonismus"
+   ],
+   "personen": [
+    "bentham",
+    "mill"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Formen und Grundmerkmale des Utilitarismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/04.%20AB%20-%20Formen%20und%20Grundmerkmale%20des%20Utilitarismus.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Formen des Utilitarismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/04.%20TB%20-%20Formen%20des%20Utilitarismus.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Prinzip der Nützlichkeit",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/05.%20TB%20-%20Quantitativer%20Utilitarismus%20-%20Prinzip%20der%20N%C3%BCtzlichkeit%20.pdf"
+    },
+    {
+     "typ": "video",
+     "titel": "Utilitarismus einfach erklärt (Studyflix)",
+     "url": "https://studyflix.de/allgemeinwissen/utilitarismus-6145"
+    }
+   ]
+  },
+  "handlung-regel": {
+   "name": "Handlungs- und Regelutilitarismus",
+   "kurz": "Handlungs- / Regelutil.",
+   "icon": "waage",
+   "erkl": "Handlungsutilitarismus: Jede einzelne Handlung wird danach beurteilt, ob ihre Folgen den Nutzen maximieren. Regelutilitarismus: Man prüft, welche allgemeine Regel den größten Nutzen bringt, wenn alle sie befolgen (Universalisierbarkeit).",
+   "achtung": "Auch der Regelutilitarismus bleibt teleologisch: Er begründet Regeln mit ihren Folgen. Darin unterscheidet er sich vom kategorischen Imperativ.",
+   "positionen": "",
+   "links": [
+    "utilitarismus",
+    "kategorischer-imperativ"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Formen des Utilitarismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/04.%20TB%20-%20Formen%20des%20Utilitarismus.pdf"
+    }
+   ]
+  },
+  "arten-util": {
+   "name": "Quantitativer, qualitativer und Präferenzutilitarismus",
+   "kurz": "Arten des Utilitarismus",
+   "icon": "waage",
+   "erkl": "Hedonistischer (quantitativer) Utilitarismus nach Bentham: Es zählt nur die Menge an Lust, alle Freuden sind gleichwertig. Idealer (qualitativer) Utilitarismus nach Mill: Geistige Freuden sind höherwertig als körperliche. Präferenzutilitarismus (z. B. Peter Singer): Maßstab ist die Erfüllung der Interessen aller Betroffenen.",
+   "achtung": "Mill: „Es ist besser, ein unzufriedener Mensch zu sein als ein zufriedenes Schwein.“ Damit wendet er sich gegen den Vorwurf, der Utilitarismus sei eine Ethik für Schweine.",
+   "positionen": "",
+   "links": [
+    "utilitarismus",
+    "kalkuel",
+    "beginn-leben"
+   ],
+   "personen": [
+    "bentham",
+    "mill",
+    "singer"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Formen des Utilitarismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/04.%20TB%20-%20Formen%20des%20Utilitarismus.pdf"
+    }
+   ]
+  },
+  "kalkuel": {
+   "name": "Hedonistisches Kalkül",
+   "kurz": "Hedonistisches Kalkül",
+   "icon": "rechnen",
+   "erkl": "Mit dem hedonistischen Kalkül will Bentham Freude und Leid, die eine Handlung auslöst, berechnen. Kriterien sind Intensität, Dauer, Gewissheit, Nähe, Folgenträchtigkeit, Reinheit und Ausmaß (Zahl der Betroffenen).",
+   "achtung": "Kritik (z. B. Höffe): Glück lässt sich kaum messen und zwischen Personen nicht vergleichen. Außerdem kann die Rechnung Ungerechtigkeit gegenüber Einzelnen rechtfertigen.",
+   "positionen": "",
+   "links": [
+    "utilitarismus",
+    "hedonismus",
+    "arten-util"
+   ],
+   "personen": [
+    "bentham",
+    "hoeffe"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Hedonistisches Kalkül",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/06.%20AB%20-%20Hedonistisches%20Kalk%C3%BCl.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Hedonistisches Kalkül",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/06.%20Quantitativer%20Utilitarismus%20-%20hedonistisches%20Kalk%C3%BCl.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Kritik am hedonistischen Kalkül",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/07.%20AB%20-%20%20Kritik%20am%20Hedonistischen%20Kalk%C3%BCl.pdf"
+    }
+   ]
+  },
+  "hedonismus": {
+   "name": "Hedonismus",
+   "kurz": "Hedonismus",
+   "icon": "herz",
+   "erkl": "Hedonismus (griech. hedone: Lust) ist die Auffassung, dass Lust bzw. Glück das höchste Gut ist und Unlust vermieden werden soll. Im Utilitarismus steckt er im hedonistischen Prinzip: Nutzen wird als Lust und Glück verstanden.",
+   "achtung": "Hedonismus bedeutet nicht automatisch Genusssucht. Epikur verstand Lust vor allem als Freiheit von Schmerz und innerer Unruhe.",
+   "positionen": "",
+   "links": [
+    "utilitarismus",
+    "kalkuel"
+   ],
+   "personen": [
+    "bentham"
+   ],
+   "material": []
+  },
+  "deontologie": {
+   "name": "Deontologische Ethik (Deontologie)",
+   "kurz": "Deontologie",
+   "icon": "hand",
+   "erkl": "Deontologische Ethik (griech. deon: Pflicht) beurteilt eine Handlung danach, ob sie einer moralischen Pflicht entspricht und aus welcher Gesinnung sie geschieht, nicht nach ihren Folgen. Hauptvertreter ist Immanuel Kant.",
+   "achtung": "Gegenbegriff: teleologisch. Folgen können bei Kant vorkommen, sie entscheiden aber nicht über den moralischen Wert einer Handlung.",
+   "positionen": "",
+   "links": [
+    "guter-wille",
+    "kategorischer-imperativ",
+    "teleologie"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Kants Pflichtethik",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB%20-%20Pflichtethik.pdf"
+    }
+   ]
+  },
+  "guter-wille": {
+   "name": "Guter Wille, Pflicht und Neigung",
+   "kurz": "Guter Wille / Pflicht",
+   "icon": "hand",
+   "erkl": "Für Kant ist nichts ohne Einschränkung gut außer ein guter Wille. Moralischen Wert hat eine Handlung nur, wenn sie aus Pflicht geschieht, also aus Achtung vor dem Sittengesetz, und nicht aus Neigung (Gefühle, Triebe, Eigennutz). Der Mensch gehört zur Sinnenwelt (Neigungen) und zur Verstandeswelt (Vernunft).",
+   "achtung": "Pflichtgemäß handeln heißt: äußerlich richtig, aber vielleicht aus Eigennutz. Aus Pflicht handeln heißt: aus moralischer Einsicht. Nur das Zweite hat moralischen Wert.",
+   "positionen": "",
+   "links": [
+    "deontologie",
+    "legalitaet",
+    "kategorischer-imperativ"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Kants Pflichtethik",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB%20-%20Pflichtethik.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Pflichtethik (Sinnenwelt und Verstandeswelt)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB-%20Kategorischer%20Imperativ%20%282%29.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "Text: Der gute Wille und die Menschheit-Zweck-Formel",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB-%20Menscheits-Zweck-Formel.pdf"
+    }
+   ]
+  },
+  "kategorischer-imperativ": {
+   "name": "Kategorischer Imperativ",
+   "kurz": "Kategorischer Imperativ",
+   "icon": "kompass",
+   "erkl": "Der kategorische Imperativ ist Kants oberstes Moralprinzip: „Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.“ Er gilt unbedingt (aus Pflicht), uneingeschränkt (immer) und universell (für jeden). Man prüft, ob sich die eigene Maxime ohne Widerspruch verallgemeinern lässt.",
+   "achtung": "Hypothetischer Imperativ: bedingt („Wenn du X willst, dann tu Y“), dient Zielen der Neigung. Der kategorische Imperativ gilt ohne jede Bedingung.",
+   "positionen": "",
+   "links": [
+    "maxime",
+    "mzf",
+    "guter-wille",
+    "handlung-regel"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Kategorischer Imperativ",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20AB%20-%20Kategorischer%20Imperativ.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Kategorischer Imperativ",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB-%20Kategorischer%20Imperativ.pdf"
+    },
+    {
+     "typ": "video",
+     "titel": "Video: Kants kategorischer Imperativ",
+     "url": "https://www.youtube.com/watch?v=6DtchCPwpHI"
+    }
+   ]
+  },
+  "maxime": {
+   "name": "Maxime",
+   "kurz": "Maxime",
+   "icon": "sprechen",
+   "erkl": "Eine Maxime ist ein subjektiver Handlungsgrundsatz, nach dem eine Person tatsächlich handelt, z. B. „Wenn ich in Geldnot bin, mache ich ein falsches Versprechen.“ Der kategorische Imperativ prüft Maximen darauf, ob sie verallgemeinerbar sind.",
+   "achtung": "Eine Maxime ist subjektiv und persönlich. Ein (Sitten-)Gesetz ist objektiv und gilt für alle Vernunftwesen.",
+   "positionen": "",
+   "links": [
+    "kategorischer-imperativ"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Kategorischer Imperativ",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20AB%20-%20Kategorischer%20Imperativ.pdf"
+    }
+   ]
+  },
+  "mzf": {
+   "name": "Menschheit-Zweck-Formel und Menschenwürde (Kant)",
+   "kurz": "Menschenwürde (Kant)",
+   "icon": "schild",
+   "erkl": "Menschheit-Zweck-Formel: „Handle so, dass du die Menschheit sowohl in deiner Person als in der Person eines jeden andern jederzeit zugleich als Zweck, niemals bloß als Mittel brauchst.“ Daraus folgt Kants Begriff der Menschenwürde: Der Mensch hat als vernünftiges, autonomes Wesen keinen Preis, sondern Würde, also einen unbedingten Wert.",
+   "achtung": "Andere als Mittel zu nutzen ist erlaubt (z. B. die Bäckerin), aber nie bloß als Mittel, ohne sie als Zweck an sich zu achten. Die Menschenwürde ist zentral für die Debatten um Sterbehilfe und Schwangerschaftsabbruch (vgl. Art. 1 GG).",
+   "positionen": "",
+   "links": [
+    "autonomie",
+    "kategorischer-imperativ",
+    "aktive",
+    "spezies"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Menschenwürde und Menschheit-Zweck-Formel",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB-%20Menscheits-Zweck-Formel%20%282%29.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "Text: Der gute Wille und die Menschheit-Zweck-Formel",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB-%20Menscheits-Zweck-Formel.pdf"
+    }
+   ]
+  },
+  "autonomie": {
+   "name": "Autonomie",
+   "kurz": "Autonomie",
+   "icon": "schluessel",
+   "erkl": "Autonomie (griech. Selbstgesetzgebung) heißt bei Kant: Die Vernunft gibt sich selbst das moralische Gesetz, statt Neigungen oder fremden Autoritäten zu folgen (Heteronomie). Die Autonomie ist der Grund der Menschenwürde.",
+   "achtung": "In der Medizinethik meint Autonomie meist Selbstbestimmung, z. B. über das eigene Lebensende. Das ist weiter gefasst als Kants Begriff.",
+   "positionen": "",
+   "links": [
+    "mzf",
+    "assistierter-suizid",
+    "kategorischer-imperativ"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Menschenwürde und Menschheit-Zweck-Formel",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/08.%20TB-%20Menscheits-Zweck-Formel%20%282%29.pdf"
+    }
+   ]
+  },
+  "legalitaet": {
+   "name": "Legalität und Moralität",
+   "kurz": "Legalität / Moralität",
+   "icon": "paragraf",
+   "erkl": "Legalität: Eine Handlung stimmt äußerlich mit der Pflicht bzw. dem Gesetz überein, gleich aus welchem Motiv. Moralität: Die Handlung geschieht aus Pflicht, also aus der richtigen Gesinnung.",
+   "achtung": "Beispiel: Ein Kaufmann, der nur aus Sorge um seinen Ruf ehrlich ist, handelt legal, aber nicht moralisch. In der Rechtsdebatte (z. B. Schwangerschaftsabbruch) bedeutet „Legalität“ dagegen die Rechtslage.",
+   "positionen": "",
+   "links": [
+    "guter-wille",
+    "ethik-moral",
+    "abbruch"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": []
+  },
+  "tugendethik": {
+   "name": "Tugendethik (Aristoteles)",
+   "kurz": "Tugend / Tugendethik",
+   "icon": "stern",
+   "erkl": "Die Tugendethik fragt nicht zuerst „Was soll ich tun?“, sondern „Wie werde ich ein guter Mensch?“. Bei Aristoteles ist das Ziel die Eudaimonia, das gelingende Leben. Ethische Tugenden sind durch Gewohnheit erworbene Haltungen. Sie liegen in der Mitte zwischen zwei Extremen (Mesotes-Lehre), z. B. Tapferkeit zwischen Feigheit und Tollkühnheit.",
+   "achtung": "Die Mitte ist kein Rechenwert, sondern hängt von Person und Situation ab. Die vier Kardinaltugenden sind Klugheit, Tapferkeit, Gerechtigkeit und Besonnenheit.",
+   "positionen": "",
+   "links": [
+    "normative-ethik",
+    "teleologie"
+   ],
+   "personen": [
+    "aristoteles"
+   ],
+   "material": [
+    {
+     "typ": "web",
+     "titel": "Die goldene Mitte (Spektrum, Kolumne)",
+     "url": "https://www.spektrum.de/kolumne/warkus-welt-die-goldene-mitte/2223716"
+    }
+   ]
+  },
+  "beginn-leben": {
+   "name": "Beginn des menschlichen Lebens",
+   "kurz": "Beginn des Lebens",
+   "icon": "keim",
+   "erkl": "Diskutierte Zeitpunkte sind u. a. Befruchtung, Nidation (Einnistung), Beginn der Hirnaktivität, Empfindungsfähigkeit, Lebensfähigkeit außerhalb des Mutterleibs und Geburt. Löw: Mit der Befruchtung ist der Mensch da, entscheidend ist die biologische Zugehörigkeit zur Gattung. Singer: Moralisch zählen Empfindungsfähigkeit und Bewusstsein, nicht die Spezies.",
+   "achtung": "Unterscheide die biologische Frage (Wann beginnt menschliches Leben?) von der ethischen Frage (Ab wann kommen ihm Würde und Lebensschutz zu?).",
+   "positionen": "",
+   "links": [
+    "skip",
+    "abbruch",
+    "arten-util"
+   ],
+   "personen": [
+    "loew",
+    "singer"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Wann beginnt ein Menschenleben?",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/11.%20Beginn%20des%20Menschenlebens.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Beginn des Menschenlebens",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/11.%20TB%20-%20Beginn%20des%20Menschenlebens.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Schwangerschaftsabbruch in den USA",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/11.%20TB%20-%20Situation%20in%20Amerika.pdf"
+    }
+   ]
+  },
+  "skip": {
+   "name": "SKIP-Argumente",
+   "kurz": "SKIP-Argumente",
+   "icon": "keim",
+   "erkl": "Mit den SKIP-Argumenten wird begründet, dass Embryonen von Anfang an Würde und Lebensschutz zukommen: Spezies-, Kontinuums-, Identitäts- und Potentialitätsargument. Sie werden vor allem gegen Schwangerschaftsabbruch und Embryonenforschung angeführt.",
+   "achtung": "Für jedes Argument solltest du auch den typischen Einwand kennen. Die Kritik an den SKIP-Argumenten ist ausdrücklich Teil der Abiturvorgaben.",
+   "positionen": "",
+   "links": [
+    "spezies",
+    "kontinuum",
+    "identitaet",
+    "potentialitaet",
+    "abbruch"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB SKIP-Argumente",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/10.%20AB%20-%20SKIP-Argumente.pdf"
+    }
+   ]
+  },
+  "spezies": {
+   "name": "Spezies-Argument",
+   "kurz": "Spezies-Argument",
+   "icon": "keim",
+   "erkl": "Jedem Mitglied der Spezies Mensch kommen Würde und Lebensschutz zu, allein weil es zur Gattung Mensch gehört.",
+   "achtung": "Einwand: naturalistischer Fehlschluss, denn aus der biologischen Zugehörigkeit folgt nicht automatisch ein moralischer Status. Singer spricht von Speziesismus.",
+   "positionen": "",
+   "links": [
+    "skip",
+    "mzf",
+    "deskriptiv"
+   ],
+   "personen": [
+    "singer",
+    "loew"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB SKIP-Argumente",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/10.%20AB%20-%20SKIP-Argumente.pdf"
+    }
+   ]
+  },
+  "kontinuum": {
+   "name": "Kontinuums-Argument",
+   "kurz": "Kontinuums-Argument",
+   "icon": "keim",
+   "erkl": "Die Entwicklung vom Embryo zum geborenen Menschen verläuft kontinuierlich, ohne moralisch bedeutsame Einschnitte. Jede Grenzziehung wäre willkürlich, also muss der Schutz von Anfang an gelten.",
+   "achtung": "Einwand: Haufen-Fehlschluss. Auch ohne scharfe Grenze kann man ein Sandkorn von einem Sandhaufen unterscheiden, also auch frühe von späten Entwicklungsphasen.",
+   "positionen": "",
+   "links": [
+    "skip",
+    "beginn-leben"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB SKIP-Argumente",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/10.%20AB%20-%20SKIP-Argumente.pdf"
+    }
+   ]
+  },
+  "identitaet": {
+   "name": "Identitäts-Argument",
+   "kurz": "Identitäts-Argument",
+   "icon": "keim",
+   "erkl": "Der Embryo ist mit dem späteren erwachsenen Menschen identisch, es handelt sich um dasselbe Individuum. Was dem Erwachsenen an Schutz zusteht, steht daher schon dem Embryo zu.",
+   "achtung": "Einwand: Bis etwa zum 14. Tag kann sich ein Embryo noch teilen (eineiige Zwillinge). Eine individuelle Identität steht also noch nicht fest.",
+   "positionen": "",
+   "links": [
+    "skip"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB SKIP-Argumente",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/10.%20AB%20-%20SKIP-Argumente.pdf"
+    }
+   ]
+  },
+  "potentialitaet": {
+   "name": "Potentialitäts-Argument",
+   "kurz": "Potentialitäts-Argument",
+   "icon": "keim",
+   "erkl": "Der Embryo hat das Potential, sich zu einem vernünftigen, selbstbewussten Menschen zu entwickeln. Weil er diese Fähigkeiten der Möglichkeit nach besitzt, verdient er Schutz.",
+   "achtung": "Einwand: Ein potentielles X hat nicht die Rechte eines tatsächlichen X. Ein Kronprinz hat nicht die Rechte eines Königs.",
+   "positionen": "",
+   "links": [
+    "skip"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB SKIP-Argumente",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/10.%20AB%20-%20SKIP-Argumente.pdf"
+    }
+   ]
+  },
+  "dammbruch": {
+   "name": "Dammbruch-Argument",
+   "kurz": "Dammbruch-Argument",
+   "icon": "welle",
+   "erkl": "Das Dammbruch-Argument (engl. slippery slope) warnt: Lässt man eine erste Ausnahme zu, z. B. aktive Sterbehilfe auf Verlangen, folgen schrittweise weitere, nicht gewollte Entwicklungen, z. B. Druck auf alte und kranke Menschen.",
+   "achtung": "Es ist ein Folgenargument, also teleologisch. Einwand: Ob der Damm wirklich bricht, ist eine empirische Frage und muss belegt werden. Klare rechtliche Grenzen können das verhindern.",
+   "positionen": "",
+   "links": [
+    "aktive",
+    "pnd",
+    "teleologie",
+    "abbruch"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "abbruch": {
+   "name": "Schwangerschaftsabbruch: Rechtslage (§§ 218, 219 StGB)",
+   "kurz": "Schwangerschaftsabbruch",
+   "icon": "paragraf",
+   "erkl": "Nach § 218 StGB ist ein Schwangerschaftsabbruch grundsätzlich strafbar. Straffrei bleibt er nach § 218a Abs. 1 in den ersten zwölf Wochen nach der Empfängnis, wenn sich die Schwangere mindestens drei Tage vorher beraten lässt (Beratungsregelung: rechtswidrig, aber straffrei). Nicht rechtswidrig ist er bei medizinischer Indikation (Gefahr für Leben oder Gesundheit der Schwangeren) und bei kriminologischer Indikation (nach einer Sexualstraftat, bis zur zwölften Woche). § 219 StGB regelt die Schwangerschaftskonfliktberatung: Sie dient dem Schutz des ungeborenen Lebens und soll ergebnisoffen geführt werden.",
+   "achtung": "Trenne die rechtliche Lage (Legalität) von der moralischen Bewertung. Die Rechtslage ist politisch umstritten. Prüfe vor der Prüfung den aktuellen Stand.",
+   "positionen": "",
+   "links": [
+    "skip",
+    "beginn-leben",
+    "pnd",
+    "legalitaet"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Problemfeld Schwangerschaftsabbruch",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/09.%20AB%20-%20Problemfeld%20Schwangerschaftsabbruch.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Problemfeld Schwangerschaftsabbruch",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/09.%20TB%20-%20Problemfeld%20Schwangerschaftsabbruch.pdf"
+    },
+    {
+     "typ": "web",
+     "titel": "Gesetzeslage (Bundesjustizministerium)",
+     "url": "https://www.bmjv.de/DE/themen/gesellschaft_familie/kinder/schwangerschaftsabbruch/abbruch_node.html"
+    },
+    {
+     "typ": "web",
+     "titel": "Aktuelle Debatte (tagesschau)",
+     "url": "https://www.tagesschau.de/inland/innenpolitik/schwangerschaftsabbruch-paragraf-218-102.html"
+    },
+    {
+     "typ": "web",
+     "titel": "Positionen und Argumente (bpb)",
+     "url": "https://www.bpb.de/themen/umwelt/bioethik/159793/schwangerschaftsabbruch/"
+    }
+   ]
+  },
+  "pnd": {
+   "name": "Pränataldiagnostik (PND)",
+   "kurz": "PND",
+   "icon": "lupe",
+   "erkl": "Pränataldiagnostik umfasst vorgeburtliche Untersuchungen des Embryos bzw. Fötus, z. B. Ultraschall, Bluttests der Schwangeren oder Fruchtwasseruntersuchung. Sie kann Krankheiten oder Behinderungen erkennen und damit Entscheidungen über einen Schwangerschaftsabbruch auslösen.",
+   "achtung": "Streitpunkte: das Recht auf Wissen und auf Nichtwissen, die Gefahr der Selektion und der Diskriminierung von Menschen mit Behinderung. Nicht verwechseln mit PID (Präimplantationsdiagnostik), der Untersuchung künstlich befruchteter Embryonen vor der Einpflanzung.",
+   "positionen": "",
+   "links": [
+    "abbruch",
+    "dammbruch",
+    "biotechnologie"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "sterbehilfe": {
+   "name": "Sterbehilfe: Überblick",
+   "kurz": "Sterbehilfe (Überblick)",
+   "icon": "puls",
+   "erkl": "Unterschieden werden aktive Sterbehilfe (Tötung auf Verlangen), passive Sterbehilfe, indirekte Sterbehilfe und Beihilfe zur Selbsttötung. Für die Bewertung entscheidend sind der Patientenwille (freiwillig, nicht-freiwillig, unfreiwillig) und die medizinische Indikation. Hintergrund ist die Frage, was der Tod ist: klinischer Tod, Hirntod, biologischer Tod.",
+   "achtung": "Die Begriffe werden in Medien oft durcheinandergebracht. Halte dich an die Unterscheidung nach Handlung, Absicht und Patientenwille.",
+   "positionen": "",
+   "links": [
+    "aktive",
+    "passive",
+    "indirekte",
+    "assistierter-suizid"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "Präsentation Sterbehilfe (Was ist der Tod?)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.TB%20-%20Sterbehilfe%20Pra%CC%88sentation%20.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Arten der Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.TB%20-Arten%20der%20Sterbehilfe%20.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Rechtslage Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.%20AB%20-%20Rechtslage%20Sterbehilfe.pdf"
+    },
+    {
+     "typ": "web",
+     "titel": "Aktuelle Gesetzeslage (DGHS)",
+     "url": "https://www.dghs.de/service/selbstbestimmtes-sterben-infocenter/sterbehilfe-gesetze/"
+    },
+    {
+     "typ": "web",
+     "titel": "Debatte im Bundestag",
+     "url": "https://www.bundestag.de/dokumente/textarchiv/2022/kw25-de-suizidhilfe-897826"
+    },
+    {
+     "typ": "web",
+     "titel": "Glossar Sterbehilfe (bpb)",
+     "url": "https://www.bpb.de/themen/medien-journalismus/netzdebatte/209590/glossar"
+    },
+    {
+     "typ": "video",
+     "titel": "Video: Sterbehilfe in Deutschland (bpb)",
+     "url": "https://www.bpb.de/mediathek/video/244981/sterbehilfe-in-deutschland-zwischen-selbstbestimmung-und-gesellschaftlicher-verantwortung/"
+    }
+   ]
+  },
+  "aktive": {
+   "name": "Aktive Sterbehilfe und Tötung auf Verlangen (§ 216 StGB)",
+   "kurz": "Aktive Sterbehilfe",
+   "icon": "puls",
+   "erkl": "Aktive Sterbehilfe ist die gezielte Tötung eines Menschen, z. B. durch eine tödliche Überdosis. Geschieht sie auf ausdrücklichen und ernstlichen Wunsch des Betroffenen, ist sie eine Tötung auf Verlangen. Diese ist nach § 216 StGB strafbar (Freiheitsstrafe von sechs Monaten bis zu fünf Jahren).",
+   "achtung": "Die letzte, tödliche Handlung führt die helfende Person aus, nicht der Patient. Darin liegt der Unterschied zum assistierten Suizid.",
+   "positionen": "Dafür: Selbstbestimmung (Autonomie) und Vermeidung unerträglichen Leids (utilitaristisch). Dagegen: Menschenwürde und Unverfügbarkeit des Lebens (Kant), Dammbruch-Argument, ärztliches Ethos.",
+   "links": [
+    "sterbehilfe",
+    "assistierter-suizid",
+    "mzf",
+    "dammbruch"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Arten der Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.TB%20-Arten%20der%20Sterbehilfe%20.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Rechtslage Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.%20AB%20-%20Rechtslage%20Sterbehilfe.pdf"
+    }
+   ]
+  },
+  "passive": {
+   "name": "Passive Sterbehilfe",
+   "kurz": "Passive Sterbehilfe",
+   "icon": "puls",
+   "erkl": "Passive Sterbehilfe ist das Unterlassen, Begrenzen oder Beenden lebenserhaltender Maßnahmen, z. B. das Abschalten der Beatmung, entsprechend dem Willen des Patienten (etwa laut Patientenverfügung). Sie ist in Deutschland erlaubt.",
+   "achtung": "Auch ein aktives Tun (Gerät abschalten) kann passive Sterbehilfe sein. Entscheidend ist, dass man dem Sterben seinen Lauf lässt. Grundpflege und Schmerzlinderung gehen weiter.",
+   "positionen": "",
+   "links": [
+    "sterbehilfe",
+    "indirekte"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Arten der Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.TB%20-Arten%20der%20Sterbehilfe%20.pdf"
+    }
+   ]
+  },
+  "indirekte": {
+   "name": "Indirekte Sterbehilfe",
+   "kurz": "Indirekte Sterbehilfe",
+   "icon": "puls",
+   "erkl": "Indirekte Sterbehilfe ist die Gabe schmerz- oder leidenslindernder Medikamente, die als nicht beabsichtigte Nebenfolge das Leben verkürzen können. Ziel ist die Linderung, nicht der Tod. Sie ist erlaubt, wenn sie dem Willen des Patienten entspricht.",
+   "achtung": "Entscheidend ist die Absicht: Leid lindern, nicht töten (Prinzip der Doppelwirkung).",
+   "positionen": "",
+   "links": [
+    "sterbehilfe",
+    "passive"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Arten der Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.TB%20-Arten%20der%20Sterbehilfe%20.pdf"
+    }
+   ]
+  },
+  "assistierter-suizid": {
+   "name": "Beihilfe zur Selbsttötung (assistierter Suizid)",
+   "kurz": "Assistierter Suizid",
+   "icon": "puls",
+   "erkl": "Beim assistierten Suizid stellt eine andere Person ein tödliches Mittel bereit, der Betroffene führt die tödliche Handlung aber selbst aus. Da Suizid in Deutschland nicht strafbar ist, ist auch die Beihilfe straflos. 2020 hat das Bundesverfassungsgericht das Verbot der geschäftsmäßigen Suizidhilfe (§ 217 StGB) aufgehoben und ein Recht auf selbstbestimmtes Sterben anerkannt. Eine gesetzliche Neuregelung ist bisher nicht zustande gekommen (Stand: November 2026).",
+   "achtung": "Voraussetzung ist ein freiverantwortlicher Entschluss. Die letzte Handlung liegt beim Betroffenen selbst: Das unterscheidet den assistierten Suizid von der Tötung auf Verlangen.",
+   "positionen": "",
+   "links": [
+    "aktive",
+    "autonomie",
+    "sterbehilfe"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Rechtslage Sterbehilfe",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/12.%20AB%20-%20Rechtslage%20Sterbehilfe.pdf"
+    },
+    {
+     "typ": "web",
+     "titel": "Aktuelle Gesetzeslage (DGHS)",
+     "url": "https://www.dghs.de/service/selbstbestimmtes-sterben-infocenter/sterbehilfe-gesetze/"
+    }
+   ]
+  },
+  "biotechnologie": {
+   "name": "Ethische Kontroversen der Biotechnologie",
+   "kurz": "Biotechnologie",
+   "icon": "dna",
+   "erkl": "Biotechnologie nutzt biologische Prozesse und Lebewesen technisch. Ethisch umstritten sind vor allem Eingriffe in das menschliche Erbgut (Genom-Editierung, z. B. mit CRISPR/Cas9), die Präimplantationsdiagnostik (PID), Klonen und Embryonenforschung. In Deutschland regelt das Embryonenschutzgesetz, was erlaubt ist.",
+   "achtung": "Die Argumente kennst du schon: Menschenwürde, SKIP-Argumente, Dammbruch-Argument und die utilitaristische Abwägung von Nutzen (z. B. Heilung von Krankheiten) und Risiken.",
+   "positionen": "",
+   "links": [
+    "skip",
+    "dammbruch",
+    "pnd",
+    "mzf"
+   ],
+   "personen": [],
+   "material": []
+  }
+ },
+ "personen": {
+  "kant": {
+   "name": "Immanuel Kant",
+   "daten": "1724 bis 1804",
+   "idee": "Philosoph der Aufklärung aus Königsberg. Begründer der modernen Pflichtethik: Moralisch wertvoll ist nur, was aus Pflicht und gutem Willen geschieht. Sein oberstes Moralprinzip ist der kategorische Imperativ. Aus der Autonomie des Menschen folgt seine Würde.",
+   "begriffe": [
+    "deontologie",
+    "guter-wille",
+    "kategorischer-imperativ",
+    "maxime",
+    "mzf",
+    "autonomie",
+    "legalitaet"
+   ],
+   "auch": "Kant begegnet dir auch bei Wahrheit und Wirklichkeit (Meinen, Glauben, Wissen) und in der Anthropologie (der Mensch als Vernunftwesen)."
+  },
+  "bentham": {
+   "name": "Jeremy Bentham",
+   "daten": "1748 bis 1832",
+   "idee": "Englischer Philosoph und Jurist, Begründer des klassischen Utilitarismus. Er vertritt einen quantitativen Hedonismus: Alle Freuden sind gleichwertig, Lust und Leid lassen sich mit dem hedonistischen Kalkül berechnen.",
+   "begriffe": [
+    "utilitarismus",
+    "arten-util",
+    "kalkuel",
+    "hedonismus"
+   ],
+   "auch": ""
+  },
+  "mill": {
+   "name": "John Stuart Mill",
+   "daten": "1806 bis 1873",
+   "idee": "Englischer Philosoph, Schüler Benthams. Er entwickelt den qualitativen Utilitarismus: Es gibt höhere (geistige) und niedere (körperliche) Freuden, die höheren zählen mehr.",
+   "begriffe": [
+    "utilitarismus",
+    "arten-util"
+   ],
+   "auch": ""
+  },
+  "aristoteles": {
+   "name": "Aristoteles",
+   "daten": "384 bis 322 v. Chr.",
+   "idee": "Griechischer Philosoph, Schüler Platons. In der Nikomachischen Ethik ist das Ziel des Menschen die Eudaimonia, das gelingende Leben. Tugenden erwirbt man durch Gewohnheit, sie liegen in der richtigen Mitte (Mesotes).",
+   "begriffe": [
+    "tugendethik"
+   ],
+   "auch": "Aristoteles kommt auch bei den Lebensentwürfen (Glück, Eudämonismus) vor."
+  },
+  "hoeffe": {
+   "name": "Otfried Höffe",
+   "daten": "geb. 1943",
+   "idee": "Deutscher Philosoph. Er kritisiert Benthams hedonistisches Kalkül: Glück sei nicht messbar und zwischen Menschen nicht vergleichbar.",
+   "begriffe": [
+    "kalkuel"
+   ],
+   "auch": ""
+  },
+  "loew": {
+   "name": "Reinhard Löw",
+   "daten": "1949 bis 1994",
+   "idee": "Deutscher Philosoph. Das Menschsein beginnt für ihn mit der Befruchtung. Einziges zweifelsfreies Kriterium sei die biologische Zugehörigkeit zur Gattung Mensch.",
+   "begriffe": [
+    "beginn-leben",
+    "spezies"
+   ],
+   "auch": ""
+  },
+  "singer": {
+   "name": "Peter Singer",
+   "daten": "geb. 1946",
+   "idee": "Australischer Philosoph, Vertreter des Präferenzutilitarismus. Moralisch zählen Interessen, Empfindungsfähigkeit und Bewusstsein, nicht die Spezies. Wer Menschen allein wegen ihrer Spezies bevorzugt, betreibt laut Singer Speziesismus.",
+   "begriffe": [
+    "arten-util",
+    "beginn-leben",
+    "spezies"
+   ],
+   "auch": "Nicht verwechseln mit Wolf Singer, dem Hirnforscher aus der Anthropologie (neuronaler Determinismus)."
+  }
+ },
+ "allgemein": [
+  {
+   "typ": "ab",
+   "titel": "Übersicht Rahmenthemen und Module",
+   "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/00.%20Rahmenthemen%20Abi%202027.pdf"
+  },
+  {
+   "typ": "ab",
+   "titel": "Hinweise Abitur 2027 (verbindliche Begriffe)",
+   "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/00.%20Hinweise%20zu%20den%20verbindlichen%20Rahmenthemen%20Abi%202027.pdf"
+  },
+  {
+   "typ": "ab",
+   "titel": "Operatorenliste",
+   "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/00.%20WN%20Operatorenliste.pdf"
+  }
+ ]
+}
