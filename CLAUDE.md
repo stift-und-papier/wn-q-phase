@@ -35,9 +35,12 @@ Die Lehrkraft (Jazz) arbeitet als Co-Lehrkraft mit Claude: Ergebnisse sollen did
 - Lücken im Unterricht bekommen trotzdem eine normale Karte (Erklärung, ggf. Video), ohne besondere Markierung.
 
 ## Stand (27.11.2026)
-- Ethik ist vollständig (34 Begriffe, 7 Cluster, 7 Personen). Anthropologie und Wahrheit und Wirklichkeit sind angelegt, aber leer (`aktiv: false`).
+- Ethik ist vollständig (34 Begriffe, 7 Cluster, 7 Personen).
+- Anthropologie ist als Entwurf aufgebaut (31 Begriffe, 7 Cluster, 16 neue Personen): Wesen des Menschen, Leib und Seele, Freiheit und Determinismus (Pflicht); Psychoanalyse (Freud), Hirnforschung, Soziale Rolle (Dahrendorf), Evolutionsbiologie (Wahl). Texte warten auf Freigabe durch die Lehrkraft. Zeitlichkeit (nur eA) ist bewusst nicht enthalten.
+- Wahrheit und Wirklichkeit ist angelegt, aber leer (`aktiv: false`).
+- Lokale Materialkopien liegen derzeit in `material/` (nicht `materialien/`); beide Ordner sind per .gitignore ausgeschlossen.
 - Lücken gegenüber dem KC, die in der Matrix abgedeckt werden sollen:
-  - Anthropologie: Monismus, Selbstreflexivität, Indeterminismus als Begriffe; Menschenbilder der Evolutionsbiologie (kein Material).
+  - Anthropologie: erledigt (Monismus, Selbstreflexivität, Indeterminismus, Evolutionsbiologie als Karten; Evolutionsbiologie, Indeterminismus und Handlungs-/Willensfreiheit ohne eigenes Material).
   - Ethik: erledigt (Tugendethik, Legalität/Moralität, PND, Biotechnologie als Karten ohne Material).
   - Wahrheit und Wirklichkeit: Subjektivität/Objektivität/Intersubjektivität; kultur- und gesellschaftsspezifische Zugänge zu Wahrheit; Medienmodul läuft noch (bisher Platons Medienkritik, Ontologie/Epistemologie).
 - Videos: bisher nur wenige; neue Videovorschläge der Lehrkraft zur Freigabe vorlegen.

@@ -8,10 +8,98 @@
    "nr": 1,
    "name": "Anthropologie",
    "farbe": "violett",
-   "aktiv": false,
+   "aktiv": true,
    "pflichtmodul": "Spezifische Dimensionen des Menschseins",
    "wahlmodul": "Menschenbilder in den Wissenschaften",
-   "cluster": []
+   "cluster": [
+    {
+     "id": "wesen",
+     "name": "Wesen des Menschen",
+     "icon": "person",
+     "modul": "pflicht",
+     "begriffe": [
+      "anthropologie",
+      "anthropologische-differenz",
+      "vernunft",
+      "selbstreflexivitaet",
+      "weltoffenheit",
+      "menschenbilder-geschichte"
+     ]
+    },
+    {
+     "id": "leibseele",
+     "name": "Leib und Seele",
+     "icon": "herz",
+     "modul": "pflicht",
+     "begriffe": [
+      "leib-seele-problem",
+      "seelenlehre",
+      "dualismus",
+      "monismus"
+     ]
+    },
+    {
+     "id": "freiheit",
+     "name": "Freiheit und Determinismus",
+     "icon": "schluessel",
+     "modul": "pflicht",
+     "begriffe": [
+      "freiheit",
+      "willensfreiheit",
+      "determinismus",
+      "indeterminismus",
+      "kompatibilismus"
+     ]
+    },
+    {
+     "id": "freud",
+     "name": "Psychoanalyse (Freud)",
+     "icon": "welle",
+     "modul": "wahl",
+     "begriffe": [
+      "psychoanalyse",
+      "instanzenmodell",
+      "es",
+      "ich",
+      "ueber-ich",
+      "triebe",
+      "abwehrmechanismus"
+     ]
+    },
+    {
+     "id": "hirn",
+     "name": "Hirnforschung",
+     "icon": "gehirn",
+     "modul": "wahl",
+     "begriffe": [
+      "neuro-determinismus",
+      "libet",
+      "libet-kritik",
+      "roth-bieri",
+      "schuld-strafe"
+     ]
+    },
+    {
+     "id": "rolle",
+     "name": "Soziale Rolle (Dahrendorf)",
+     "icon": "gruppe",
+     "modul": "wahl",
+     "begriffe": [
+      "soziale-rolle",
+      "rollenerwartungen",
+      "rollenkonflikt"
+     ]
+    },
+    {
+     "id": "evolution",
+     "name": "Evolutionsbiologie",
+     "icon": "dna",
+     "modul": "wahl",
+     "begriffe": [
+      "evolution-mensch"
+     ]
+    }
+   ]
   },
   {
    "id": "ethik",
@@ -963,6 +1051,828 @@
    ],
    "personen": [],
    "material": []
+  },
+  "anthropologie": {
+   "name": "Anthropologie",
+   "kurz": "Anthropologie",
+   "icon": "person",
+   "erkl": "Anthropologie (griech. anthropos: Mensch) ist die Lehre vom Menschen. Die einzelwissenschaftliche Anthropologie (z. B. Biologie, Medizin, Psychologie, Soziologie) untersucht einzelne Aspekte des Menschen. Die philosophische Anthropologie fragt nach dem Menschen als Ganzem: „Was ist der Mensch?“ Dazu gehört die Suche nach Wesenseigenschaften, also nach Merkmalen, die den Menschen notwendig ausmachen.",
+   "achtung": "Jede Wissenschaft hat ihr eigenes Menschenbild (z. B. Freud: psychisch bestimmt, Hirnforschung: neuronal bestimmt, Dahrendorf: sozial bestimmt). Ein Menschenbild beschreibt nie den ganzen Menschen, sondern einen Ausschnitt.",
+   "positionen": "",
+   "links": [
+    "anthropologische-differenz",
+    "menschenbilder-geschichte",
+    "psychoanalyse",
+    "neuro-determinismus",
+    "soziale-rolle"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "Übersicht Rahmenthema Anthropologie (Kerncurriculum)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/00.%20Info%20-%20Rahmenthema%20Anthropologie.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Pioneer-Plakette: Was ist der Mensch?",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/01.%20AB%20-%20Pioneer%20Plakette.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Anthropologie im Wandel der Zeiten",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/03.%20AB%20-%20Anthropologie%20im%20Wandel%20der%20Zeiten.pdf"
+    }
+   ]
+  },
+  "anthropologische-differenz": {
+   "name": "Anthropologische Differenz",
+   "kurz": "Anthropologische Differenz",
+   "icon": "lupe",
+   "erkl": "Die anthropologische Differenz bezeichnet den Unterschied zwischen Mensch und Tier: Welches Merkmal (kognitiv, sozial oder religiös) zeichnet den Menschen aus? Oft steckt dahinter die Formel „Mensch = Tier + X“. Lenk: Es gibt nur einen Gradunterschied, die Fähigkeiten sind beim Menschen aber viel stärker ausgeprägt. Rensch: Der Unterschied ist prinzipiell, denn nur der Mensch hat eine materielle und geistige Kultur (abstraktes Denken, Sprache, Werte und Normen). Kern: Jede einzelne Fähigkeit findet sich auch bei Tieren, das Besondere ist das Zusammenspiel aller Fähigkeiten.",
+   "achtung": "Kern kritisiert gerade die Prämisse „Tier + X“: Sie geht davon aus, dass der Unterschied in einer einzelnen Zusatzfähigkeit liegt. Die Frage hat ethische Folgen, z. B. für unseren Umgang mit Tieren.",
+   "positionen": "Gradueller Unterschied (Lenk) gegen prinzipiellen Unterschied (Rensch) gegen Unterschied in der Einheit der Fähigkeiten (Kern).",
+   "links": [
+    "anthropologie",
+    "vernunft",
+    "evolution-mensch",
+    "spezies"
+   ],
+   "personen": [
+    "lenk",
+    "rensch",
+    "kern"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Die anthropologische Differenz",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20AB%20-%20Anthropologische%20Differenz.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Anthropologische Differenz (Lenk, Rensch, Kern)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20TB%20-%20Anthropologische%20Differenz.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "Hausaufgabe Anthropologische Differenz",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20HA%20-%20Anthropologische%20Differenz%20.pdf"
+    }
+   ]
+  },
+  "vernunft": {
+   "name": "Vernunft (animal rationale)",
+   "kurz": "Vernunft",
+   "icon": "sonne",
+   "erkl": "Vernunft ist die Fähigkeit, Zusammenhänge zu erkennen, Gründe abzuwägen und sein Handeln nach Einsicht zu bestimmen. Seit der Antike gilt sie als Wesensmerkmal des Menschen: Aristoteles bestimmt den Menschen als vernunftbegabtes Lebewesen (zoon logon echon, lat. animal rationale) und als Gemeinschaftswesen (zoon politikon). Für Kant ist der Mensch ein Vernunftwesen, das sich selbst das moralische Gesetz geben kann.",
+   "achtung": "Freud, die Hirnforschung und Schopenhauer stellen die Herrschaft der Vernunft in Frage: Vieles im Menschen läuft unbewusst ab. Bei Kant ist die Vernunft die Grundlage von Autonomie und Menschenwürde.",
+   "positionen": "",
+   "links": [
+    "anthropologische-differenz",
+    "seelenlehre",
+    "autonomie",
+    "mzf",
+    "psychoanalyse"
+   ],
+   "personen": [
+    "aristoteles",
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Anthropologie im Wandel der Zeiten",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/03.%20AB%20-%20Anthropologie%20im%20Wandel%20der%20Zeiten.pdf"
+    }
+   ]
+  },
+  "selbstreflexivitaet": {
+   "name": "Selbstreflexivität",
+   "kurz": "Selbstreflexivität",
+   "icon": "auge",
+   "erkl": "Selbstreflexivität ist die Fähigkeit, sich auf sich selbst zu beziehen: über das eigene Denken, Fühlen und Handeln nachzudenken und dazu Stellung zu nehmen. Der Mensch hat nicht nur ein Bewusstsein, er weiß auch um sich selbst. Plessner spricht von exzentrischer Positionalität: Der Mensch lebt sein Leben und kann zugleich von außen auf es blicken. Kant: Dass der Mensch die Vorstellung „Ich“ haben kann, macht ihn zur Person.",
+   "achtung": "Schon die Frage „Was ist der Mensch?“ ist ein Beispiel für Selbstreflexivität: Kein anderes Lebewesen stellt sie. Verwandt ist die Forderung „Erkenne dich selbst“ (Orakel von Delphi, Sokrates).",
+   "positionen": "",
+   "links": [
+    "weltoffenheit",
+    "vernunft",
+    "anthropologische-differenz",
+    "freiheit"
+   ],
+   "personen": [
+    "plessner",
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Anthropologie im Wandel der Zeiten",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/03.%20AB%20-%20Anthropologie%20im%20Wandel%20der%20Zeiten.pdf"
+    }
+   ]
+  },
+  "weltoffenheit": {
+   "name": "Weltoffenheit und Mängelwesen",
+   "kurz": "Weltoffenheit / Mängelwesen",
+   "icon": "sonne",
+   "erkl": "Die moderne philosophische Anthropologie (Scheler, Plessner, Gehlen, 1920er bis 1940er Jahre) betont: Der Mensch ist nicht wie das Tier an eine bestimmte Umwelt gebunden, sondern weltoffen. Scheler: Durch den Geist hat der Mensch eine Sonderstellung im Kosmos. Gehlen: Der Mensch ist ein instinktarmes Mängelwesen, körperlich den Tieren unterlegen. Er gleicht das durch Lernfähigkeit und Kultur aus und schafft sich Institutionen (Sprache, Normen, Technik), die ihn entlasten.",
+   "achtung": "Weltoffenheit heißt auch: Der Mensch ist „nicht festgestellt“ und muss sein Leben erst führen. Kritik an Gehlen (Adorno, Habermas): Er gibt den Institutionen zu viel Gewicht und übersieht, dass sie auch unterdrücken können.",
+   "positionen": "",
+   "links": [
+    "selbstreflexivitaet",
+    "anthropologische-differenz",
+    "freiheit",
+    "soziale-rolle"
+   ],
+   "personen": [
+    "scheler",
+    "plessner",
+    "gehlen"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Anthropologie im Wandel der Zeiten",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/03.%20AB%20-%20Anthropologie%20im%20Wandel%20der%20Zeiten.pdf"
+    }
+   ]
+  },
+  "menschenbilder-geschichte": {
+   "name": "Menschenbilder im Wandel der Zeit",
+   "kurz": "Menschenbilder (Geschichte)",
+   "icon": "buch",
+   "erkl": "Die Antwort auf die Frage „Was ist der Mensch?“ hat sich gewandelt. Antike: Protagoras: „Der Mensch ist das Maß aller Dinge.“ Platon und Aristoteles: der Mensch als Vernunftwesen. Mittelalter (Augustinus): Ebenbild Gottes und zugleich Sünder. Neuzeit: Hobbes sieht den Menschen als Egoisten („homo homini lupus“), Rousseau als von Natur aus gut. Kant: Vernunftwesen mit Willensfreiheit. 19. Jahrhundert: Feuerbach (der Mensch projiziert sein Wesen in Gott), Marx (der Mensch als arbeitendes, gesellschaftliches Wesen), Nietzsche (der Mensch als „das noch nicht festgestellte Tier“).",
+   "achtung": "Die Liste musst du nicht auswendig können. Wichtig ist der Gedanke: Anthropologisches Nachdenken setzt oft dann ein, wenn bisherige Weltbilder ins Wanken geraten.",
+   "positionen": "",
+   "links": [
+    "anthropologie",
+    "vernunft",
+    "weltoffenheit"
+   ],
+   "personen": [
+    "platon",
+    "aristoteles",
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Anthropologie im Wandel der Zeiten",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/03.%20AB%20-%20Anthropologie%20im%20Wandel%20der%20Zeiten.pdf"
+    }
+   ]
+  },
+  "leib-seele-problem": {
+   "name": "Leib-Seele-Problem",
+   "kurz": "Leib-Seele-Problem",
+   "icon": "herz",
+   "erkl": "Das Leib-Seele-Problem fragt, wie sich Körper (Leib, Materie, Gehirn) und Geist (Seele, Bewusstsein, Denken) zueinander verhalten. Sind es zwei verschiedene Dinge (Dualismus) oder im Grunde eines (Monismus)? Und wenn es zwei sind: Wie können sie aufeinander wirken?",
+   "achtung": "Das Problem ist heute wieder aktuell, weil die Hirnforschung geistige Vorgänge mit Gehirnprozessen verbindet. Daraus folgt aber noch nicht automatisch, dass Geist nichts anderes ist als Gehirn.",
+   "positionen": "Dualismus: Platon, Descartes. Monismus: z. B. Spinoza, materialistische Positionen, Roth. Zwischenposition: Aristoteles (Seele als Form des Körpers).",
+   "links": [
+    "dualismus",
+    "monismus",
+    "seelenlehre",
+    "roth-bieri"
+   ],
+   "personen": [
+    "descartes",
+    "platon"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Dualismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/04.%20AB%20-%20Dualismus.pdf"
+    }
+   ]
+  },
+  "seelenlehre": {
+   "name": "Seelenlehre (Platon und Aristoteles)",
+   "kurz": "Seelenlehre",
+   "icon": "herz",
+   "erkl": "Platon unterscheidet drei Seelenteile: vernünftig (Vernunft, Verstand), mutartig bzw. beherzt (Emotionen, Affekte) und begehrend (Triebe wie Essen, Trinken, Fortpflanzung). Seele und Körper sind trennbar: Die Seele ist unsterblich, der Körper endlich, der Tod ist ihre Trennung. Aristoteles unterscheidet die vegetative (Ernährung, Wachstum, Fortpflanzung), die wahrnehmende und begehrende (Sinne, Bewegung, Affekte) und die vernünftige Seele. Für ihn sind Seele und Körper untrennbar: Der Körper ist der Stoff (hyle), die Seele die Form (morphe). Das nennt man Hylemorphismus.",
+   "achtung": "Platon ist Dualist, Aristoteles nicht: Bei ihm ist die Seele mit dem Körper endlich. Nur die vernünftige Seele ist typisch menschlich, Pflanzen haben eine vegetative, Tiere zusätzlich eine wahrnehmende Seele.",
+   "positionen": "",
+   "links": [
+    "dualismus",
+    "leib-seele-problem",
+    "vernunft",
+    "instanzenmodell"
+   ],
+   "personen": [
+    "platon",
+    "aristoteles"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Seelenlehre",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/04.%20TB%20-%20Seelenlehre.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Dualismus (Platon, Descartes)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/04.%20AB%20-%20Dualismus.pdf"
+    }
+   ]
+  },
+  "dualismus": {
+   "name": "Dualismus (Leib-Seele-Dualismus)",
+   "kurz": "Dualismus",
+   "icon": "waage",
+   "erkl": "Der Dualismus nimmt zwei grundverschiedene Bereiche an: Körper und Geist. Descartes (Substanzdualismus) gelangt durch methodischen Zweifel zur Gewissheit „Ich denke, also bin ich“. Der Mensch ist demnach vor allem ein denkendes Ding. Die Welt besteht aus zwei Substanzen: denkender Geist (res cogitans) und ausgedehnter Körper (res extensa). Im Menschen sind beide verbunden.",
+   "achtung": "Hauptproblem ist das Interaktionsproblem: Wie kann ein nicht-räumlicher Geist einen räumlichen Körper bewegen, und umgekehrt? Varianten des Substanzdualismus sind der Interaktionismus (beide wirken aufeinander) und der Epiphänomenalismus (Geistiges ist nur eine Begleiterscheinung körperlicher Vorgänge).",
+   "positionen": "",
+   "links": [
+    "monismus",
+    "leib-seele-problem",
+    "seelenlehre"
+   ],
+   "personen": [
+    "descartes",
+    "platon"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Dualismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/04.%20AB%20-%20Dualismus.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Seelenlehre",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/04.%20TB%20-%20Seelenlehre.pdf"
+    }
+   ]
+  },
+  "monismus": {
+   "name": "Monismus",
+   "kurz": "Monismus",
+   "icon": "ziel",
+   "erkl": "Der Monismus (griech. monos: allein) nimmt nur eine Grundsubstanz an: Körper und Geist sind nicht zwei Dinge, sondern zwei Seiten oder Beschreibungen desselben. Materialistische Varianten führen alles Geistige auf Körperliches zurück. Identitätstheorie: Geistige Zustände sind Gehirnzustände. Behaviorismus: Geistiges zeigt sich im Verhalten. Eliminativer Materialismus: Begriffe wie „Wunsch“ oder „Absicht“ werden durch neurowissenschaftliche ersetzt. Roth: Geist und Bewusstsein sind physische Zustände mit eigenen Gesetzmäßigkeiten.",
+   "achtung": "Der Monismus löst das Interaktionsproblem des Dualismus. Er muss aber erklären, wie Erleben aus der Innenperspektive (wie sich etwas anfühlt) aus bloßer Materie entstehen kann.",
+   "positionen": "",
+   "links": [
+    "dualismus",
+    "leib-seele-problem",
+    "roth-bieri",
+    "neuro-determinismus"
+   ],
+   "personen": [
+    "roth"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Dualismus (Aufgabe 5: monistische Gegenposition)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/04.%20AB%20-%20Dualismus.pdf"
+    }
+   ]
+  },
+  "freiheit": {
+   "name": "Freiheit",
+   "kurz": "Freiheit",
+   "icon": "schluessel",
+   "erkl": "Freiheit bedeutet, selbst bestimmen zu können, was man tut, statt von außen oder innen gezwungen zu werden. Unterschieden wird die Freiheit von etwas (Abwesenheit von Zwang) und die Freiheit zu etwas (die Möglichkeit, sich selbst Ziele zu setzen). Wir erfahren uns als frei, zugleich wirken viele Faktoren auf uns ein: Normen, Gesetze, Erziehung, Emotionen, Triebe, soziale Abhängigkeit, Umstände, religiös gedacht auch Vorsehung.",
+   "achtung": "Freiheit ist die Voraussetzung für Verantwortung und Schuld. Deshalb hat die Frage nach der Willensfreiheit direkte Folgen für das Strafrecht. Sartre: Der Mensch ist „zur Freiheit verurteilt“.",
+   "positionen": "",
+   "links": [
+    "willensfreiheit",
+    "determinismus",
+    "autonomie",
+    "schuld-strafe"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Determinismus: Ist der Mensch frei?",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20TB%20-%20Neurologischer%20Determinismus.pdf"
+    }
+   ]
+  },
+  "willensfreiheit": {
+   "name": "Handlungsfreiheit und Willensfreiheit",
+   "kurz": "Handlungs- / Willensfreiheit",
+   "icon": "schluessel",
+   "erkl": "Handlungsfreiheit: Ich kann tun, was ich will, ohne äußere Hindernisse (z. B. nicht eingesperrt sein). Wahlfreiheit: Ich kann zwischen mehreren Möglichkeiten wählen. Willensfreiheit: Ich kann bestimmen, was ich überhaupt will. Mein Wille ist also nicht vollständig durch Ursachen festgelegt, die ich nicht beeinflussen kann.",
+   "achtung": "Wer im Gefängnis sitzt, hat keine Handlungsfreiheit, kann aber Willensfreiheit haben. Umgekehrt kann jemand frei handeln, dessen Wille durch Sucht oder Manipulation bestimmt ist. Die Hirnforschung bestreitet vor allem die Willensfreiheit.",
+   "positionen": "",
+   "links": [
+    "freiheit",
+    "determinismus",
+    "kompatibilismus",
+    "libet"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "determinismus": {
+   "name": "Determinismus",
+   "kurz": "Determinismus",
+   "icon": "kette",
+   "erkl": "Der Determinismus (lat. determinare: festlegen) behauptet, dass alles Geschehen, auch menschliches Wollen und Handeln, durch vorausgehende Ursachen vollständig festgelegt ist. Bei gleichen Bedingungen könnte nichts anders geschehen. Je nach Ursache spricht man z. B. vom mechanistischen (La Mettrie: „Der Mensch eine Maschine“), psychischen (Freud), neurobiologischen (Singer, Roth) oder sozialen Determinismus.",
+   "achtung": "Harter Determinismus: Weil alles festgelegt ist, gibt es keine Willensfreiheit (Inkompatibilismus). Der Kompatibilismus hält dagegen Freiheit und Determinismus für vereinbar.",
+   "positionen": "",
+   "links": [
+    "indeterminismus",
+    "kompatibilismus",
+    "neuro-determinismus",
+    "psychoanalyse",
+    "soziale-rolle"
+   ],
+   "personen": [
+    "w-singer"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Determinismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20TB%20-%20Neurologischer%20Determinismus.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Sind wir Sklaven unserer Neuronen?",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20AB%20-%20Neurologischer%20Determinismus.pdf"
+    }
+   ]
+  },
+  "indeterminismus": {
+   "name": "Indeterminismus",
+   "kurz": "Indeterminismus",
+   "icon": "stern",
+   "erkl": "Der Indeterminismus bestreitet, dass alles Geschehen vollständig festgelegt ist. Es gibt Ereignisse, die nicht vollständig durch vorausgehende Ursachen bestimmt sind, z. B. nach der Quantenphysik. Der libertarische Indeterminismus folgert daraus: Der Mensch kann eine Handlungskette selbst neu beginnen, er ist wirklich frei.",
+   "achtung": "Einwand: Zufall ist noch keine Freiheit. Eine Handlung, die einfach zufällig passiert, kann ich mir ebenso wenig zurechnen wie eine vollständig festgelegte.",
+   "positionen": "",
+   "links": [
+    "determinismus",
+    "kompatibilismus",
+    "willensfreiheit"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "kompatibilismus": {
+   "name": "Kompatibilismus",
+   "kurz": "Kompatibilismus",
+   "icon": "hand",
+   "erkl": "Der Kompatibilismus (lat. compatibilis: vereinbar) hält Freiheit und Determinismus für vereinbar. Frei ist eine Handlung, wenn sie aus meinen eigenen Überlegungen und Wünschen hervorgeht und nicht durch äußeren Zwang, Sucht oder Manipulation. Dass meine Überlegungen selbst Ursachen haben, macht sie nicht unfrei. Bieri spricht von „bedingter Freiheit“, Pauen von Selbstbestimmung.",
+   "achtung": "Freiheit heißt hier nicht Ursachenlosigkeit, sondern Selbstbestimmung. Kritiker sagen, das sei nur eine Umdeutung des Freiheitsbegriffs. Historischer Vertreter: David Hume.",
+   "positionen": "",
+   "links": [
+    "determinismus",
+    "indeterminismus",
+    "roth-bieri",
+    "libet-kritik"
+   ],
+   "personen": [
+    "bieri",
+    "pauen"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Neurobiologischer Determinismus auf dem Prüfstand",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/09.%20AB%20-%20Neuorbiologischer%20Determinismus%20auf%20dem%20Pru%CC%88fstand.pdf"
+    }
+   ]
+  },
+  "psychoanalyse": {
+   "name": "Psychoanalyse",
+   "kurz": "Psychoanalyse",
+   "icon": "sprechen",
+   "erkl": "Die Psychoanalyse ist Freuds Theorie des Seelenlebens und zugleich eine Therapiemethode. Für Freud ist der Mensch ein psychisch bestimmtes Wesen: Der größte Teil von Denken, Fühlen und Wollen läuft unbewusst ab. Missglückte Lösungen von Triebkonflikten können zu neurotischen Erkrankungen führen. In analytischen Gesprächen und durch Traumdeutung sollen verdrängte Konflikte bewusst gemacht werden, um das Ich zu entlasten und dem Menschen mehr Selbstbestimmung zu ermöglichen.",
+   "achtung": "Bild vom Eisberg: Nur die Spitze (das Bewusste) ragt aus dem Wasser. Kritik: Viele Thesen Freuds sind empirisch nicht bestätigt, seine Vorstellungen über Frauen gelten als veraltet. Philosophisch wirkt sein Menschenbild desillusionierend, weil Vernunft und Bewusstsein nur einen kleinen Teil ausmachen.",
+   "positionen": "",
+   "links": [
+    "instanzenmodell",
+    "abwehrmechanismus",
+    "triebe",
+    "determinismus",
+    "vernunft"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Freuds Menschenbild",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20AB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Freud: Der Mensch als psychisch bestimmtes Wesen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20TB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "instanzenmodell": {
+   "name": "Instanzenmodell (psychischer Apparat)",
+   "kurz": "Instanzenmodell",
+   "icon": "welle",
+   "erkl": "Freud beschreibt die Psyche als „psychischen Apparat“ mit drei Instanzen: Das Es ist der unbewusste Triebpol (Lustprinzip). Das Über-Ich enthält die verinnerlichten Normen und Werte (Moralprinzip). Das Ich vermittelt zwischen Es, Über-Ich und Außenwelt (Realitätsprinzip) und steuert das Handeln. Eine Handlung ist gelungen, wenn sie den Ansprüchen aller drei Seiten genügt.",
+   "achtung": "Die Instanzen sind keine Orte im Gehirn, sondern ein Modell. Merke: Es will, Über-Ich soll, Ich muss vermitteln. Der Konflikt zwischen Es und Über-Ich ist der Kern vieler innerer Spannungen.",
+   "positionen": "",
+   "links": [
+    "es",
+    "ich",
+    "ueber-ich",
+    "psychoanalyse",
+    "seelenlehre"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Das Ich zwischen Es und Über-Ich",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/05.%20AB%20-%20Freud%20Menschenbild.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Freud: Der Mensch als psychisch bestimmtes Wesen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20TB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "es": {
+   "name": "Es",
+   "kurz": "Es",
+   "icon": "welle",
+   "erkl": "Das Es ist die älteste psychische Instanz. Es enthält alles Ererbte und bei der Geburt Mitgebrachte, vor allem die Triebe. Es ist vollständig unbewusst und folgt dem Lustprinzip: Bedürfnisse sollen sofort befriedigt, Unlust soll vermieden werden, unabhängig von den Folgen.",
+   "achtung": "Lust meint bei Freud nicht nur sexuelle Lust, sondern jede Form von Bedürfniserfüllung, vom Hunger bis zum geistigen Vergnügen.",
+   "positionen": "",
+   "links": [
+    "instanzenmodell",
+    "triebe",
+    "ich",
+    "hedonismus"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Das Ich zwischen Es und Über-Ich",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/05.%20AB%20-%20Freud%20Menschenbild.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Freuds Menschenbild",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20AB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "ich": {
+   "name": "Ich",
+   "kurz": "Ich",
+   "icon": "person",
+   "erkl": "Das Ich entsteht unter dem Einfluss der Außenwelt aus einem Teil des Es. Es vermittelt zwischen den Triebansprüchen des Es, den Forderungen des Über-Ichs und der Realität und verfügt über die willkürlichen Bewegungen. Das Ich folgt dem Realitätsprinzip: Es entscheidet, ob Triebe befriedigt werden, schiebt die Befriedigung auf oder unterdrückt sie.",
+   "achtung": "Das Ich ist teils bewusst, teils unbewusst. Wenn der Ausgleich nicht gelingt, setzt es Abwehrmechanismen ein. Freud: Das Ich ist „nicht Herr im eigenen Haus“.",
+   "positionen": "",
+   "links": [
+    "instanzenmodell",
+    "es",
+    "ueber-ich",
+    "abwehrmechanismus"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Das Ich zwischen Es und Über-Ich",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/05.%20AB%20-%20Freud%20Menschenbild.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Freuds Menschenbild",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20AB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "ueber-ich": {
+   "name": "Über-Ich",
+   "kurz": "Über-Ich",
+   "icon": "paragraf",
+   "erkl": "Das Über-Ich bildet sich in der Kindheit heraus, in der der Mensch von seinen Eltern abhängig ist. Es enthält die verinnerlichten Normen, Werte, Ideale und Gebote von Eltern und Gesellschaft und folgt dem Moralprinzip. Es kritisiert das Ich und erzeugt Schuldgefühle oder Stolz, je nachdem, ob man sich an die verinnerlichten Werte hält.",
+   "achtung": "Das Über-Ich entspricht ungefähr dem Gewissen. Zu Ethik passt: Für Freud ist Moral zunächst anerzogen, nicht vernünftig begründet. Das unterscheidet ihn von Kant.",
+   "positionen": "",
+   "links": [
+    "instanzenmodell",
+    "ich",
+    "es",
+    "ethik-moral"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Das Ich zwischen Es und Über-Ich",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/05.%20AB%20-%20Freud%20Menschenbild.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Freuds Menschenbild",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20AB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "triebe": {
+   "name": "Triebe (Eros und Thanatos)",
+   "kurz": "Triebe",
+   "icon": "herz",
+   "erkl": "Freud unterscheidet zwei Urtriebe. Der Lebenstrieb (Eros) dient der Erhaltung des Lebens und der Art: Selbsterhaltungstriebe (Hunger, Durst) und Sexualtriebe, deren Energie er Libido nennt. Der Todestrieb (Thanatos) strebt nach Auflösung und Spannungslosigkeit und zeigt sich z. B. in Aggression und Zerstörung. Außerdem unterscheidet er Primärtriebe (angeboren, z. B. Sexualität, Aggression) und Sekundärtriebe (später entwickelt, z. B. Sicherheit, Anerkennung).",
+   "achtung": "Triebe sitzen im Es und sind unbewusst. Weil das Verhalten durch sie gesteuert wird, ist Freuds Menschenbild eine Form des psychischen Determinismus.",
+   "positionen": "",
+   "links": [
+    "es",
+    "psychoanalyse",
+    "determinismus"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Freuds Menschenbild",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20AB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Freud: Der Mensch als psychisch bestimmtes Wesen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20TB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "abwehrmechanismus": {
+   "name": "Abwehrmechanismus",
+   "kurz": "Abwehrmechanismus",
+   "icon": "schild",
+   "erkl": "Abwehrmechanismen sind unbewusste Strategien des Ichs, um sich vor unangenehmen Konflikten oder Triebwünschen zu schützen, die mit sozialen oder moralischen Normen unvereinbar sind. Sie greifen, wenn der Ausgleich zwischen Es, Ich und Über-Ich nicht gelingt. Beispiele: Verdrängung (bedrohliche Inhalte werden aus dem Bewusstsein verschoben) und Sublimierung (unerwünschte Triebenergie wird in gesellschaftlich anerkannte Tätigkeiten umgelenkt, z. B. Kunst oder Sport).",
+   "achtung": "Abwehrmechanismen laufen unbewusst ab, man setzt sie nicht absichtlich ein. Weitere Beispiele: Projektion (eigene Wünsche werden anderen zugeschrieben) und Rationalisierung (nachträgliche vernünftige Begründung).",
+   "positionen": "",
+   "links": [
+    "ich",
+    "psychoanalyse",
+    "instanzenmodell"
+   ],
+   "personen": [
+    "freud"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Freuds Menschenbild",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/06.%20AB%20-%20Freuds%20Menschenbild%20%282%29.pdf"
+    }
+   ]
+  },
+  "neuro-determinismus": {
+   "name": "Neurobiologischer Determinismus",
+   "kurz": "Neurobiolog. Determinismus",
+   "icon": "gehirn",
+   "erkl": "Der neurobiologische Determinismus besagt: Unsere Gedanken, Entscheidungen und Handlungen sind vollständig durch neuronale Prozesse im Gehirn festgelegt, die Naturgesetzen folgen. Singer: Ob uns ein Motiv bewusst ist oder nicht, in beiden Fällen entscheidet das Gehirn. Das Gefühl, frei zu entscheiden, ist nur eine Begleiterscheinung. Beispiel (Markowitsch): Ein Lehrer belästigt plötzlich Kinder. Ursache ist ein Tumor im Frontalhirn. Nach der Entfernung verschwindet das Verhalten.",
+   "achtung": "Singer folgert daraus eine Abkehr vom Schuldprinzip: „Keiner kann anders, als er ist.“ Ob man aus einem Sonderfall wie dem Tumor auf alle Menschen schließen darf, ist umstritten.",
+   "positionen": "",
+   "links": [
+    "determinismus",
+    "libet",
+    "roth-bieri",
+    "schuld-strafe",
+    "monismus"
+   ],
+   "personen": [
+    "w-singer",
+    "roth"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Sind wir Sklaven unserer Neuronen?",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20AB%20-%20Neurologischer%20Determinismus.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Determinismus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20TB%20-%20Neurologischer%20Determinismus.pdf"
+    }
+   ]
+  },
+  "libet": {
+   "name": "Libet-Experiment",
+   "kurz": "Libet-Experiment",
+   "icon": "puls",
+   "erkl": "Benjamin Libet ließ Versuchspersonen in den 1980er Jahren zu einem beliebigen Zeitpunkt die Hand bewegen. Mit einer schnell laufenden Uhr sollten sie sich merken, wann sie den bewussten „Drang“ dazu spürten. Gleichzeitig maß er das Bereitschaftspotenzial im Gehirn. Ergebnis: Das Bereitschaftspotenzial setzt etwa 550 Millisekunden vor der Bewegung ein, die bewusste Entscheidung erst etwa 200 Millisekunden vorher. Das Gehirn beginnt also rund 350 Millisekunden vor der bewussten Entscheidung mit der Vorbereitung.",
+   "achtung": "Deutung der Hirnforschung: Die bewusste Entscheidung ist nur eine Begleiterscheinung, nicht die Ursache der Handlung. Libet selbst wollte eigentlich die Willensfreiheit belegen und hielt ein bewusstes Veto (Abbruch der Handlung) für möglich.",
+   "positionen": "",
+   "links": [
+    "libet-kritik",
+    "neuro-determinismus",
+    "willensfreiheit"
+   ],
+   "personen": [
+    "libet"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Sind wir nur Marionetten? Die Libet-Experimente",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/08.%20AB%20-%20Libet-Experiment%20.pdf"
+    }
+   ]
+  },
+  "libet-kritik": {
+   "name": "Kritik am Libet-Experiment (Pauen)",
+   "kurz": "Kritik an Libet",
+   "icon": "lupe",
+   "erkl": "Michael Pauen bestreitet, dass die Libet-Experimente die Willensfreiheit widerlegen. Erstens ist ein „Drang“ keine Entscheidung: Ein Drang kommt über uns, eine Entscheidung treffen wir aktiv. Zweitens war der Drang vermutlich ein sonst unbewusster Bewegungsimpuls, der nur durch die Versuchsanweisung bewusst wurde. Drittens gab es keine echten Alternativen: Die Versuchspersonen konnten nur den Zeitpunkt einer festgelegten Bewegung bestimmen. Viertens dauern echte Entscheidungen länger als wenige Millisekunden, weil man Gründe abwägt.",
+   "achtung": "Die eigentliche Entscheidung fiel vorher: als die Versuchsperson sich entschied, am Experiment teilzunehmen und den Anweisungen zu folgen.",
+   "positionen": "",
+   "links": [
+    "libet",
+    "kompatibilismus",
+    "roth-bieri"
+   ],
+   "personen": [
+    "pauen",
+    "libet"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Neurobiologischer Determinismus auf dem Prüfstand (M 9)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/09.%20AB%20-%20Neuorbiologischer%20Determinismus%20auf%20dem%20Pru%CC%88fstand.pdf"
+    }
+   ]
+  },
+  "roth-bieri": {
+   "name": "Hirnforschung und Philosophie: Roth und Bieri",
+   "kurz": "Roth vs. Bieri",
+   "icon": "sprechen",
+   "erkl": "Roth: Geist und Bewusstsein lassen sich naturwissenschaftlich beschreiben. Sie sind physische Zustände mit eigenen Gesetzmäßigkeiten, die den Gesetzen der Physik nicht widersprechen. Willensfreiheit ist eine Illusion. Bieri: Hirnforscher können über Freiheit gar nicht reden. Wie bei einem Gemälde gibt es verschiedene Beschreibungsebenen: physikalisch (Gewicht, Farbe) und inhaltlich (was es darstellt). Freiheit gehört zur Ebene, auf der wir Menschen als Personen mit Wünschen, Überlegungen und Entscheidungen beschreiben. Wer sie im Gehirn sucht, begeht einen Kategorienfehler.",
+   "achtung": "Bieri bestreitet nicht, dass sich das psychische Profil nur ändert, wenn sich das neuronale ändert. Er bestreitet nur, dass daraus Unfreiheit folgt. Er vertritt eine bedingte Freiheit (Kompatibilismus).",
+   "positionen": "",
+   "links": [
+    "neuro-determinismus",
+    "kompatibilismus",
+    "monismus",
+    "libet-kritik"
+   ],
+   "personen": [
+    "roth",
+    "bieri"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Neurobiologischer Determinismus auf dem Prüfstand (M 8)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/09.%20AB%20-%20Neuorbiologischer%20Determinismus%20auf%20dem%20Pru%CC%88fstand.pdf"
+    }
+   ]
+  },
+  "schuld-strafe": {
+   "name": "Schuld und Strafe (Straftheorien)",
+   "kurz": "Schuld und Strafe",
+   "icon": "paragraf",
+   "erkl": "Wenn der Mensch nicht frei ist, kann man ihm dann Schuld zuweisen? Das Strafrecht kennt verschiedene Begründungen von Strafe. Absolute Theorie: Strafe ist Vergeltung, Sühne und Ausgleich für die Tat (vergangenheitsorientiert, z. B. Talionsprinzip, Kant). Relative Theorie: Strafe soll künftige Taten verhindern (zukunftsorientiert). Spezialprävention zielt auf den Täter (Resozialisierung, Schutz durch Freiheitsentzug), Generalprävention auf die Allgemeinheit (Abschreckung, Stärkung des Rechtsbewusstseins). Die Vereinigungstheorie verbindet beide.",
+   "achtung": "Ohne Willensfreiheit verliert vor allem die Vergeltung ihren Sinn. Präventive Strafzwecke lassen sich auch ohne Schuld begründen. Das Strafvollzugsgesetz nennt als Vollzugsziel die Resozialisierung (§ 2 StVollzG).",
+   "positionen": "Absolute Theorie: deontologisch (Kant). Relative Theorie: teleologisch, an den Folgen orientiert.",
+   "links": [
+    "neuro-determinismus",
+    "freiheit",
+    "deontologie",
+    "teleologie"
+   ],
+   "personen": [
+    "w-singer",
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Straftheorien",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20TB%20-%20Straftheorien.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Strafzwecke (Strafvollzugsgesetz)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20TB%20-%20Strafzwecke.pdf"
+    },
+    {
+     "typ": "ab",
+     "titel": "AB Sind wir Sklaven unserer Neuronen? (Gerichtsverhandlung)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20AB%20-%20Neurologischer%20Determinismus.pdf"
+    },
+    {
+     "typ": "web",
+     "titel": "Strafvollzugsgesetz (gesetze-im-internet.de)",
+     "url": "https://www.gesetze-im-internet.de/stvollzg/BJNR005810976.html"
+    }
+   ]
+  },
+  "soziale-rolle": {
+   "name": "Soziale Rolle (Homo sociologicus)",
+   "kurz": "Soziale Rolle",
+   "icon": "gruppe",
+   "erkl": "Nach Dahrendorfs Rollentheorie nimmt jeder Mensch in der Gesellschaft Positionen ein (z. B. Schülerin, Sohn, Fußballspieler). An jeder Position hängt eine soziale Rolle: ein Bündel von Verhaltenserwartungen, die die Gesellschaft festlegt, nicht der Einzelne. Rollen sind „quasi-objektiv“ und verbindlich: Wer von ihnen abweicht, wird sanktioniert. Sozialisation ist der Vorgang, in dem man Rollen übernimmt. Der Mensch erscheint so als homo sociologicus.",
+   "achtung": "Dahrendorf nennt Positionen ein „Danaergeschenk“ der Gesellschaft: Sie geben Orientierung und Sicherheit, schränken aber Individualität und Freiheit ein. Die Rollentheorie beschreibt einen sozialen Determinismus.",
+   "positionen": "",
+   "links": [
+    "rollenerwartungen",
+    "rollenkonflikt",
+    "determinismus",
+    "weltoffenheit"
+   ],
+   "personen": [
+    "dahrendorf"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Homo sociologicus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/10.%20AB%20-%20Homo%20Sociologicus.pdf"
+    },
+    {
+     "typ": "web",
+     "titel": "Die Rollentheorie (bpb)",
+     "url": "https://www.bpb.de/lernen/angebote/grafstat/krise-und-sozialisation/240816/die-rollentheorie/"
+    }
+   ]
+  },
+  "rollenerwartungen": {
+   "name": "Muss-, Soll- und Kann-Erwartungen",
+   "kurz": "Rollenerwartungen",
+   "icon": "waage",
+   "erkl": "Dahrendorf unterscheidet Rollenerwartungen nach ihrer Verbindlichkeit. Muss-Erwartungen sind meist gesetzlich festgelegt, bei Verstoß drohen harte Strafen (z. B. eine Lehrkraft darf Noten nicht verkaufen). Soll-Erwartungen sind fast ebenso verbindlich, Verstöße führen zu sozialer Ablehnung (z. B. pünktlich zum Unterricht kommen). Kann-Erwartungen sind freiwillig, wer sie erfüllt, erhält Anerkennung (z. B. eine AG anbieten).",
+   "achtung": "Bei Muss-Erwartungen überwiegen negative Sanktionen, bei Kann-Erwartungen positive. Bezugsgruppen (z. B. Eltern, Kollegium, Schulleitung) stellen die Erwartungen und überwachen sie.",
+   "positionen": "",
+   "links": [
+    "soziale-rolle",
+    "rollenkonflikt",
+    "deskriptiv"
+   ],
+   "personen": [
+    "dahrendorf"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Homo sociologicus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/10.%20AB%20-%20Homo%20Sociologicus.pdf"
+    }
+   ]
+  },
+  "rollenkonflikt": {
+   "name": "Rollenkonflikt",
+   "kurz": "Rollenkonflikt",
+   "icon": "achtung",
+   "erkl": "Ein Rollenkonflikt entsteht, wenn sich Erwartungen widersprechen und der Rolleninhaber einen Ausgleich finden muss. Intra-Rollenkonflikt: Verschiedene Bezugsgruppen stellen an dieselbe Rolle unterschiedliche Erwartungen (z. B. Schulleitung und Eltern an eine Lehrkraft). Inter-Rollenkonflikt: Zwei Rollen einer Person geraten in Widerspruch (z. B. Elternteil und Berufstätige:r). Gelingt der Ausgleich nicht, entsteht eine Krise.",
+   "achtung": "Intra = innerhalb einer Rolle, Inter = zwischen verschiedenen Rollen. Rollenkonflikte zeigen auch, dass der Mensch nicht völlig in seinen Rollen aufgeht: Er muss selbst entscheiden.",
+   "positionen": "",
+   "links": [
+    "soziale-rolle",
+    "rollenerwartungen"
+   ],
+   "personen": [
+    "dahrendorf"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Homo sociologicus",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/10.%20AB%20-%20Homo%20Sociologicus.pdf"
+    }
+   ]
+  },
+  "evolution-mensch": {
+   "name": "Menschenbild der Evolutionsbiologie",
+   "kurz": "Evolutionsbiologie",
+   "icon": "dna",
+   "erkl": "Seit Darwin (1859) gilt der Mensch als Ergebnis der Evolution: Er hat sich durch Variation und natürliche Selektion schrittweise aus einem Ast des tierischen Stammbaums entwickelt und gehört mit den Menschenaffen zur Ordnung der Primaten. Viele Eigenschaften, auch soziales Verhalten wie Kooperation oder Altruismus, lassen sich als Anpassungen erklären, die das Überleben und die Fortpflanzung gefördert haben (Soziobiologie, evolutionäre Psychologie).",
+   "achtung": "Aus der Evolution folgt zunächst nur ein Gradunterschied zwischen Mensch und Tier. Vorsicht vor dem Sein-Sollen-Fehlschluss: Was sich evolutionär entwickelt hat, ist deshalb nicht automatisch gut.",
+   "positionen": "",
+   "links": [
+    "anthropologische-differenz",
+    "spezies",
+    "determinismus",
+    "deskriptiv"
+   ],
+   "personen": [
+    "rensch"
+   ],
+   "material": []
   }
  },
  "personen": {
@@ -977,7 +1887,10 @@
     "maxime",
     "mzf",
     "autonomie",
-    "legalitaet"
+    "legalitaet",
+    "vernunft",
+    "selbstreflexivitaet",
+    "schuld-strafe"
    ],
    "auch": "Kant begegnet dir auch bei Wahrheit und Wirklichkeit (Meinen, Glauben, Wissen) und in der Anthropologie (der Mensch als Vernunftwesen)."
   },
@@ -1008,9 +1921,11 @@
    "daten": "384 bis 322 v. Chr.",
    "idee": "Griechischer Philosoph, Schüler Platons. In der Nikomachischen Ethik ist das Ziel des Menschen die Eudaimonia, das gelingende Leben. Tugenden erwirbt man durch Gewohnheit, sie liegen in der richtigen Mitte (Mesotes).",
    "begriffe": [
-    "tugendethik"
+    "tugendethik",
+    "seelenlehre",
+    "vernunft"
    ],
-   "auch": "Aristoteles kommt auch bei den Lebensentwürfen (Glück, Eudämonismus) vor."
+   "auch": "Aristoteles kommt auch in der Anthropologie vor: Seelenlehre (Hylemorphismus) und der Mensch als vernunftbegabtes Gemeinschaftswesen (zoon logon echon, zoon politikon). Bei den Lebensentwürfen begegnet er dir beim Thema Glück (Eudämonismus)."
   },
   "hoeffe": {
    "name": "Otfried Höffe",
@@ -1041,6 +1956,161 @@
     "spezies"
    ],
    "auch": "Nicht verwechseln mit Wolf Singer, dem Hirnforscher aus der Anthropologie (neuronaler Determinismus)."
+  },
+  "platon": {
+   "name": "Platon",
+   "daten": "428/427 bis 348/347 v. Chr.",
+   "idee": "Griechischer Philosoph, Schüler des Sokrates. Er ist Dualist: Leib und Seele sind trennbar, die Seele ist unsterblich, der Körper vergänglich. Der Tod ist die Trennung der Seele vom Leib. Die Seele hat drei Teile: vernünftig, mutartig und begehrend.",
+   "begriffe": [
+    "seelenlehre",
+    "dualismus",
+    "leib-seele-problem"
+   ],
+   "auch": "Platon begegnet dir auch bei Wahrheit und Wirklichkeit (Ideenlehre, Medienkritik)."
+  },
+  "descartes": {
+   "name": "René Descartes",
+   "daten": "1596 bis 1650",
+   "idee": "Französischer Philosoph und Mathematiker. Durch methodischen Zweifel gelangt er zur unbezweifelbaren Gewissheit „Ich denke, also bin ich“. Er vertritt einen Substanzdualismus: Der Mensch besteht aus denkendem Geist (res cogitans) und ausgedehntem Körper (res extensa).",
+   "begriffe": [
+    "dualismus",
+    "leib-seele-problem"
+   ],
+   "auch": ""
+  },
+  "lenk": {
+   "name": "Hans Lenk",
+   "daten": "geb. 1935",
+   "idee": "Deutscher Philosoph. Zwischen Mensch und Tier besteht nur ein Gradunterschied, allerdings ein riesengroßer: Alle Fähigkeiten des Menschen finden sich in Ansätzen auch bei Tieren, beim Menschen sind sie aber in viel höherem Grad ausgeprägt.",
+   "begriffe": [
+    "anthropologische-differenz"
+   ],
+   "auch": ""
+  },
+  "rensch": {
+   "name": "Bernhard Rensch",
+   "daten": "1900 bis 1990",
+   "idee": "Deutscher Evolutionsbiologe. Der Mensch ist aus dem Tierreich hervorgegangen und unterscheidet sich anatomisch kaum von Menschenaffen. Durch abstraktes Denken, Sprache und eine materielle und geistige Kultur ist er aber prinzipiell etwas Neues.",
+   "begriffe": [
+    "anthropologische-differenz",
+    "evolution-mensch"
+   ],
+   "auch": ""
+  },
+  "kern": {
+   "name": "Andrea Kern",
+   "daten": "Philosophin der Gegenwart",
+   "idee": "Deutsche Philosophin. Sie kritisiert die Prämisse, der Mensch unterscheide sich durch eine einzelne zusätzliche Fähigkeit vom Tier. Der Unterschied liegt in der besonderen Einheit und im Zusammenspiel aller menschlichen Fähigkeiten.",
+   "begriffe": [
+    "anthropologische-differenz"
+   ],
+   "auch": ""
+  },
+  "scheler": {
+   "name": "Max Scheler",
+   "daten": "1874 bis 1928",
+   "idee": "Deutscher Philosoph, Mitbegründer der modernen philosophischen Anthropologie („Die Stellung des Menschen im Kosmos“, 1928). Durch den Geist hat der Mensch eine Sonderstellung: Er ist weltoffen und kann sich von seiner Umwelt distanzieren.",
+   "begriffe": [
+    "weltoffenheit"
+   ],
+   "auch": ""
+  },
+  "plessner": {
+   "name": "Helmuth Plessner",
+   "daten": "1892 bis 1985",
+   "idee": "Deutscher Philosoph und Soziologe. Das Tier lebt zentrisch, ganz in seiner Umwelt. Der Mensch lebt exzentrisch: Er kann zu sich selbst und seinem Leben Stellung nehmen. Er muss sich erst zu dem machen, was er ist, und bleibt sich selbst eine offene Frage.",
+   "begriffe": [
+    "selbstreflexivitaet",
+    "weltoffenheit"
+   ],
+   "auch": ""
+  },
+  "gehlen": {
+   "name": "Arnold Gehlen",
+   "daten": "1904 bis 1976",
+   "idee": "Deutscher Philosoph und Soziologe. Der Mensch ist ein instinktarmes Mängelwesen. Er gleicht seine körperlichen Mängel durch Lernfähigkeit, Weltoffenheit und Kultur aus. Institutionen wie Sprache, Normen und Technik entlasten ihn und geben ihm Halt.",
+   "begriffe": [
+    "weltoffenheit"
+   ],
+   "auch": ""
+  },
+  "freud": {
+   "name": "Sigmund Freud",
+   "daten": "1856 bis 1939",
+   "idee": "Wiener Arzt und Neurologe, Begründer der Psychoanalyse. Der Mensch ist ein psychisch bestimmtes Wesen: Sein Verhalten wird weitgehend von unbewussten Trieben gesteuert. Die Psyche beschreibt er im Instanzenmodell aus Es, Ich und Über-Ich.",
+   "begriffe": [
+    "psychoanalyse",
+    "instanzenmodell",
+    "es",
+    "ich",
+    "ueber-ich",
+    "triebe",
+    "abwehrmechanismus"
+   ],
+   "auch": "Freuds Menschenbild ist eine Form des psychischen Determinismus. Mit Dahrendorf ist er verbindliche Abiturvorgabe 2027."
+  },
+  "w-singer": {
+   "name": "Wolf Singer",
+   "daten": "geb. 1943",
+   "idee": "Deutscher Hirnforscher. Er vertritt einen neurobiologischen Determinismus: Entscheidungen beruhen auf neuronalen Prozessen, die Naturgesetzen folgen, ob sie uns bewusst sind oder nicht. Er fordert deshalb eine Abkehr vom Schuldprinzip: „Keiner kann anders, als er ist.“",
+   "begriffe": [
+    "neuro-determinismus",
+    "determinismus",
+    "schuld-strafe"
+   ],
+   "auch": "Nicht verwechseln mit Peter Singer aus der Ethik (Präferenzutilitarismus)."
+  },
+  "libet": {
+   "name": "Benjamin Libet",
+   "daten": "1916 bis 2007",
+   "idee": "US-amerikanischer Neurophysiologe. Seine Experimente in den 1980er Jahren zeigen, dass das Bereitschaftspotenzial im Gehirn vor der bewussten Entscheidung einsetzt. Libet selbst hielt am freien Willen fest: Der Mensch könne eine angebahnte Handlung bewusst stoppen (Veto).",
+   "begriffe": [
+    "libet",
+    "libet-kritik"
+   ],
+   "auch": ""
+  },
+  "pauen": {
+   "name": "Michael Pauen",
+   "daten": "geb. 1956",
+   "idee": "Deutscher Philosoph (Berlin). Er bestreitet, dass die Libet-Experimente die Willensfreiheit widerlegen: Der gemessene „Drang“ ist keine Entscheidung, und es gab keine echten Alternativen. Freiheit versteht er als Selbstbestimmung (Kompatibilismus).",
+   "begriffe": [
+    "libet-kritik",
+    "kompatibilismus"
+   ],
+   "auch": ""
+  },
+  "roth": {
+   "name": "Gerhard Roth",
+   "daten": "1942 bis 2023",
+   "idee": "Deutscher Hirnforscher und Philosoph. Geist und Bewusstsein lassen sich naturwissenschaftlich als physische Zustände beschreiben, die sich in die Natur einfügen. Die Willensfreiheit hält er für eine Illusion.",
+   "begriffe": [
+    "roth-bieri",
+    "neuro-determinismus",
+    "monismus"
+   ],
+   "auch": ""
+  },
+  "bieri": {
+   "name": "Peter Bieri",
+   "daten": "1944 bis 2023",
+   "idee": "Schweizer Philosoph und Schriftsteller (Pseudonym Pascal Mercier). Freiheit gehört zur Beschreibung von Personen, nicht zur Neurobiologie. Wer im Gehirn nach Freiheit sucht, begeht einen Kategorienfehler. Er vertritt eine bedingte Freiheit (Kompatibilismus).",
+   "begriffe": [
+    "roth-bieri",
+    "kompatibilismus"
+   ],
+   "auch": ""
+  },
+  "dahrendorf": {
+   "name": "Ralf Dahrendorf",
+   "daten": "1929 bis 2009",
+   "idee": "Deutsch-britischer Soziologe und Politiker. In „Homo sociologicus“ (1958) beschreibt er den Menschen als Träger sozialer Rollen: Die Gesellschaft legt Verhaltenserwartungen fest, Abweichungen werden sanktioniert. Sozialisation bedeutet für ihn auch Entpersönlichung.",
+   "begriffe": [
+    "soziale-rolle",
+    "rollenerwartungen",
+    "rollenkonflikt"
+   ],
+   "auch": "Dahrendorfs Rollentheorie ist verbindliche Abiturvorgabe 2027."
   }
  },
  "allgemein": [
@@ -1058,6 +2128,11 @@
    "typ": "ab",
    "titel": "Operatorenliste",
    "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/02.%20Ethik/00.%20WN%20Operatorenliste.pdf"
+  },
+  {
+   "typ": "tb",
+   "titel": "Hinweise zur Klausur (Anforderungsbereiche)",
+   "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/07.%20TB%20-%20Hinweise%20Klausur.pdf"
   }
  ]
 }
