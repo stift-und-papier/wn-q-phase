@@ -47,6 +47,7 @@ export const ICON_NAMEN = {
   hand: 'Hand', kompass: 'Kompass', schild: 'Schild', schluessel: 'Schlüssel', paragraf: 'Paragraf', stern: 'Stern',
   keim: 'Keim', welle: 'Welle', puls: 'Puls', dna: 'DNA', gehirn: 'Gehirn', auge: 'Auge', buch: 'Buch',
   gruppe: 'Gruppe', sonne: 'Sonne', medien: 'Bildschirm', person: 'Person', info: 'Glühbirne',
+  kette: 'Kette', schliessen: 'Kreuz',
 };
 
 export function icon(name, cls = 'ic') {
@@ -70,6 +71,13 @@ export function hell(hex, a) {
   const n = parseInt(hex.slice(1), 16);
   const m = (c) => Math.round(c + (255 - c) * a).toString(16).padStart(2, '0');
   return '#' + m(n >> 16) + m((n >> 8) & 255) + m(n & 255);
+}
+
+// Zwei Farben mischen (t = 0: a, t = 1: b)
+export function mische(a, b, t) {
+  const x = parseInt(a.slice(1), 16), y = parseInt(b.slice(1), 16);
+  const k = (s) => Math.round(((x >> s) & 255) + (((y >> s) & 255) - ((x >> s) & 255)) * t).toString(16).padStart(2, '0');
+  return '#' + k(16) + k(8) + k(0);
 }
 
 // Text sicher ausgeben; **so** wird fett

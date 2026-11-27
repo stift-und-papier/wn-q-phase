@@ -20,6 +20,9 @@
      "begriffe": [
       "anthropologie",
       "anthropologische-differenz",
+      "differenz-lenk",
+      "differenz-rensch",
+      "differenz-kern",
       "vernunft",
       "selbstreflexivitaet",
       "weltoffenheit",
@@ -96,7 +99,8 @@
      "icon": "dna",
      "modul": "wahl",
      "begriffe": [
-      "evolution-mensch"
+      "evolution-mensch",
+      "sein-sollen"
      ]
     }
    ]
@@ -158,7 +162,11 @@
      "icon": "stern",
      "modul": "pflicht",
      "begriffe": [
-      "tugendethik"
+      "tugendethik",
+      "eudaimonia",
+      "tugenden",
+      "mesotes",
+      "kardinaltugenden"
      ]
     },
     {
@@ -197,7 +205,12 @@
      "icon": "dna",
      "modul": "wahl",
      "begriffe": [
-      "biotechnologie"
+      "biotechnologie",
+      "genom-editierung",
+      "pid",
+      "klonen",
+      "embryonenforschung",
+      "embryonenschutzgesetz"
      ]
     }
    ]
@@ -207,10 +220,67 @@
    "nr": 3,
    "name": "Wahrheit und Wirklichkeit",
    "farbe": "tuerkis",
-   "aktiv": false,
+   "aktiv": true,
    "pflichtmodul": "Wahrheitsansprüche",
    "wahlmodul": "Wahrheit und Wirklichkeit in den Medien",
-   "cluster": []
+   "cluster": [
+    {
+     "id": "wissen",
+     "name": "Wahrheit und Wissen",
+     "icon": "auge",
+     "modul": "pflicht",
+     "begriffe": [
+      "meinen-glauben-wissen",
+      "subjektiv-objektiv",
+      "wahrheit-kulturen"
+     ]
+    },
+    {
+     "id": "theorien",
+     "name": "Wahrheitstheorien",
+     "icon": "waage",
+     "modul": "pflicht",
+     "begriffe": [
+      "wahrheitstheorien",
+      "korrespondenz",
+      "kohaerenz",
+      "pragmatisch",
+      "konsens"
+     ]
+    },
+    {
+     "id": "ideen",
+     "name": "Platons Ideenlehre",
+     "icon": "sonne",
+     "modul": "pflicht",
+     "begriffe": [
+      "ideenlehre",
+      "hoehlengleichnis"
+     ]
+    },
+    {
+     "id": "wissenschaft",
+     "name": "Wissenschaftliche Erkenntnis",
+     "icon": "lupe",
+     "modul": "pflicht",
+     "begriffe": [
+      "deduktion",
+      "induktion",
+      "verifikation",
+      "falsifikation"
+     ]
+    },
+    {
+     "id": "medien",
+     "name": "Wahrheit in den Medien",
+     "icon": "medien",
+     "modul": "wahl",
+     "begriffe": [
+      "platon-medienkritik",
+      "ontologie-epistemologie"
+     ]
+    }
+   ]
   },
   {
    "id": "lebensentwuerfe",
@@ -677,24 +747,96 @@
    "name": "Tugendethik (Aristoteles)",
    "kurz": "Tugend / Tugendethik",
    "icon": "stern",
-   "erkl": "Die **Tugendethik** fragt nicht zuerst „Was soll ich tun?“, sondern „Wie werde ich ein guter Mensch?“. Bei Aristoteles ist das Ziel die **Eudaimonia**, das gelingende Leben. Ethische **Tugenden** sind durch **Gewohnheit** erworbene Haltungen. Sie liegen in der **Mitte zwischen zwei Extremen** (Mesotes-Lehre). Die vier **Kardinaltugenden** sind Klugheit, Tapferkeit, Gerechtigkeit und Besonnenheit.",
-   "beispiel": "Tapferkeit liegt zwischen Feigheit und Tollkühnheit, Großzügigkeit zwischen Geiz und Verschwendung.",
-   "achtung": "Die Mitte ist kein Rechenwert (nicht der Durchschnitt), sondern hängt von Person und Situation ab.",
-   "positionen": "",
+   "erkl": "Die **Tugendethik** fragt nicht zuerst „Was soll ich tun?“, sondern „**Wie werde ich ein guter Mensch?**“. Im Mittelpunkt steht nicht die einzelne Handlung (wie bei Kant oder im Utilitarismus), sondern der **Charakter** der handelnden Person. Ihr wichtigster Vertreter ist **Aristoteles** (Nikomachische Ethik): Ziel des Lebens ist die **Eudaimonia**, das gelingende Leben. Man erreicht sie, indem man **Tugenden** ausbildet, die in der **richtigen Mitte** liegen.",
+   "beispiel": "Darf ich meine Freundin anlügen, um sie zu schonen? Der Utilitarist fragt nach den Folgen, Kant fragt, ob die Maxime verallgemeinerbar ist. Die Tugendethik fragt: Was würde ein ehrlicher und kluger Mensch an meiner Stelle tun, und was für ein Mensch werde ich, wenn ich so handle?",
+   "achtung": "",
+   "positionen": "Kritik: Die Tugendethik gibt **keine klare Handlungsanweisung** für schwierige Einzelfälle (z. B. Sterbehilfe). Außerdem kann davon, was als Tugend gilt, **Kultur und Zeit** abhängen.",
    "links": [
+    "eudaimonia",
+    "tugenden",
+    "mesotes",
+    "kardinaltugenden",
     "normative-ethik",
     "teleologie"
    ],
    "personen": [
     "aristoteles"
    ],
-   "material": [
-    {
-     "typ": "web",
-     "titel": "Die goldene Mitte (Spektrum, Kolumne)",
-     "url": "https://www.spektrum.de/kolumne/warkus-welt-die-goldene-mitte/2223716"
-    }
-   ]
+   "material": []
+  },
+  "eudaimonia": {
+   "name": "Eudaimonia (Glückseligkeit)",
+   "kurz": "Eudaimonia",
+   "icon": "sonne",
+   "erkl": "**Eudaimonia** (griech., meist übersetzt als **Glückseligkeit** oder **gelingendes Leben**) ist für Aristoteles das **höchste Gut**: das Ziel, das **um seiner selbst willen** angestrebt wird und nicht als Mittel für etwas anderes. Sie ist kein kurzes Gefühl, sondern eine **Tätigkeit der Seele gemäß der Tugend**, und zwar ein ganzes Leben lang. Weil der Mensch ein **Vernunftwesen** ist, verwirklicht er sich am besten im vernünftigen, tugendhaften Handeln.",
+   "beispiel": "Geld will man, um sich etwas kaufen zu können, Gesundheit, um gut leben zu können. Das gelingende Leben selbst will man nicht mehr für etwas anderes: Es ist das Endziel.",
+   "achtung": "Eudaimonia ist **nicht dasselbe wie Lust** im Hedonismus (Bentham). Ein Leben voller Vergnügen ohne Tugend ist für Aristoteles kein gelingendes Leben.",
+   "positionen": "",
+   "links": [
+    "tugendethik",
+    "tugenden",
+    "hedonismus",
+    "vernunft"
+   ],
+   "personen": [
+    "aristoteles"
+   ],
+   "material": []
+  },
+  "tugenden": {
+   "name": "Ethische und dianoetische Tugenden",
+   "kurz": "Tugenden",
+   "icon": "stern",
+   "erkl": "Eine **Tugend** (griech. **areté**: Bestheit, Tüchtigkeit) ist eine dauerhafte **Haltung**, das Gute zu tun. Aristoteles unterscheidet zwei Arten: **Dianoetische Tugenden** (Verstandestugenden) wie **Klugheit** (phronesis) und Weisheit werden durch **Belehrung** erworben. **Ethische Tugenden** (Charaktertugenden) wie Tapferkeit, Großzügigkeit oder Gerechtigkeit entstehen durch **Gewohnheit** und Übung: Man wird gerecht, indem man gerecht handelt. Die **Klugheit** verbindet beide, denn sie erkennt in der konkreten Situation die richtige Mitte.",
+   "beispiel": "Wie beim Musikinstrument: Niemand wird durch das Lesen eines Buches zur guten Gitarristin, sondern durch Üben. Genauso wird man erst durch wiederholtes mutiges Handeln tapfer.",
+   "achtung": "Eine einzelne gute Tat macht noch keinen tugendhaften Menschen. Tugend ist eine **feste Haltung**, keine einmalige Handlung („Eine Schwalbe macht noch keinen Frühling“).",
+   "positionen": "",
+   "links": [
+    "tugendethik",
+    "mesotes",
+    "kardinaltugenden",
+    "eudaimonia"
+   ],
+   "personen": [
+    "aristoteles"
+   ],
+   "material": []
+  },
+  "mesotes": {
+   "name": "Mesotes-Lehre (Lehre von der Mitte)",
+   "kurz": "Mesotes (Mitte)",
+   "icon": "waage",
+   "erkl": "Nach der **Mesotes-Lehre** des Aristoteles liegt jede ethische Tugend in der **Mitte zwischen zwei Lastern**: einem **Zuviel** (Übermaß) und einem **Zuwenig** (Mangel). Welche Handlung die Mitte trifft, bestimmt die **Klugheit**. Die Mitte ist **relativ zur Person und zur Situation**.",
+   "beispiel": "Tapferkeit liegt zwischen Feigheit (Mangel) und Tollkühnheit (Übermaß), Großzügigkeit zwischen Geiz und Verschwendung, Selbstbewusstsein zwischen Unterwürfigkeit und Überheblichkeit.",
+   "achtung": "Die Mitte ist **kein Rechenwert** (nicht der Durchschnitt) und kein lauer Kompromiss. Sie hängt von Person und Situation ab: Für eine Feuerwehrfrau im Einsatz ist etwas anderes tapfer als für einen Zuschauer.",
+   "positionen": "",
+   "links": [
+    "tugenden",
+    "tugendethik"
+   ],
+   "personen": [
+    "aristoteles"
+   ],
+   "material": []
+  },
+  "kardinaltugenden": {
+   "name": "Kardinaltugenden",
+   "kurz": "Kardinaltugenden",
+   "icon": "kompass",
+   "erkl": "Die vier **Kardinaltugenden** (lat. cardo: Türangel) gelten seit der Antike als Grundtugenden, an denen alle anderen „hängen“: **Weisheit** (Klugheit), **Tapferkeit**, **Besonnenheit** (Mäßigung) und **Gerechtigkeit**. Sie gehen auf **Platon** zurück, der sie den **Teilen der Seele** zuordnet. Aristoteles greift sie in seiner Tugendlehre auf.",
+   "beispiel": "Platon: Der vernünftige Seelenteil braucht Weisheit, der mutartige Tapferkeit, der begehrende Besonnenheit. Gerechtigkeit herrscht, wenn jeder Teil seine Aufgabe erfüllt.",
+   "achtung": "Die Vierer-Liste stammt **nicht von Aristoteles**, sondern von Platon. Aristoteles nennt viel mehr ethische Tugenden (z. B. Großzügigkeit, Freundlichkeit, Wahrhaftigkeit).",
+   "positionen": "",
+   "links": [
+    "tugenden",
+    "tugendethik",
+    "seelenlehre"
+   ],
+   "personen": [
+    "platon",
+    "aristoteles"
+   ],
+   "material": []
   },
   "beginn-leben": {
    "name": "Beginn des menschlichen Lebens",
@@ -1063,15 +1205,108 @@
    "name": "Ethische Kontroversen der Biotechnologie",
    "kurz": "Biotechnologie",
    "icon": "dna",
-   "erkl": "**Biotechnologie** nutzt biologische Prozesse und Lebewesen technisch. Ethisch umstritten sind vor allem Eingriffe in das menschliche Erbgut (**Genom-Editierung**, z. B. mit CRISPR/Cas9), die **Präimplantationsdiagnostik (PID)**, **Klonen** und **Embryonenforschung**. In Deutschland regelt das **Embryonenschutzgesetz**, was erlaubt ist.",
-   "beispiel": "2018 wurden in China erstmals Zwillinge geboren, deren Erbgut als Embryonen mit CRISPR/Cas9 verändert worden war. Das löste weltweit scharfe Kritik aus.",
+   "erkl": "**Biotechnologie** nutzt biologische Prozesse und Lebewesen technisch, z. B. in Medizin, Landwirtschaft und Forschung. Ethisch umstritten sind vor allem Eingriffe am **Beginn des menschlichen Lebens** und in das **Erbgut**. Fünf Themen solltest du unterscheiden können: **Genom-Editierung**, **Präimplantationsdiagnostik**, **Klonen**, **Embryonenforschung** und ihre rechtliche Regelung im **Embryonenschutzgesetz**. Zu jedem Thema gibt es eine eigene Karte.",
    "achtung": "",
-   "positionen": "Die Argumente kennst du schon: **Menschenwürde**, **SKIP-Argumente**, **Dammbruch-Argument** und die utilitaristische Abwägung von Nutzen (z. B. Heilung von Krankheiten) und Risiken.",
+   "positionen": "In allen fünf Debatten kehren dieselben Argumente wieder: **Menschenwürde** und **SKIP-Argumente** (Schutz des Embryos), das **Dammbruch-Argument** (Gefahr von „Designerbabys“ und Selektion) und die **utilitaristische Abwägung** von Nutzen (z. B. Heilung von Krankheiten) und Risiken.",
    "links": [
+    "genom-editierung",
+    "pid",
+    "klonen",
+    "embryonenforschung",
+    "embryonenschutzgesetz",
     "skip",
     "dammbruch",
-    "pnd",
     "mzf"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "genom-editierung": {
+   "name": "Genom-Editierung (CRISPR/Cas9)",
+   "kurz": "Genom-Editierung",
+   "icon": "dna",
+   "erkl": "Bei der **Genom-Editierung** wird das Erbgut gezielt verändert. Das bekannteste Verfahren ist **CRISPR/Cas9**, eine „**Genschere**“, die die DNA an einer genau bestimmten Stelle schneidet (Nobelpreis für Chemie 2020 an Emmanuelle Charpentier und Jennifer Doudna). Entscheidend ist die Unterscheidung: Die **somatische Gentherapie** verändert Körperzellen eines einzelnen Menschen, die Änderung wird **nicht vererbt**. Ein **Keimbahneingriff** verändert Ei- oder Samenzellen oder frühe Embryonen, die Änderung wird an **alle Nachkommen weitergegeben**. Keimbahneingriffe sind in Deutschland nach dem **Embryonenschutzgesetz verboten**.",
+   "beispiel": "Somatisch: Seit 2024 ist in der EU eine CRISPR-Therapie gegen die Sichelzellkrankheit zugelassen. Keimbahn: 2018 kamen in China Zwillinge zur Welt, deren Erbgut der Forscher He Jiankui als Embryonen verändert hatte. Das löste weltweit Empörung aus, er wurde zu einer Haftstrafe verurteilt.",
+   "achtung": "Nicht jede Genom-Editierung ist ein Eingriff in die **Keimbahn**. Prüfe immer, ob die Veränderung **vererbt** wird: Davon hängt die ethische Bewertung ab.",
+   "positionen": "Pro: Heilung schwerer **Erbkrankheiten** und Vermeidung von Leid (utilitaristisch). Contra: unbekannte **Langzeitrisiken** für künftige Generationen, die nicht zustimmen können; Gefahr von „**Designerbabys**“ (Verbesserung statt Heilung, **Enhancement**) und neuer Ungleichheit (Dammbruch-Argument).",
+   "links": [
+    "biotechnologie",
+    "embryonenschutzgesetz",
+    "pid",
+    "dammbruch"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "pid": {
+   "name": "Präimplantationsdiagnostik (PID)",
+   "kurz": "PID",
+   "icon": "lupe",
+   "erkl": "Bei der **Präimplantationsdiagnostik** werden Embryonen, die durch **künstliche Befruchtung** (In-vitro-Fertilisation, IVF) entstanden sind, **vor der Übertragung in die Gebärmutter** genetisch untersucht. Nur Embryonen ohne den gesuchten Gendefekt werden eingesetzt. In Deutschland ist die PID seit 2011 **grundsätzlich verboten** (§ 3a Embryonenschutzgesetz), aber **ausnahmsweise erlaubt**: wenn bei den Eltern ein hohes Risiko für eine **schwerwiegende Erbkrankheit** besteht oder eine Tot- oder Fehlgeburt droht. Vorher sind eine **Beratung** und die Zustimmung einer **Ethikkommission** nötig.",
+   "beispiel": "Beide Partner tragen die Anlage für Mukoviszidose. Mit PID können Embryonen ohne die Krankheit ausgewählt werden, bevor überhaupt eine Schwangerschaft entsteht.",
+   "achtung": "PID und **PND** nicht verwechseln: Die PID untersucht den Embryo **im Reagenzglas vor** der Schwangerschaft, die Pränataldiagnostik untersucht das Ungeborene **während** der Schwangerschaft.",
+   "positionen": "Pro: Leid wird vermieden, und ein späterer **Schwangerschaftsabbruch** nach PND wird überflüssig. Contra: Embryonen werden **ausgewählt und verworfen** (Menschenwürde, SKIP-Argumente); Gefahr der **Selektion** und der Diskriminierung von Menschen mit Behinderung (Dammbruch-Argument).",
+   "links": [
+    "pnd",
+    "embryonenschutzgesetz",
+    "genom-editierung",
+    "skip",
+    "dammbruch"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "klonen": {
+   "name": "Klonen (reproduktiv und therapeutisch)",
+   "kurz": "Klonen",
+   "icon": "gruppe",
+   "erkl": "Ein **Klon** ist ein Lebewesen mit **identischem Erbgut** wie ein anderes. Beim Klonen durch **Zellkerntransfer** wird der Zellkern einer Körperzelle in eine entkernte Eizelle eingesetzt. Beim **reproduktiven Klonen** soll daraus ein ganzes Lebewesen entstehen. Beim **therapeutischen Klonen** sollen Embryonen erzeugt werden, aus denen man **Stammzellen** für Forschung oder Behandlung gewinnt; der Embryo wird dabei zerstört. In Deutschland ist das Klonen von Menschen **verboten** (§ 6 Embryonenschutzgesetz).",
+   "beispiel": "1996 kam das Schaf **Dolly** zur Welt, das erste aus einer Körperzelle geklonte Säugetier. Eineiige Zwillinge sind übrigens natürliche Klone.",
+   "achtung": "Ein Klon ist **keine Kopie der Person**: Er hat dasselbe Erbgut, aber ein anderes Alter, andere Erfahrungen und eine eigene Persönlichkeit, wie eineiige Zwillinge.",
+   "positionen": "Gegen reproduktives Klonen: Verletzung der **Menschenwürde** (der Mensch wird nach Plan „hergestellt“ und damit als Mittel benutzt, vgl. Kant), hohe **gesundheitliche Risiken**, das Recht auf eine **offene Zukunft**. Beim therapeutischen Klonen steht der **Nutzen für Kranke** gegen den **Schutz des Embryos**.",
+   "links": [
+    "embryonenforschung",
+    "embryonenschutzgesetz",
+    "mzf",
+    "skip"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "embryonenforschung": {
+   "name": "Embryonenforschung und Stammzellen",
+   "kurz": "Embryonenforschung",
+   "icon": "keim",
+   "erkl": "**Embryonale Stammzellen** sind **pluripotent**: Aus ihnen kann jeder Zelltyp des Körpers entstehen. Forschende hoffen, damit Krankheiten wie Parkinson oder Diabetes behandeln zu können. Um sie zu gewinnen, muss ein früher **Embryo zerstört** werden (**verbrauchende Embryonenforschung**). In Deutschland ist das **verboten**. Das **Stammzellgesetz** (2002) erlaubt nur den **Import** embryonaler Stammzellen, die vor einem **Stichtag** (1. Mai 2007) im Ausland gewonnen wurden. Eine Alternative sind **induzierte pluripotente Stammzellen** (iPS-Zellen): Sie werden aus Körperzellen zurückprogrammiert, ohne dass ein Embryo zerstört wird.",
+   "beispiel": "Bei einer künstlichen Befruchtung entstehen oft mehr Embryonen, als eingesetzt werden. Dürfen diese „überzähligen“ Embryonen für die Forschung verwendet werden, statt sie zu verwerfen?",
+   "achtung": "Nicht alle Stammzellen stammen aus Embryonen: **Adulte Stammzellen** (z. B. aus dem Knochenmark) und iPS-Zellen sind ethisch weit weniger umstritten.",
+   "positionen": "Die Bewertung hängt am **moralischen Status des Embryos**: Wer ihm von der Befruchtung an volle **Menschenwürde** zuschreibt (SKIP-Argumente, Löw), lehnt die Forschung ab. Wer Empfindungsfähigkeit oder Bewusstsein für entscheidend hält (Singer), gewichtet den möglichen **Nutzen für Kranke** stärker.",
+   "links": [
+    "beginn-leben",
+    "skip",
+    "klonen",
+    "embryonenschutzgesetz"
+   ],
+   "personen": [
+    "loew",
+    "singer"
+   ],
+   "material": []
+  },
+  "embryonenschutzgesetz": {
+   "name": "Embryonenschutzgesetz (ESchG)",
+   "kurz": "Embryonenschutzgesetz",
+   "icon": "paragraf",
+   "erkl": "Das **Embryonenschutzgesetz** von 1990 regelt in Deutschland den Umgang mit menschlichen Embryonen **außerhalb des Mutterleibs**. Als **Embryo** gilt schon die **befruchtete, entwicklungsfähige Eizelle** ab der Kernverschmelzung. Verboten sind u. a.: Embryonen zu **anderen Zwecken als einer Schwangerschaft** zu erzeugen oder zu verwenden (also auch für die Forschung), das **Klonen** von Menschen, Eingriffe in die **Keimbahn**, die Bildung von **Chimären und Hybriden** (Mischwesen aus Mensch und Tier) sowie ärztliche Maßnahmen zur **Eizellspende** und **Leihmutterschaft**. Strafbar sind dabei die Ärztinnen und Ärzte, nicht die beteiligten Frauen. Die **PID** ist nur in engen Ausnahmen erlaubt (§ 3a).",
+   "beispiel": "Ein deutsches Labor darf keine Embryonen für die Stammzellforschung herstellen. Paare, die eine Eizellspende brauchen, lassen sie deshalb oft im Ausland durchführen, z. B. in Spanien oder Tschechien.",
+   "achtung": "Das Embryonenschutzgesetz regelt nur den Embryo **außerhalb** des Mutterleibs. Für den **Schwangerschaftsabbruch** gelten die **§§ 218, 219 StGB**.",
+   "positionen": "Das Gesetz ist umstritten. Eine von der Bundesregierung eingesetzte **Kommission** kam 2024 zu dem Ergebnis, dass das Verbot der Eizellspende verfassungsrechtlich nicht geboten ist. Eine Lockerung wird diskutiert, ist aber (Stand November 2026) **nicht beschlossen**. Befürworter des strengen Gesetzes verweisen auf **Menschenwürde** und Lebensschutz, Kritiker auf die **Forschungsfreiheit** und die **Fortpflanzungsfreiheit** von Paaren.",
+   "links": [
+    "pid",
+    "klonen",
+    "genom-editierung",
+    "embryonenforschung",
+    "abbruch"
    ],
    "personen": [],
    "material": []
@@ -1116,11 +1351,14 @@
    "name": "Anthropologische Differenz",
    "kurz": "Anthropologische Differenz",
    "icon": "lupe",
-   "erkl": "Die **anthropologische Differenz** bezeichnet den **Unterschied zwischen Mensch und Tier**: Welches Merkmal (kognitiv, sozial oder religiös) zeichnet den Menschen aus? Oft steckt dahinter die Formel **„Mensch = Tier + X“**. **Lenk**: Es gibt nur einen **Gradunterschied**, die Fähigkeiten sind beim Menschen aber viel stärker ausgeprägt. **Rensch**: Der Unterschied ist **prinzipiell**, denn nur der Mensch hat eine **materielle und geistige Kultur** (abstraktes Denken, Sprache, Werte und Normen). **Kern**: Jede einzelne Fähigkeit findet sich auch bei Tieren, das Besondere ist das **Zusammenspiel aller Fähigkeiten**. Die Frage hat ethische Folgen, z. B. für unseren Umgang mit Tieren.",
-   "beispiel": "Schimpansen benutzen Stöcke als Werkzeug, Delfine lösen einfache Aufgaben, manche Vögel bilden „Sätze“ aus Lauten. Für Lenk zeigt das: Tiere haben dieselben Fähigkeiten in geringerem Grad.",
-   "achtung": "Kern stellt nicht einfach ein weiteres X auf, sondern kritisiert die **Prämisse „Tier + X“** selbst: Der Unterschied liegt für sie nicht in einer einzelnen Zusatzfähigkeit.",
-   "positionen": "**Gradueller** Unterschied (Lenk) gegen **prinzipiellen** Unterschied (Rensch) gegen Unterschied in der **Einheit der Fähigkeiten** (Kern).",
+   "erkl": "Die **anthropologische Differenz** bezeichnet den **Unterschied zwischen Mensch und Tier**: Welches Merkmal (kognitiv, sozial oder religiös) zeichnet den Menschen aus? Oft steckt dahinter die Formel **„Mensch = Tier + X“**: Der Mensch hat alles, was das Tier hat, und dazu eine besondere Fähigkeit X. Umstritten ist, ob der Unterschied nur **graduell** ist (Lenk), **prinzipiell** (Rensch) oder in der **Einheit aller Fähigkeiten** liegt (Kern). Jede Position hat eine eigene Karte. Die Frage hat ethische Folgen, z. B. für unseren Umgang mit Tieren.",
+   "beispiel": "Klassische Kandidaten für das X sind **Vernunft** (Aristoteles, Kant), **Sprache**, **Werkzeuggebrauch**, **Selbstreflexivität**, **Kultur** und **Religion**.",
+   "achtung": "",
+   "positionen": "Lenk und Rensch streiten über das **Ausmaß** des Unterschieds (Grad oder Prinzip). Kern stellt dagegen schon die **Formel „Tier + X“** in Frage.",
    "links": [
+    "differenz-lenk",
+    "differenz-rensch",
+    "differenz-kern",
     "anthropologie",
     "vernunft",
     "evolution-mensch",
@@ -1146,6 +1384,81 @@
      "typ": "ab",
      "titel": "Hausaufgabe Anthropologische Differenz",
      "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20HA%20-%20Anthropologische%20Differenz%20.pdf"
+    }
+   ]
+  },
+  "differenz-lenk": {
+   "name": "Gradueller Unterschied (Lenk)",
+   "kurz": "Gradunterschied (Lenk)",
+   "icon": "puls",
+   "erkl": "**Hans Lenk** vertritt die These, dass zwischen Mensch und Tier nur ein **Gradunterschied** besteht, allerdings ein **riesengroßer**. Alle Fähigkeiten, die den Menschen auszeichnen sollen (Werkzeuggebrauch, Sprache, Problemlösen, Sozialverhalten), finden sich **in Ansätzen auch bei Tieren**. Beim Menschen sind sie aber in **viel höherem Grad** ausgeprägt. Es gibt also kein einzelnes Merkmal, das nur der Mensch hat.",
+   "beispiel": "Schimpansen benutzen Stöcke als Werkzeug, Delfine lösen einfache Aufgaben, manche Vögel bilden „Sätze“ aus Lauten. Für Lenk zeigt das: Tiere haben dieselben Fähigkeiten, nur in geringerem Grad.",
+   "achtung": "„Nur graduell“ heißt bei Lenk **nicht**, dass der Unterschied klein ist. Er betont gerade, dass der Abstand riesig ist.",
+   "positionen": "Gegen Lenk: **Rensch** sieht in der Kultur einen **prinzipiellen** Unterschied. **Kern** bestreitet, dass man den Menschen über einzelne, vergleichbare Fähigkeiten erfassen kann.",
+   "links": [
+    "anthropologische-differenz",
+    "differenz-rensch",
+    "differenz-kern",
+    "evolution-mensch"
+   ],
+   "personen": [
+    "lenk"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Anthropologische Differenz (Lenk, Rensch, Kern)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20TB%20-%20Anthropologische%20Differenz.pdf"
+    }
+   ]
+  },
+  "differenz-rensch": {
+   "name": "Prinzipieller Unterschied (Rensch)",
+   "kurz": "Prinzipieller Unterschied (Rensch)",
+   "icon": "stern",
+   "erkl": "Der Evolutionsbiologe **Bernhard Rensch** betont zunächst die Nähe: Der Mensch ist aus dem Tierreich **hervorgegangen** und unterscheidet sich **anatomisch** kaum von Menschenaffen. Trotzdem ist der Unterschied **prinzipiell**: Nur der Mensch hat **abstraktes Denken**, eine **Wortsprache** und eine **materielle und geistige Kultur** (Technik, Kunst, Wissenschaft, Werte und Normen), die er über Generationen **weitergibt** und weiterentwickelt. Damit ist er in der Evolution **etwas Neues**.",
+   "beispiel": "Ein Schimpanse kann einen Stock als Werkzeug nutzen. Aber nur Menschen bauen Werkzeuge, mit denen sie andere Werkzeuge herstellen, schreiben ihr Wissen auf und entwickeln es über Jahrhunderte weiter.",
+   "achtung": "Rensch ist **kein Gegner der Evolutionstheorie**: Er erklärt die Entstehung des Menschen biologisch und sieht trotzdem einen prinzipiellen Unterschied.",
+   "positionen": "Gegen Rensch (**Lenk**): Auch Tiere haben Vorformen von Kultur, z. B. Werkzeugtechniken, die Schimpansengruppen an ihre Jungen weitergeben. Ist der Unterschied dann wirklich prinzipiell?",
+   "links": [
+    "anthropologische-differenz",
+    "differenz-lenk",
+    "differenz-kern",
+    "evolution-mensch"
+   ],
+   "personen": [
+    "rensch"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Anthropologische Differenz (Lenk, Rensch, Kern)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20TB%20-%20Anthropologische%20Differenz.pdf"
+    }
+   ]
+  },
+  "differenz-kern": {
+   "name": "Einheit der Fähigkeiten (Kern)",
+   "kurz": "Einheit der Fähigkeiten (Kern)",
+   "icon": "ziel",
+   "erkl": "**Andrea Kern** kritisiert die Formel **„Mensch = Tier + X“**. Jede einzelne Fähigkeit, die man als X anführt, findet man in irgendeiner Form auch bei Tieren. Das Besondere des Menschen liegt für sie nicht in einer **Zusatzfähigkeit**, sondern in der **Einheit und im Zusammenspiel aller Fähigkeiten**: Beim Menschen sind Wahrnehmen, Fühlen, Wollen und Handeln insgesamt von seinem **Denken geprägt**. Der Mensch ist also nicht ein Tier mit etwas obendrauf, sondern ein **anderes Ganzes**.",
+   "beispiel": "Auch Tiere essen. Menschen aber kochen, decken den Tisch, laden Gäste ein oder fasten aus religiösen Gründen: Schon das Essen ist beim Menschen von Kultur und Denken durchdrungen.",
+   "achtung": "Kern stellt **kein weiteres X** auf, sondern kritisiert die **Prämisse „Tier + X“** selbst.",
+   "positionen": "Kern widerspricht damit **Lenk** (der Mensch als Tier mit gesteigerten Einzelfähigkeiten) und der Suche nach einem **einzigen Merkmal**, das den Menschen ausmacht.",
+   "links": [
+    "anthropologische-differenz",
+    "differenz-lenk",
+    "differenz-rensch",
+    "vernunft"
+   ],
+   "personen": [
+    "kern"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Anthropologische Differenz (Lenk, Rensch, Kern)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/01.Anthropologie/02.%20TB%20-%20Anthropologische%20Differenz.pdf"
     }
    ]
   },
@@ -1909,27 +2222,494 @@
    "name": "Menschenbild der Evolutionsbiologie",
    "kurz": "Evolutionsbiologie",
    "icon": "dna",
-   "erkl": "Seit **Darwin** (1859) gilt der Mensch als **Ergebnis der Evolution**: Er hat sich durch **Variation und natürliche Selektion** schrittweise aus einem Ast des tierischen Stammbaums entwickelt und gehört mit den Menschenaffen zur Ordnung der **Primaten**. Viele Eigenschaften, auch soziales Verhalten wie **Kooperation** oder **Altruismus**, lassen sich als **Anpassungen** erklären, die das Überleben und die Fortpflanzung gefördert haben (**Soziobiologie**, evolutionäre Psychologie). Aus der Evolution folgt zunächst nur ein **Gradunterschied** zwischen Mensch und Tier.",
+   "erkl": "Seit **Darwin** (1859) gilt der Mensch als **Ergebnis der Evolution**: Er hat sich durch **Variation und natürliche Selektion** schrittweise aus einem Ast des tierischen Stammbaums entwickelt und gehört mit den Menschenaffen zur Ordnung der **Primaten**. Viele Eigenschaften, auch soziales Verhalten wie **Kooperation** oder **Altruismus**, lassen sich als **Anpassungen** erklären, die das Überleben und die Fortpflanzung gefördert haben (**Soziobiologie**, evolutionäre Psychologie). Aus der Evolution folgt zunächst nur ein **Gradunterschied** zwischen Mensch und Tier. Was moralisch richtig ist, kann die Evolutionsbiologie allein aber nicht beantworten (siehe **Sein-Sollen-Fehlschluss**).",
    "beispiel": "Warum helfen Menschen einander? Evolutionsbiologisch: Gruppen, deren Mitglieder kooperierten, überlebten eher und gaben ihre Anlagen häufiger weiter.",
-   "achtung": "Vorsicht vor dem **Sein-Sollen-Fehlschluss**: Was sich evolutionär entwickelt hat (z. B. Aggression), ist deshalb nicht automatisch gut oder richtig.",
+   "achtung": "",
    "positionen": "",
    "links": [
+    "sein-sollen",
     "anthropologische-differenz",
+    "differenz-rensch",
     "spezies",
-    "determinismus",
-    "deskriptiv"
+    "determinismus"
    ],
    "personen": [
     "rensch"
    ],
    "material": []
+  },
+  "sein-sollen": {
+   "name": "Sein-Sollen-Fehlschluss",
+   "kurz": "Sein-Sollen-Fehlschluss",
+   "icon": "kompass",
+   "erkl": "Ein **Sein-Sollen-Fehlschluss** liegt vor, wenn aus einer **beschreibenden Aussage** (Sein: So ist es) direkt eine **normative Aussage** (Sollen: So soll es sein) abgeleitet wird. Schon **David Hume** stellte fest, dass aus Tatsachen allein keine Normen folgen. Damit ein solcher Schluss gültig ist, braucht es eine zusätzliche **normative Prämisse**, die man offenlegen und begründen muss. In der Evolutionsbiologie ist der Fehlschluss besonders verführerisch: Was die Evolution hervorgebracht hat, wirkt „natürlich“ und damit richtig. Oft spricht man auch vom **naturalistischen Fehlschluss**.",
+   "beispiel": "„Aggression hat sich in der Evolution bewährt (Sein). Also ist es richtig, aggressiv zu sein (Sollen).“ Oder der **Sozialdarwinismus**: „In der Natur setzt sich der Stärkere durch, also soll sich auch in der Gesellschaft der Stärkere durchsetzen.“",
+   "achtung": "Nicht jedes Argument mit Fakten ist ein Fehlschluss: Tatsachen sind für moralische Urteile **wichtig** (Untersatz im **praktischen Syllogismus**). Fehlerhaft ist nur, die **normative Prämisse wegzulassen**.",
+   "positionen": "",
+   "links": [
+    "evolution-mensch",
+    "deskriptiv",
+    "moralisches-urteil",
+    "ethik-moral"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "meinen-glauben-wissen": {
+   "name": "Meinen, Glauben, Wissen (Kant)",
+   "kurz": "Meinen, Glauben, Wissen",
+   "icon": "auge",
+   "erkl": "**Kant** unterscheidet drei Stufen des **Fürwahrhaltens** danach, wie gut sie begründet sind. **Meinen** ist **subjektiv und objektiv unzureichend**: Ich bin mir nicht sicher, und es gibt keine ausreichenden Gründe. **Glauben** ist **subjektiv zureichend**, aber **objektiv unzureichend**: Ich bin fest überzeugt, kann es aber nicht so begründen, dass es für alle gilt. **Wissen** ist **subjektiv und objektiv zureichend** begründet.",
+   "beispiel": "„Morgen regnet es vielleicht“ ist ein Meinen. Wer fest auf Gott vertraut, ohne es beweisen zu können, glaubt. Wer nachgemessen hat, dass Wasser bei Normaldruck bei 100 °C siedet, weiß es.",
+   "achtung": "**Gewissheit ist kein Wissen**: Wer sich subjektiv sicher ist, aber keine objektiv zureichenden Gründe hat, **glaubt** nach Kant nur. Und „glauben“ meint bei Kant mehr als im Alltag: „Ich glaube, der Bus kommt gleich“ wäre bei Kant ein Meinen.",
+   "positionen": "",
+   "links": [
+    "ontologie-epistemologie",
+    "subjektiv-objektiv",
+    "wahrheitstheorien",
+    "platon-medienkritik"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "video",
+     "titel": "Video: Meinen, Glauben, Wissen",
+     "url": "https://youtu.be/aiDTInDp9gA"
+    }
+   ]
+  },
+  "subjektiv-objektiv": {
+   "name": "Subjektivität, Objektivität, Intersubjektivität",
+   "kurz": "Subjektiv, objektiv, intersubjektiv",
+   "icon": "gruppe",
+   "erkl": "**Subjektiv** ist, was vom einzelnen Menschen abhängt: von seiner Wahrnehmung, seinen Gefühlen und seinem Standpunkt. **Objektiv** ist, was **unabhängig vom Betrachter** gilt, also so ist, wie es ist, egal wer hinsieht. Weil wir die Welt immer aus unserer Perspektive erkennen, ist volle Objektivität schwer zu erreichen. **Intersubjektiv** ist deshalb, was **für alle nachprüfbar** ist und worüber sich verschiedene Menschen mit Gründen **verständigen** können. Die Wissenschaft strebt Intersubjektivität an: Experimente müssen von anderen wiederholt werden können.",
+   "beispiel": "„Das Wasser ist kalt“ ist subjektiv: Für den einen ist es kalt, für die andere angenehm. „Das Wasser hat 18 °C“ ist intersubjektiv überprüfbar: Jede und jeder kann nachmessen.",
+   "achtung": "Intersubjektiv heißt **nicht einfach Mehrheitsmeinung**. Entscheidend ist, dass alle die Aussage mit denselben Methoden **prüfen** können.",
+   "positionen": "Die **Korrespondenztheorie** setzt eine objektive Wirklichkeit voraus. Die **Konsenstheorie** (Habermas) setzt bei der Intersubjektivität an: Wahrheit entsteht in der begründeten Verständigung.",
+   "links": [
+    "meinen-glauben-wissen",
+    "korrespondenz",
+    "konsens",
+    "verifikation"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "wahrheit-kulturen": {
+   "name": "Kulturelle und gesellschaftliche Zugänge zur Wahrheit",
+   "kurz": "Wahrheit in Kulturen",
+   "icon": "sprechen",
+   "erkl": "Was als wahr gilt und **wie** man Wahrheit sucht, ist auch von **Kultur und Gesellschaft** geprägt. Neben der **wissenschaftlichen** Wahrheitssuche (Beobachtung, Experiment, Überprüfung) gibt es **religiöse** Zugänge (Wahrheit als **Offenbarung**, z. B. in heiligen Schriften), **traditionelle** Zugänge (überliefertes Wissen der Älteren) und **gesellschaftliche und politische** Einflüsse: Wer bestimmt, was als wahr gilt? Unterschiedlich beantwortet wird auch die Frage, ob es eine **absolute Wahrheit** gibt oder ob Wahrheit **relativ** zu Kultur und Standpunkt ist.",
+   "beispiel": "Die Frage „Wie ist die Welt entstanden?“ beantworten die Schöpfungserzählungen der Religionen anders als die Physik mit dem Urknall. Beide erheben einen Wahrheitsanspruch, aber auf unterschiedlicher Ebene.",
+   "achtung": "Unterscheide die **Vielfalt der Zugänge** vom **Relativismus**: Dass Kulturen Wahrheit unterschiedlich suchen, heißt noch nicht, dass jede Behauptung gleich wahr ist. Sonst wäre auch „Die Erde ist eine Scheibe“ wahr.",
+   "positionen": "**Relativismus**: Wahrheit gibt es nur relativ zu einer Kultur. Einwand: Der Satz „Alles ist relativ“ beansprucht selbst, absolut wahr zu sein (**Selbstwiderspruch**). **Universalismus**: Es gibt Wahrheiten, die für alle Menschen gelten, z. B. in Logik und Naturwissenschaft.",
+   "links": [
+    "subjektiv-objektiv",
+    "wahrheitstheorien",
+    "konsens"
+   ],
+   "personen": [],
+   "material": []
+  },
+  "wahrheitstheorien": {
+   "name": "Wahrheitstheorien im Überblick",
+   "kurz": "Wahrheitstheorien (Überblick)",
+   "icon": "waage",
+   "erkl": "**Wahrheitstheorien** beantworten die Frage: **Wann ist eine Aussage wahr?** Wahr oder falsch sein können nur **Aussagen** (Meinungen, Urteile), nicht Dinge. Vier Theorien solltest du kennen: **Korrespondenztheorie** (Moore): wahr ist, was mit den **Tatsachen übereinstimmt**. **Kohärenztheorie** (Davidson): wahr ist, was **widerspruchsfrei** in ein Meinungssystem passt. **Pragmatische Theorie** (James): wahr ist, was sich **praktisch bewährt**. **Konsenstheorie** (Habermas): wahr ist, worauf sich alle in einem **idealen Diskurs** einigen könnten. Die Korrespondenztheorie versteht Wahrheit als **Beziehung** zwischen Meinung und Tatsache, die anderen drei eher als **Prozess**.",
+   "beispiel": "Ein Kochvideo verspricht eine „Klostersuppe aus vier Zutaten für eine ganze Woche“. Korrespondenz: Stimmen Bilder und Rezept mit dem überein, was wirklich gekocht wurde? Kohärenz: Passt das zu allem, was ich übers Kochen weiß? Pragmatisch: Funktioniert das Rezept? Konsens: Würden alle nach freier Prüfung zustimmen?",
+   "achtung": "Wahrheit und **Wissen** nicht gleichsetzen: Wahrheitstheorien sagen, wann eine Aussage **wahr** ist. Ob wir sie **wissen**, ist eine andere Frage (siehe Ontologie und Epistemologie).",
+   "positionen": "Jede Theorie hat Schwächen: Bei der Korrespondenz bleibt offen, wie wir die Übereinstimmung **prüfen** können. Die Kohärenz lässt auch **widerspruchsfreie Märchen** zu (Schlick). Beim Pragmatismus können auch **falsche Meinungen nützen**. Der ideale Diskurs ist in der Wirklichkeit **nie ganz erreichbar**.",
+   "links": [
+    "korrespondenz",
+    "kohaerenz",
+    "pragmatisch",
+    "konsens",
+    "ontologie-epistemologie"
+   ],
+   "personen": [
+    "moore",
+    "davidson",
+    "james",
+    "habermas"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Wahrheit prüfen (alle Theorien am Beispiel)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/09.%20TB%20-%20Wahrheit%20pru%CC%88fen.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Konsens, Kohärenz, Korrespondenz im Vergleich",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/07.%20TB%20-%20Konsenstheorie.pdf"
+    }
+   ]
+  },
+  "korrespondenz": {
+   "name": "Korrespondenztheorie (Moore)",
+   "kurz": "Korrespondenztheorie",
+   "icon": "ziel",
+   "erkl": "Nach der **Korrespondenztheorie** ist eine Meinung **wahr**, wenn sie mit den **Tatsachen übereinstimmt** (lat. correspondere: entsprechen), und **falsch**, wenn es keine Tatsache gibt, der sie entspricht. **George Edward Moore** nennt diese Beziehung zwischen Meinung und Tatsache „**Übereinstimmung**“ (correspondence). Die Idee geht bis auf **Aristoteles** zurück und entspricht unserem **Alltagsverständnis** von Wahrheit.",
+   "beispiel": "Ein Freund meint: „Moore ist im Urlaub.“ Die Meinung ist genau dann wahr, wenn Moore tatsächlich weggefahren ist. Sitzt Moore zu Hause, ist sie falsch.",
+   "achtung": "",
+   "positionen": "Kritik (**James**): Was heißt „Übereinstimmung“ genau? Bei wahrnehmbaren Dingen kann eine Vorstellung ein **Abbild** sein (das Zifferblatt einer Uhr). Aber was bildet die Vorstellung von der „Elastizität“ einer Feder oder von „Macht“ ab? Außerdem bleibt offen, wie wir die Übereinstimmung **prüfen** sollen, denn wir kennen die Wirklichkeit nur über unsere Wahrnehmung.",
+   "links": [
+    "wahrheitstheorien",
+    "pragmatisch",
+    "kohaerenz",
+    "ontologie-epistemologie",
+    "verifikation"
+   ],
+   "personen": [
+    "moore",
+    "james"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Was ist Wahrheit? Korrespondenztheorie (Moore, James)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/01.%20AB%20-%20Korrespondenztheorie.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Korrespondenztheorie und pragmatische Wahrheitstheorie",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/02.%20TB%20-%20Pragmatische%20Wahrheitstheorie%20.pdf"
+    },
+    {
+     "typ": "video",
+     "titel": "Video: Korrespondenztheorie der Wahrheit",
+     "url": "https://www.youtube.com/watch?v=oMJ5PDGxGiM"
+    }
+   ]
+  },
+  "kohaerenz": {
+   "name": "Kohärenztheorie (Davidson)",
+   "kurz": "Kohärenztheorie",
+   "icon": "kette",
+   "erkl": "Nach der **Kohärenztheorie** ist eine Meinung **wahr**, wenn sie **widerspruchsfrei** in ein umfassendes **Meinungssystem** hineinpasst (lat. cohaerere: zusammenhängen). **Donald Davidson**: Als Grund für eine Meinung kommt nur **eine andere Meinung** in Frage, kein direkter Vergleich mit der Wirklichkeit. Eine Meinung ist umso wahrscheinlicher wahr, je **umfassender** das konsistente Meinungssystem ist, zu dem sie passt. Daraus folgt auch: Es ist unmöglich, dass **alle** unsere Meinungen auf einmal falsch sind.",
+   "beispiel": "Jemand erzählt, er habe gestern in Paris einen Kaffee getrunken. Du weißt aber, dass er den ganzen Tag mit dir in der Schule war. Die Aussage passt nicht in dein Meinungssystem, also hältst du sie für falsch.",
+   "achtung": "**Kohärent** heißt nicht nur „passt zu einer anderen Aussage“, sondern stimmig mit einem **ganzen System** von Meinungen.",
+   "positionen": "Kritik (**Schlick**): Wenn nur die Widerspruchsfreiheit zählt, müsste man auch ein **gut erfundenes Märchen** für wahr halten. Außerdem lassen sich mehrere in sich widerspruchsfreie, aber **untereinander unverträgliche** Systeme bilden. Die Kohärenz liefert also kein eindeutiges Kriterium der Wahrheit.",
+   "links": [
+    "wahrheitstheorien",
+    "korrespondenz",
+    "konsens"
+   ],
+   "personen": [
+    "davidson",
+    "schlick"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Die Kohärenztheorie (Davidson, Kritik von Schlick)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/03.%20AB%20-%20Koha%CC%88renztheorie.pdf"
+    },
+    {
+     "typ": "video",
+     "titel": "Video: Kohärenztheorie der Wahrheit",
+     "url": "https://www.youtube.com/watch?v=gcHYFz6-MNE"
+    },
+    {
+     "typ": "web",
+     "titel": "Schreibübung: Erörterung zur Kohärenztheorie im Alltag",
+     "url": "https://app.fello.fish/a/ljq0d2l2rcfx9eglkllmi6yd"
+    }
+   ]
+  },
+  "pragmatisch": {
+   "name": "Pragmatische Wahrheitstheorie (James)",
+   "kurz": "Pragmatische Wahrheitstheorie",
+   "icon": "hand",
+   "erkl": "Für den Pragmatisten **William James** ist Wahrheit **kein Selbstzweck**, sondern ein **Mittel zum Handeln**. Eine Meinung ist **wahr**, wenn sie mit den Tatsachen übereinstimmt **und** einen **praktischen Nutzen** hat: wenn sie uns hilft, erfolgreich „mit der Wirklichkeit zu **operieren**“. Dieser Nutzen muss **langfristig** sein und darf nicht auf Täuschung beruhen, deshalb muss er immer wieder überprüft werden. Wahrheit ist für James **dynamisch**: Meinungen **bewahrheiten sich** in einem Prozess.",
+   "beispiel": "Wer sich im Wald verirrt hat und einem Kuhweg folgt, weil er an dessen Ende ein Haus vermutet, rettet sich, wenn die Vorstellung stimmt. Der wahre Gedanke ist nützlich, weil das Haus nützlich ist.",
+   "achtung": "James sagt **nicht** einfach „Wahr ist, was nützt“. Der Nutzen muss **dauerhaft** sein und darf uns nicht in Täuschungen verstricken. „Glücksbringer bringen Glück“ wird nicht dadurch wahr, dass der Glücksbringer kurz beruhigt.",
+   "positionen": "Kritik: Auch **falsche Meinungen** können nützlich sein (z. B. eine Notlüge oder ein Placebo). Außerdem ist unklar, **für wen** und **wie lange** etwas nützen muss. James antwortet: Ein Nutzen, der auf Täuschung beruht, trägt auf Dauer nicht.",
+   "links": [
+    "wahrheitstheorien",
+    "korrespondenz",
+    "verifikation"
+   ],
+   "personen": [
+    "james"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB William James: Pragmatische Wahrheitstheorie",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/02.%20AB%20-%20Pragmatische%20Wahrheitstheorie%20.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Korrespondenztheorie und pragmatische Wahrheitstheorie",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/02.%20TB%20-%20Pragmatische%20Wahrheitstheorie%20.pdf"
+    },
+    {
+     "typ": "video",
+     "titel": "Video: Pragmatische Wahrheitstheorie",
+     "url": "https://youtu.be/rFcswnkOS_0"
+    }
+   ]
+  },
+  "konsens": {
+   "name": "Konsenstheorie (Habermas)",
+   "kurz": "Konsenstheorie",
+   "icon": "sprechen",
+   "erkl": "Nach der **Konsenstheorie** (auch **Diskurstheorie**) von **Jürgen Habermas** ist **wahr**, was bei einer Diskussion unter **idealen Bedingungen** von allen vernünftigen Teilnehmenden als **Konsens** akzeptiert werden kann. Diese **ideale Sprechsituation** verlangt: **Verständlichkeit**, **Gleichberechtigung** (alle dürfen sich beteiligen und jede Behauptung prüfen), **Freiheit und Zwanglosigkeit** (kein Druck, keine Macht) und **Konsensorientierung** (alle suchen ehrlich nach Verständigung). Es zählt allein der „**zwanglose Zwang des besseren Arguments**“.",
+   "beispiel": "Ein Kurs diskutiert die Aussage „Social Media bereichert unseren Alltag“. Wahr wäre sie, wenn sich alle nach freier, gleichberechtigter Prüfung aller Argumente darauf einigen könnten, nicht schon dann, wenn die Mehrheit zustimmt.",
+   "achtung": "Konsens heißt **nicht Mehrheitsentscheidung** oder Abstimmung. Ein Konsens unter Druck, durch Manipulation oder unter Ausschluss Einzelner zählt nicht.",
+   "positionen": "Kritik: Die ideale Sprechsituation wird in der Wirklichkeit **nie ganz erreicht**, sie bleibt ein Ideal. Und auch eine Einigung aller kann sich **irren**: Jahrhundertelang hielten fast alle die Erde für den Mittelpunkt des Weltalls.",
+   "links": [
+    "wahrheitstheorien",
+    "subjektiv-objektiv",
+    "kohaerenz"
+   ],
+   "personen": [
+    "habermas"
+   ],
+   "material": [
+    {
+     "typ": "tb",
+     "titel": "TB Konsenstheorie (Diskurstheorie)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/07.%20TB%20-%20Konsenstheorie.pdf"
+    },
+    {
+     "typ": "video",
+     "titel": "Video: Konsenstheorie",
+     "url": "https://www.youtube.com/watch?v=hCaJCL-MOjA"
+    }
+   ]
+  },
+  "ideenlehre": {
+   "name": "Ideenlehre (Platon)",
+   "kurz": "Ideenlehre",
+   "icon": "sonne",
+   "erkl": "**Platon** unterscheidet zwei Welten. Die **Sinnenwelt** (sichtbare Welt) umfasst die veränderlichen, vergänglichen Dinge, die wir mit den Sinnen wahrnehmen. Sie sind nur **Abbilder**. Die **Ideenwelt** enthält die **Ideen**: die unveränderlichen, ewigen **Urbilder** aller Dinge, z. B. die Idee des Kreises, des Gerechten oder des Schönen. Nur die Ideen sind **wahrhaft wirklich**, und nur von ihnen gibt es echtes **Wissen**. Erkannt werden sie nicht mit den Augen, sondern mit der **Vernunft** (**intelligibel**), z. B. in Mathematik und Logik. Die höchste Idee ist die **Idee des Guten**.",
+   "beispiel": "Kein an die Tafel gezeichneter Kreis ist vollkommen rund. Trotzdem wissen wir, was ein Kreis ist: Wir haben die Idee des Kreises im Kopf und beurteilen jeden gezeichneten Kreis danach.",
+   "achtung": "„Idee“ meint bei Platon **keinen Einfall** und keine bloße Vorstellung im Kopf, sondern etwas, das **unabhängig von uns** existiert und wirklicher ist als die Dinge der Sinnenwelt.",
+   "positionen": "Kritik (**Aristoteles**): Es gibt keine von den Dingen getrennte Ideenwelt. Das Allgemeine (die Form) steckt **in den Dingen selbst**.",
+   "links": [
+    "hoehlengleichnis",
+    "platon-medienkritik",
+    "ontologie-epistemologie",
+    "dualismus",
+    "seelenlehre"
+   ],
+   "personen": [
+    "platon",
+    "aristoteles"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Platon: Das Höhlengleichnis",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/05.%20AB%20-%20Ideenlehre%20nach%20Platon.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Platons Ideenlehre",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/05.%20TB%20-%20Ideenlehre%20nach%20Platon.pdf"
+    }
+   ]
+  },
+  "hoehlengleichnis": {
+   "name": "Höhlengleichnis (Platon)",
+   "kurz": "Höhlengleichnis",
+   "icon": "auge",
+   "erkl": "Im **Höhlengleichnis** (Politeia, Buch VII) veranschaulicht Platon seine Ideenlehre und den **Bildungsweg** des Menschen. Menschen sitzen von Kind an **gefesselt in einer Höhle** und sehen nur **Schatten** von Gegenständen, die hinter ihnen vor einem Feuer vorbeigetragen werden. Sie halten die Schatten für die **ganze Wirklichkeit**. Einer wird **befreit**: Der Aufstieg ist **schmerzhaft**, das Licht blendet ihn. Schrittweise erkennt er die Gegenstände, dann die Dinge draußen und zuletzt die **Sonne**. Als er in die Höhle zurückkehrt, um die anderen zu befreien, wird er **ausgelacht** und mit dem Tod bedroht.",
+   "beispiel": "Deutung: Höhle = **Sinnenwelt**, Schatten = bloße Abbilder und Meinungen, Aufstieg = **Bildung und Philosophie**, Welt außerhalb = **Ideenwelt**, Sonne = **Idee des Guten**, Rückkehrer = Philosoph (Anspielung auf Sokrates, der zum Tod verurteilt wurde).",
+   "achtung": "Das Gleichnis handelt **nicht von echten Höhlenmenschen**. Platon sagt ausdrücklich, die Gefangenen seien „unseresgleichen“: Wir alle halten oft Abbilder für die Wirklichkeit.",
+   "positionen": "",
+   "links": [
+    "ideenlehre",
+    "platon-medienkritik",
+    "meinen-glauben-wissen"
+   ],
+   "personen": [
+    "platon"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Platon: Das Höhlengleichnis",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/05.%20AB%20-%20Ideenlehre%20nach%20Platon.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Platons Ideenlehre",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/05.%20TB%20-%20Ideenlehre%20nach%20Platon.pdf"
+    }
+   ]
+  },
+  "deduktion": {
+   "name": "Deduktive Argumente (Deduktion)",
+   "kurz": "Deduktion",
+   "icon": "rechnen",
+   "erkl": "Ein **Argument** besteht aus **Prämissen** (Gründen) und einer **Konklusion** (der Behauptung, die daraus folgen soll). Bei einem **deduktiven** Argument folgt die Konklusion **zwingend** aus den Prämissen: Sind alle Prämissen wahr und ist die Form **logisch gültig**, muss auch die Konklusion wahr sein. Deduktive Schlüsse sind also **wahrheitserhaltend** und **unabhängig von Erfahrung**. Sie bringen aber **keinen inhaltlichen Erkenntnisgewinn**, denn die Konklusion steckt schon in den Prämissen. Ein bekanntes Beispiel ist der **Syllogismus** aus Obersatz, Untersatz und Schluss.",
+   "beispiel": "P1: Alle Katzen sind Säugetiere. P2: Alle Säugetiere sind Wirbeltiere. K: Also sind alle Katzen Wirbeltiere.",
+   "achtung": "**Gültig** ist nicht dasselbe wie **wahr**: „Alle Katzen sind Fische. Alle Fische haben Schuppen. Also haben alle Katzen Schuppen“ ist logisch gültig, aber die erste Prämisse ist falsch. Umgekehrt ist „Alle Katzen sind Säugetiere. Alle Wölfe sind Säugetiere. Also sind alle Wölfe Katzen“ ein **Fehlschluss**, weil die Form ungültig ist.",
+   "positionen": "",
+   "links": [
+    "induktion",
+    "falsifikation",
+    "moralisches-urteil"
+   ],
+   "personen": [],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Deduktive und induktive Schlussformen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/08.%20AB%20-%20Induktion%20und%20Deduktion.pdf"
+    }
+   ]
+  },
+  "induktion": {
+   "name": "Induktive Argumente (Induktion)",
+   "kurz": "Induktion",
+   "icon": "lupe",
+   "erkl": "Bei einem **induktiven** Argument wird von **einzelnen Beobachtungen** auf eine **allgemeine Regel** oder auf einen weiteren Fall geschlossen. Induktive Schlüsse **erweitern unser Wissen**, denn die Konklusion geht über die Prämissen hinaus. Darum sind sie in Wissenschaft und Alltag unverzichtbar. Sie sind aber **riskant**: Auch bei wahren Prämissen kann die Konklusion falsch sein. Induktive Argumente sind nicht gültig oder ungültig, sondern **mehr oder weniger stark**, und neue Erfahrungen können ihre Überzeugungskraft verändern.",
+   "beispiel": "„Alle bisher beobachteten Pferde haben eine Mähne. Also haben alle Pferde eine Mähne.“ Oder: „Minka ist eine Katze. Die meisten Katzen mögen Milch. Also mag Minka vermutlich Milch.“",
+   "achtung": "Auch noch so viele Bestätigungen **beweisen** eine allgemeine Aussage nicht, ein einziges Gegenbeispiel kann sie widerlegen (**Induktionsproblem**). Genau hier setzt Popper mit der **Falsifikation** an.",
+   "positionen": "",
+   "links": [
+    "deduktion",
+    "verifikation",
+    "falsifikation"
+   ],
+   "personen": [
+    "popper"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Deduktive und induktive Schlussformen",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/08.%20AB%20-%20Induktion%20und%20Deduktion.pdf"
+    }
+   ]
+  },
+  "verifikation": {
+   "name": "Verifikation",
+   "kurz": "Verifikation",
+   "icon": "schild",
+   "erkl": "**Verifikation** (lat. verus: wahr) ist die **Überprüfung des Wahrheitsgehalts** einer Aussage **durch Beobachtung**. Für **Moritz Schlick** (Wiener Kreis) ist das der einzige Weg zur Wahrheit: Ob eine Aussage wahr ist, zeigt sich, wenn der behauptete Sachverhalt **beobachtet** wird. **Rudolf Carnap** schränkt ein: Allgemeine Gesetze beruhen immer nur auf **endlich vielen Beobachtungen**, morgen kann schon ein Gegenbeispiel auftauchen. Eine **vollständige Verifikation** ist deshalb **unmöglich**. Man sollte nur von **Bestätigung** sprechen.",
+   "beispiel": "„Die Blätter auf dem Schulhof sind gelb, grün, rot und braun.“ Das lässt sich durch Hinsehen bestätigen, aber nur für diesen Moment. Morgen kann ein schwarzes Blatt dazukommen.",
+   "achtung": "Allgemeine Sätze („Alle Schwäne sind weiß“) lassen sich **nicht endgültig verifizieren**, nur **bestätigen**. „Verifiziert“ im Sinne von „endgültig bewiesen“ zu verwenden, ist ein typischer Fehler.",
+   "positionen": "",
+   "links": [
+    "falsifikation",
+    "induktion",
+    "korrespondenz",
+    "subjektiv-objektiv"
+   ],
+   "personen": [
+    "schlick",
+    "carnap"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Verifikation und Falsifikation (Schlick, Carnap, Popper)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/06.%20AB%20-%20Verifikation%20und%20Falsifikation.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Verifikation und Falsifikation",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/06.%20TB%20-%20Verifikation%20und%20Falsifikation.pdf"
+    }
+   ]
+  },
+  "falsifikation": {
+   "name": "Falsifikation (Popper)",
+   "kurz": "Falsifikation",
+   "icon": "schliessen",
+   "erkl": "**Falsifikation** ist der **Versuch, eine Aussage durch Beobachtung zu widerlegen**. **Karl Popper** zieht damit die Konsequenz aus dem Induktionsproblem: Theorien lassen sich nie endgültig beweisen, aber sie können **widerlegt** werden. Die wissenschaftliche Methode besteht deshalb in **Falsifikationsversuchen**: Jede Theorie wird so streng wie möglich geprüft, um ihre **Schwächen** zu finden. Sein **Abgrenzungskriterium**: Eine Theorie gehört nur dann zur **Erfahrungswissenschaft**, wenn sie **falsifizierbar** ist, also an möglichen Erfahrungen scheitern kann. Eine Theorie, die viele Widerlegungsversuche übersteht, gilt als **bewährt**, aber nie als endgültig wahr.",
+   "beispiel": "„Impfung schützt vor Blattern“ ist falsifizierbar: Erkranken Geimpfte genauso oft wie Ungeimpfte, ist die Theorie widerlegt. In der Doku „Behind the Curve“ wollen Anhänger der flachen Erde ihre Theorie mit einem Lichtexperiment beweisen und widerlegen sie dabei selbst.",
+   "achtung": "Falsifizierbar heißt **nicht falsch**, sondern **prüfbar**: Eine gute wissenschaftliche Theorie sagt genau, welche Beobachtung sie widerlegen würde. Nicht falsifizierbar ist z. B. „Morgen regnet es oder es regnet nicht“.",
+   "positionen": "Popper sieht selbst ein Problem: Man kann eine Theorie gegen Widerlegungen **immunisieren**, z. B. durch **Hilfshypothesen** („Der Impfstoff war wohl verdorben“). Ob die Falsifizierbarkeit allein ausreicht, um Wissenschaft zu bestimmen, ist umstritten.",
+   "links": [
+    "verifikation",
+    "induktion",
+    "deduktion"
+   ],
+   "personen": [
+    "popper"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Verifikation und Falsifikation (Schlick, Carnap, Popper)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/06.%20AB%20-%20Verifikation%20und%20Falsifikation.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Verifikation und Falsifikation",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/06.%20TB%20-%20Verifikation%20und%20Falsifikation.pdf"
+    }
+   ]
+  },
+  "platon-medienkritik": {
+   "name": "Platons Medienkritik (Phaidros)",
+   "kurz": "Platons Medienkritik",
+   "icon": "buch",
+   "erkl": "Im Dialog **Phaidros** fragt Sokrates, ob die **Schrift** eine nützliche Erfindung ist. In einem Mythos stellt der Gott **Theuth** die Buchstaben König **Thamus** vor: Sie sollen die Menschen weiser und gedächtnisreicher machen. Thamus widerspricht. Die Kritikpunkte: 1. Die Schrift bewirkt das **Gegenteil**: Wer sich auf sie verlässt, **vergisst**, statt sich zu erinnern. 2. Sie erzeugt **Scheinwissen**: Leser werden zu „Vielwissern“ ohne echtes Verständnis (**Scheinweise**). 3. Geschriebenes **verbreitet sich** überall, auch bei denen, die es nicht verstehen. 4. Ein Text kann auf Nachfragen **nicht antworten**, er braucht immer seinen **Autor** zum Erklären. 5. Die Schrift ist **nicht nachhaltig**: Echtes Wissen wird im **lebendigen Gespräch** „in die Seele geschrieben“.",
+   "beispiel": "Lejla lässt sich die Korrespondenztheorie von einem **KI-Chatbot** erklären. Die Antwort klingt souverän, doch eine genannte Quelle existiert nicht. Lejla meint: „Der Chatbot weiß das doch.“ Wer Antworten nur kopiert, ohne sie zu prüfen, wird zum „Scheinexperten“. Anders als ein Buch kann der Chatbot aber auf Nachfragen antworten.",
+   "achtung": "Platon behauptet **nicht**, dass Geschriebenes **falsch** ist. Seine Kritik ist vor allem **epistemisch**: Die Leser **wissen** es nicht wirklich, weil sie es nicht selbst begründen und prüfen können.",
+   "positionen": "Ist Platons Kritik heute aktuell? Dafür: Kopieren ohne Nachdenken, Fachbegriffe ohne Inhalt, Quellen, die niemand prüft. Dagegen: Schrift und digitale Medien machen Wissen **für viele zugänglich**, und ein Dialog mit einer KI kann auch **beim Lernen helfen**. Entscheidend bleibt, **Quellen und Antworten selbst zu bewerten**. Übrigens äußert Platon seine Kritik selbst in einem geschriebenen Text, allerdings in Form eines **Dialogs**.",
+   "links": [
+    "ontologie-epistemologie",
+    "meinen-glauben-wissen",
+    "hoehlengleichnis",
+    "ideenlehre"
+   ],
+   "personen": [
+    "platon"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Platon: Phaidros (Über die Schrift)",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/12.%20AB%20-%20Platons%20Medienkritik.pdf"
+    },
+    {
+     "typ": "tb",
+     "titel": "TB Platons Medienkritik",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/12.%20TB%20-%20Platons%20Medienkritik.pdf"
+    }
+   ]
+  },
+  "ontologie-epistemologie": {
+   "name": "Ontologie und Epistemologie (Wahrheit und Wissen)",
+   "kurz": "Ontologie und Epistemologie",
+   "icon": "lupe",
+   "erkl": "Zwei Ebenen muss man auseinanderhalten. Die **Ontologie** (griech. on: das Seiende) ist die **Lehre vom Sein**. Ihre Leitfrage: **Was ist wirklich so?** Auf dieser Ebene entscheidet sich, ob eine Aussage **wahr** ist: Sie ist wahr, wenn die Wirklichkeit so ist, wie sie sagt (Korrespondenztheorie). Die **Epistemologie** (griech. episteme: Wissen) ist die **Erkenntnistheorie**. Ihre Leitfrage: **Was können wir wissen, und wie begründen wir es?** Auf dieser Ebene entscheidet sich, ob wir eine Aussage **wissen**: nach Kant nur, wenn sie **subjektiv und objektiv zureichend** begründet ist. Merksatz: **Etwas kann wahr sein, ohne dass wir es wissen. Und wir können uns sicher sein, obwohl es falsch ist.**",
+   "beispiel": "„Aale legen Eier“ ist eine ontologische Aussage: Sie ist wahr oder falsch, ob es jemand weiß oder nicht. „Eberhard war sich seiner Deutung sicher“ betrifft die epistemische Ebene: Gewissheit allein ist noch kein Wissen.",
+   "achtung": "Typische Fehler: „Das ist nicht wahr, weil man es nicht beweisen kann.“ Besser: **Unbewiesen heißt nicht falsch.** Oder: „Medien lügen, also gibt es keine Wahrheit.“ Besser: Medien können Falsches verbreiten, die **Wahrheit selbst hängt aber nicht von ihnen ab**.",
+   "positionen": "",
+   "links": [
+    "meinen-glauben-wissen",
+    "korrespondenz",
+    "wahrheitstheorien",
+    "platon-medienkritik"
+   ],
+   "personen": [
+    "kant"
+   ],
+   "material": [
+    {
+     "typ": "ab",
+     "titel": "AB Wahrheit oder Wissen? Ontologie und Epistemologie",
+     "url": "https://kgslaatzen.eu/iserv/file/-/Groups/Sek2%207wn71%20KUG/03.%20Wahrheit%20und%20Wirklichkeit/13.%20AB%20-%20Wahrheit%20und%20Wissen.pdf"
+    }
+   ]
   }
  },
  "personen": {
   "kant": {
    "name": "Immanuel Kant",
    "daten": "1724 bis 1804",
-   "idee": "Philosoph der Aufklärung aus Königsberg. Begründer der modernen Pflichtethik: Moralisch wertvoll ist nur, was aus Pflicht und gutem Willen geschieht. Sein oberstes Moralprinzip ist der kategorische Imperativ. Aus der Autonomie des Menschen folgt seine Würde.",
+   "idee": "Philosoph der Aufklärung aus Königsberg. Begründer der modernen **Pflichtethik**: Moralisch wertvoll ist nur, was aus **Pflicht** und **gutem Willen** geschieht. Sein oberstes Moralprinzip ist der **kategorische Imperativ**. Aus der **Autonomie** des Menschen folgt seine **Würde**. In der Erkenntnistheorie unterscheidet er **Meinen, Glauben und Wissen**.",
    "begriffe": [
     "deontologie",
     "guter-wille",
@@ -1940,14 +2720,16 @@
     "legalitaet",
     "vernunft",
     "selbstreflexivitaet",
-    "schuld-strafe"
+    "schuld-strafe",
+    "meinen-glauben-wissen",
+    "ontologie-epistemologie"
    ],
-   "auch": "Kant begegnet dir auch bei Wahrheit und Wirklichkeit (Meinen, Glauben, Wissen) und in der Anthropologie (der Mensch als Vernunftwesen)."
+   "auch": "Kant begegnet dir in allen drei Rahmenthemen: in der Ethik (Pflichtethik), in der Anthropologie (der Mensch als Vernunftwesen) und bei Wahrheit und Wirklichkeit (Meinen, Glauben, Wissen)."
   },
   "bentham": {
    "name": "Jeremy Bentham",
    "daten": "1748 bis 1832",
-   "idee": "Englischer Philosoph und Jurist, Begründer des klassischen Utilitarismus. Er vertritt einen quantitativen Hedonismus: Alle Freuden sind gleichwertig, Lust und Leid lassen sich mit dem hedonistischen Kalkül berechnen.",
+   "idee": "Englischer Philosoph und Jurist, Begründer des klassischen **Utilitarismus**. Er vertritt einen **quantitativen Hedonismus**: Alle Freuden sind gleichwertig, Lust und Leid lassen sich mit dem **hedonistischen Kalkül** berechnen.",
    "begriffe": [
     "utilitarismus",
     "arten-util",
@@ -1959,7 +2741,7 @@
   "mill": {
    "name": "John Stuart Mill",
    "daten": "1806 bis 1873",
-   "idee": "Englischer Philosoph, Schüler Benthams. Er entwickelt den qualitativen Utilitarismus: Es gibt höhere (geistige) und niedere (körperliche) Freuden, die höheren zählen mehr.",
+   "idee": "Englischer Philosoph, Schüler Benthams. Er entwickelt den **qualitativen Utilitarismus**: Es gibt **höhere** (geistige) und **niedere** (körperliche) Freuden, die höheren zählen mehr.",
    "begriffe": [
     "utilitarismus",
     "arten-util"
@@ -1969,18 +2751,23 @@
   "aristoteles": {
    "name": "Aristoteles",
    "daten": "384 bis 322 v. Chr.",
-   "idee": "Griechischer Philosoph, Schüler Platons. In der Nikomachischen Ethik ist das Ziel des Menschen die Eudaimonia, das gelingende Leben. Tugenden erwirbt man durch Gewohnheit, sie liegen in der richtigen Mitte (Mesotes).",
+   "idee": "Griechischer Philosoph, Schüler Platons. In der **Nikomachischen Ethik** ist das Ziel des Menschen die **Eudaimonia**, das gelingende Leben. **Tugenden** erwirbt man durch **Gewohnheit**, sie liegen in der richtigen **Mitte** (Mesotes). Den Menschen bestimmt er als **vernunftbegabtes Gemeinschaftswesen** (zoon logon echon, zoon politikon).",
    "begriffe": [
     "tugendethik",
+    "eudaimonia",
+    "tugenden",
+    "mesotes",
+    "kardinaltugenden",
     "seelenlehre",
-    "vernunft"
+    "vernunft",
+    "ideenlehre"
    ],
-   "auch": "Aristoteles kommt auch in der Anthropologie vor: Seelenlehre (Hylemorphismus) und der Mensch als vernunftbegabtes Gemeinschaftswesen (zoon logon echon, zoon politikon). Bei den Lebensentwürfen begegnet er dir beim Thema Glück (Eudämonismus)."
+   "auch": "Bei den Lebensentwürfen begegnet dir Aristoteles beim Thema Glück (Eudämonismus)."
   },
   "hoeffe": {
    "name": "Otfried Höffe",
    "daten": "geb. 1943",
-   "idee": "Deutscher Philosoph. Er kritisiert Benthams hedonistisches Kalkül: Glück sei nicht messbar und zwischen Menschen nicht vergleichbar.",
+   "idee": "Deutscher Philosoph. Er kritisiert Benthams **hedonistisches Kalkül**: Glück sei **nicht messbar** und zwischen Menschen **nicht vergleichbar**.",
    "begriffe": [
     "kalkuel"
    ],
@@ -1989,21 +2776,23 @@
   "loew": {
    "name": "Reinhard Löw",
    "daten": "1949 bis 1994",
-   "idee": "Deutscher Philosoph. Das Menschsein beginnt für ihn mit der Befruchtung. Einziges zweifelsfreies Kriterium sei die biologische Zugehörigkeit zur Gattung Mensch.",
+   "idee": "Deutscher Philosoph. Das Menschsein beginnt für ihn mit der **Befruchtung**. Einziges zweifelsfreies Kriterium sei die **biologische Zugehörigkeit zur Gattung Mensch**.",
    "begriffe": [
     "beginn-leben",
-    "spezies"
+    "spezies",
+    "embryonenforschung"
    ],
    "auch": ""
   },
   "singer": {
    "name": "Peter Singer",
    "daten": "geb. 1946",
-   "idee": "Australischer Philosoph, Vertreter des Präferenzutilitarismus. Moralisch zählen Interessen, Empfindungsfähigkeit und Bewusstsein, nicht die Spezies. Wer Menschen allein wegen ihrer Spezies bevorzugt, betreibt laut Singer Speziesismus.",
+   "idee": "Australischer Philosoph, Vertreter des **Präferenzutilitarismus**. Moralisch zählen **Interessen**, **Empfindungsfähigkeit** und **Bewusstsein**, nicht die Spezies. Wer Menschen allein wegen ihrer Spezies bevorzugt, betreibt laut Singer **Speziesismus**.",
    "begriffe": [
     "arten-util",
     "beginn-leben",
-    "spezies"
+    "spezies",
+    "embryonenforschung"
    ],
    "achtung": "Nicht verwechseln mit **Wolf Singer**, dem Hirnforscher aus der Anthropologie (neurobiologischer Determinismus).",
    "auch": ""
@@ -2011,18 +2800,22 @@
   "platon": {
    "name": "Platon",
    "daten": "428/427 bis 348/347 v. Chr.",
-   "idee": "Griechischer Philosoph, Schüler des Sokrates. Er ist Dualist: Leib und Seele sind trennbar, die Seele ist unsterblich, der Körper vergänglich. Der Tod ist die Trennung der Seele vom Leib. Die Seele hat drei Teile: vernünftig, mutartig und begehrend.",
+   "idee": "Griechischer Philosoph, Schüler des Sokrates. Er ist **Dualist**: Leib und Seele sind trennbar, die **Seele ist unsterblich**, der Körper vergänglich. Die Seele hat **drei Teile**: vernünftig, mutartig und begehrend. In seiner **Ideenlehre** unterscheidet er die Sinnenwelt von der wahren **Ideenwelt** (**Höhlengleichnis**). Im Phaidros kritisiert er die **Schrift** als Quelle von Scheinwissen.",
    "begriffe": [
     "seelenlehre",
     "dualismus",
-    "leib-seele-problem"
+    "leib-seele-problem",
+    "kardinaltugenden",
+    "ideenlehre",
+    "hoehlengleichnis",
+    "platon-medienkritik"
    ],
-   "auch": "Platon begegnet dir auch bei Wahrheit und Wirklichkeit (Ideenlehre, Medienkritik)."
+   "auch": ""
   },
   "descartes": {
    "name": "René Descartes",
    "daten": "1596 bis 1650",
-   "idee": "Französischer Philosoph und Mathematiker. Durch methodischen Zweifel gelangt er zur unbezweifelbaren Gewissheit „Ich denke, also bin ich“. Er vertritt einen Substanzdualismus: Der Mensch besteht aus denkendem Geist (res cogitans) und ausgedehntem Körper (res extensa).",
+   "idee": "Französischer Philosoph und Mathematiker. Durch **methodischen Zweifel** gelangt er zur unbezweifelbaren Gewissheit „**Ich denke, also bin ich**“. Er vertritt einen **Substanzdualismus**: Der Mensch besteht aus denkendem Geist (**res cogitans**) und ausgedehntem Körper (**res extensa**).",
    "begriffe": [
     "dualismus",
     "leib-seele-problem"
@@ -2032,8 +2825,9 @@
   "lenk": {
    "name": "Hans Lenk",
    "daten": "geb. 1935",
-   "idee": "Deutscher Philosoph. Zwischen Mensch und Tier besteht nur ein Gradunterschied, allerdings ein riesengroßer: Alle Fähigkeiten des Menschen finden sich in Ansätzen auch bei Tieren, beim Menschen sind sie aber in viel höherem Grad ausgeprägt.",
+   "idee": "Deutscher Philosoph. Zwischen Mensch und Tier besteht nur ein **Gradunterschied**, allerdings ein **riesengroßer**: Alle Fähigkeiten des Menschen finden sich in Ansätzen auch bei Tieren, beim Menschen sind sie aber in viel höherem Grad ausgeprägt.",
    "begriffe": [
+    "differenz-lenk",
     "anthropologische-differenz"
    ],
    "auch": ""
@@ -2041,8 +2835,9 @@
   "rensch": {
    "name": "Bernhard Rensch",
    "daten": "1900 bis 1990",
-   "idee": "Deutscher Evolutionsbiologe. Der Mensch ist aus dem Tierreich hervorgegangen und unterscheidet sich anatomisch kaum von Menschenaffen. Durch abstraktes Denken, Sprache und eine materielle und geistige Kultur ist er aber prinzipiell etwas Neues.",
+   "idee": "Deutscher **Evolutionsbiologe**. Der Mensch ist aus dem Tierreich hervorgegangen und unterscheidet sich anatomisch kaum von Menschenaffen. Durch **abstraktes Denken**, **Sprache** und eine **materielle und geistige Kultur** ist er aber **prinzipiell** etwas Neues.",
    "begriffe": [
+    "differenz-rensch",
     "anthropologische-differenz",
     "evolution-mensch"
    ],
@@ -2051,8 +2846,9 @@
   "kern": {
    "name": "Andrea Kern",
    "daten": "Philosophin der Gegenwart",
-   "idee": "Deutsche Philosophin. Sie kritisiert die Prämisse, der Mensch unterscheide sich durch eine einzelne zusätzliche Fähigkeit vom Tier. Der Unterschied liegt in der besonderen Einheit und im Zusammenspiel aller menschlichen Fähigkeiten.",
+   "idee": "Deutsche Philosophin. Sie kritisiert die Prämisse, der Mensch unterscheide sich durch eine einzelne **zusätzliche Fähigkeit** vom Tier („**Tier + X**“). Der Unterschied liegt in der besonderen **Einheit** und im **Zusammenspiel aller menschlichen Fähigkeiten**.",
    "begriffe": [
+    "differenz-kern",
     "anthropologische-differenz"
    ],
    "auch": ""
@@ -2060,7 +2856,7 @@
   "scheler": {
    "name": "Max Scheler",
    "daten": "1874 bis 1928",
-   "idee": "Deutscher Philosoph, Mitbegründer der modernen philosophischen Anthropologie („Die Stellung des Menschen im Kosmos“, 1928). Durch den Geist hat der Mensch eine Sonderstellung: Er ist weltoffen und kann sich von seiner Umwelt distanzieren.",
+   "idee": "Deutscher Philosoph, Mitbegründer der modernen **philosophischen Anthropologie** („Die Stellung des Menschen im Kosmos“, 1928). Durch den **Geist** hat der Mensch eine **Sonderstellung**: Er ist **weltoffen** und kann sich von seiner Umwelt distanzieren.",
    "begriffe": [
     "weltoffenheit"
    ],
@@ -2069,7 +2865,7 @@
   "plessner": {
    "name": "Helmuth Plessner",
    "daten": "1892 bis 1985",
-   "idee": "Deutscher Philosoph und Soziologe. Das Tier lebt zentrisch, ganz in seiner Umwelt. Der Mensch lebt exzentrisch: Er kann zu sich selbst und seinem Leben Stellung nehmen. Er muss sich erst zu dem machen, was er ist, und bleibt sich selbst eine offene Frage.",
+   "idee": "Deutscher Philosoph und Soziologe. Das Tier lebt **zentrisch**, ganz in seiner Umwelt. Der Mensch lebt **exzentrisch**: Er kann zu sich selbst und seinem Leben **Stellung nehmen**. Er muss sich erst zu dem machen, was er ist, und bleibt sich selbst eine offene Frage.",
    "begriffe": [
     "selbstreflexivitaet",
     "weltoffenheit"
@@ -2079,7 +2875,7 @@
   "gehlen": {
    "name": "Arnold Gehlen",
    "daten": "1904 bis 1976",
-   "idee": "Deutscher Philosoph und Soziologe. Der Mensch ist ein instinktarmes Mängelwesen. Er gleicht seine körperlichen Mängel durch Lernfähigkeit, Weltoffenheit und Kultur aus. Institutionen wie Sprache, Normen und Technik entlasten ihn und geben ihm Halt.",
+   "idee": "Deutscher Philosoph und Soziologe. Der Mensch ist ein **instinktarmes Mängelwesen**. Er gleicht seine körperlichen Mängel durch **Lernfähigkeit**, **Weltoffenheit** und **Kultur** aus. **Institutionen** wie Sprache, Normen und Technik **entlasten** ihn und geben ihm Halt.",
    "begriffe": [
     "weltoffenheit"
    ],
@@ -2088,7 +2884,7 @@
   "freud": {
    "name": "Sigmund Freud",
    "daten": "1856 bis 1939",
-   "idee": "Wiener Arzt und Neurologe, Begründer der Psychoanalyse. Der Mensch ist ein psychisch bestimmtes Wesen: Sein Verhalten wird weitgehend von unbewussten Trieben gesteuert. Die Psyche beschreibt er im Instanzenmodell aus Es, Ich und Über-Ich.",
+   "idee": "Wiener Arzt und Neurologe, Begründer der **Psychoanalyse**. Der Mensch ist ein psychisch bestimmtes Wesen: Sein Verhalten wird weitgehend von **unbewussten Trieben** gesteuert. Die Psyche beschreibt er im **Instanzenmodell** aus **Es**, **Ich** und **Über-Ich**.",
    "begriffe": [
     "psychoanalyse",
     "instanzenmodell",
@@ -2103,7 +2899,7 @@
   "w-singer": {
    "name": "Wolf Singer",
    "daten": "geb. 1943",
-   "idee": "Deutscher Hirnforscher. Er vertritt einen neurobiologischen Determinismus: Entscheidungen beruhen auf neuronalen Prozessen, die Naturgesetzen folgen, ob sie uns bewusst sind oder nicht. Er fordert deshalb eine Abkehr vom Schuldprinzip: „Keiner kann anders, als er ist.“",
+   "idee": "Deutscher Hirnforscher. Er vertritt einen **neurobiologischen Determinismus**: Entscheidungen beruhen auf **neuronalen Prozessen**, die Naturgesetzen folgen, ob sie uns bewusst sind oder nicht. Er fordert deshalb eine **Abkehr vom Schuldprinzip**: „Keiner kann anders, als er ist.“",
    "begriffe": [
     "neuro-determinismus",
     "determinismus",
@@ -2115,7 +2911,7 @@
   "libet": {
    "name": "Benjamin Libet",
    "daten": "1916 bis 2007",
-   "idee": "US-amerikanischer Neurophysiologe. Seine Experimente in den 1980er Jahren zeigen, dass das Bereitschaftspotenzial im Gehirn vor der bewussten Entscheidung einsetzt. Libet selbst hielt am freien Willen fest: Der Mensch könne eine angebahnte Handlung bewusst stoppen (Veto).",
+   "idee": "US-amerikanischer Neurophysiologe. Seine Experimente in den 1980er Jahren zeigen, dass das **Bereitschaftspotenzial** im Gehirn **vor der bewussten Entscheidung** einsetzt. Libet selbst hielt am freien Willen fest: Der Mensch könne eine angebahnte Handlung bewusst stoppen (**Veto**).",
    "begriffe": [
     "libet",
     "libet-kritik"
@@ -2125,7 +2921,7 @@
   "pauen": {
    "name": "Michael Pauen",
    "daten": "geb. 1956",
-   "idee": "Deutscher Philosoph (Berlin). Er bestreitet, dass die Libet-Experimente die Willensfreiheit widerlegen: Der gemessene „Drang“ ist keine Entscheidung, und es gab keine echten Alternativen. Freiheit versteht er als Selbstbestimmung (Kompatibilismus).",
+   "idee": "Deutscher Philosoph (Berlin). Er bestreitet, dass die **Libet-Experimente** die Willensfreiheit widerlegen: Der gemessene „Drang“ ist **keine Entscheidung**, und es gab **keine echten Alternativen**. Freiheit versteht er als **Selbstbestimmung** (Kompatibilismus).",
    "begriffe": [
     "libet-kritik",
     "kompatibilismus"
@@ -2135,7 +2931,7 @@
   "roth": {
    "name": "Gerhard Roth",
    "daten": "1942 bis 2023",
-   "idee": "Deutscher Hirnforscher und Philosoph. Geist und Bewusstsein lassen sich naturwissenschaftlich als physische Zustände beschreiben, die sich in die Natur einfügen. Die Willensfreiheit hält er für eine Illusion.",
+   "idee": "Deutscher Hirnforscher und Philosoph. Geist und Bewusstsein lassen sich **naturwissenschaftlich** als **physische Zustände** beschreiben, die sich in die Natur einfügen. Die **Willensfreiheit** hält er für eine **Illusion**.",
    "begriffe": [
     "roth-bieri",
     "neuro-determinismus",
@@ -2146,7 +2942,7 @@
   "bieri": {
    "name": "Peter Bieri",
    "daten": "1944 bis 2023",
-   "idee": "Schweizer Philosoph und Schriftsteller (Pseudonym Pascal Mercier). Freiheit gehört zur Beschreibung von Personen, nicht zur Neurobiologie. Wer im Gehirn nach Freiheit sucht, begeht einen Kategorienfehler. Er vertritt eine bedingte Freiheit (Kompatibilismus).",
+   "idee": "Schweizer Philosoph und Schriftsteller (Pseudonym Pascal Mercier). Freiheit gehört zur Beschreibung von **Personen**, nicht zur Neurobiologie. Wer im Gehirn nach Freiheit sucht, begeht einen **Kategorienfehler**. Er vertritt eine **bedingte Freiheit** (Kompatibilismus).",
    "begriffe": [
     "roth-bieri",
     "kompatibilismus"
@@ -2156,13 +2952,84 @@
   "dahrendorf": {
    "name": "Ralf Dahrendorf",
    "daten": "1929 bis 2009",
-   "idee": "Deutsch-britischer Soziologe und Politiker. In „Homo sociologicus“ (1958) beschreibt er den Menschen als Träger sozialer Rollen: Die Gesellschaft legt Verhaltenserwartungen fest, Abweichungen werden sanktioniert. Sozialisation bedeutet für ihn auch Entpersönlichung.",
+   "idee": "Deutsch-britischer Soziologe und Politiker. In „**Homo sociologicus**“ (1958) beschreibt er den Menschen als **Träger sozialer Rollen**: Die Gesellschaft legt **Verhaltenserwartungen** fest, Abweichungen werden **sanktioniert**. Sozialisation bedeutet für ihn auch **Entpersönlichung**.",
    "begriffe": [
     "soziale-rolle",
     "rollenerwartungen",
     "rollenkonflikt"
    ],
    "auch": "Dahrendorfs Rollentheorie ist verbindliche Abiturvorgabe 2027."
+  },
+  "moore": {
+   "name": "George Edward Moore",
+   "daten": "1873 bis 1958",
+   "idee": "Englischer Philosoph, einer der Väter der **analytischen Philosophie**. Er vertritt die **Korrespondenztheorie**: Eine Meinung ist wahr, wenn es im Universum eine **Tatsache** gibt, mit der sie **übereinstimmt**.",
+   "begriffe": [
+    "korrespondenz",
+    "wahrheitstheorien"
+   ],
+   "auch": "In der Ethik prägte Moore den Begriff **naturalistischer Fehlschluss**, der eng mit dem Sein-Sollen-Fehlschluss verwandt ist."
+  },
+  "james": {
+   "name": "William James",
+   "daten": "1842 bis 1910",
+   "idee": "US-amerikanischer Philosoph und Psychologe (Harvard), Hauptvertreter des **Pragmatismus**. Wahrheit ist für ihn ein **Mittel zum Handeln**: Eine Meinung ist wahr, wenn sie uns hilft, **dauerhaft** erfolgreich mit der Wirklichkeit umzugehen. Wahrheit ist kein fester Zustand, sondern ein **Prozess der Bewährung**.",
+   "begriffe": [
+    "pragmatisch",
+    "korrespondenz",
+    "wahrheitstheorien"
+   ],
+   "auch": ""
+  },
+  "davidson": {
+   "name": "Donald Davidson",
+   "daten": "1917 bis 2003",
+   "idee": "US-amerikanischer Philosoph. Er vertritt eine **Kohärenztheorie** der Wahrheit und Erkenntnis: Als Grund für eine Meinung kommt nur eine **andere Meinung** in Frage. Eine Meinung ist umso wahrscheinlicher wahr, je umfassender das **widerspruchsfreie Meinungssystem** ist, zu dem sie passt.",
+   "begriffe": [
+    "kohaerenz",
+    "wahrheitstheorien"
+   ],
+   "auch": ""
+  },
+  "habermas": {
+   "name": "Jürgen Habermas",
+   "daten": "geb. 1929",
+   "idee": "Deutscher Philosoph und Soziologe (Frankfurter Schule). Nach seiner **Konsens- oder Diskurstheorie** ist wahr, worauf sich alle in einem **herrschaftsfreien Diskurs** unter idealen Bedingungen (**ideale Sprechsituation**) begründet einigen könnten. Es zählt allein der **zwanglose Zwang des besseren Arguments**.",
+   "begriffe": [
+    "konsens",
+    "wahrheitstheorien",
+    "weltoffenheit"
+   ],
+   "auch": "In der Anthropologie begegnet dir Habermas als Kritiker von Gehlens Institutionenlehre."
+  },
+  "schlick": {
+   "name": "Moritz Schlick",
+   "daten": "1882 bis 1936",
+   "idee": "Deutscher Philosoph und Physiker, Begründer des **Wiener Kreises** (logischer Empirismus). Ob eine Aussage wahr ist, wird durch **Beobachtung** festgestellt (**Verifikation**). Er kritisiert die **Kohärenztheorie**: Sonst wäre auch ein widerspruchsfreies **Märchen** wahr.",
+   "begriffe": [
+    "verifikation",
+    "kohaerenz"
+   ],
+   "auch": ""
+  },
+  "carnap": {
+   "name": "Rudolf Carnap",
+   "daten": "1891 bis 1970",
+   "idee": "Deutsch-amerikanischer Philosoph des **Wiener Kreises**. Naturgesetze beruhen immer nur auf **endlich vielen Beobachtungen**. Eine **vollständige Verifikation** ist daher unmöglich, man kann nur von **Bestätigung** sprechen.",
+   "begriffe": [
+    "verifikation"
+   ],
+   "auch": ""
+  },
+  "popper": {
+   "name": "Karl Popper",
+   "daten": "1902 bis 1994",
+   "idee": "Österreichisch-britischer Philosoph, Begründer des **kritischen Rationalismus**. Theorien lassen sich nicht beweisen, aber **widerlegen**. Wissenschaftlich ist eine Theorie nur, wenn sie **falsifizierbar** ist (**Abgrenzungskriterium**).",
+   "begriffe": [
+    "falsifikation",
+    "induktion"
+   ],
+   "auch": ""
   }
  },
  "allgemein": [

@@ -27,7 +27,8 @@ Die Lehrkraft (Jazz) arbeitet als Co-Lehrkraft mit Claude: Ergebnisse sollen did
 - IServ selbst blockiert JavaScript; deshalb läuft die Matrix auf GitHub Pages, in IServ liegt nur ein Link darauf.
 - Fachliche Erklärungen sind Entwürfe, bis die Lehrkraft sie freigibt. Rechtsstand (§§ 216, 218, 219 StGB, Suizidhilfe) vor Änderungen aktuell recherchieren.
 - Gestaltung: sachlich, klare serifenlose Schrift, Großbuchstaben mit Sperrung für Überschriften, keine verspielten Schriften, nicht überfrachten. Überblick und Clustern stehen im Vordergrund.
-- Pflicht- und Wahlmodul farblich absetzen: Pflicht-Cluster in kräftigen Tönen der Themenfarbe, Wahl-Cluster hell getönt mit farbigem Rand (Halbkreis, Legende, Badge, Clusterbereich).
+- Pflicht- und Wahlmodul farblich absetzen: Pflicht-Cluster in dunklen, kräftigen Tönen der Themenfarbe, Wahl-Cluster in hellen, vollen Tönen ohne Rand (Halbkreis, Badge, Clusterbereich). Die Beschriftung im Halbkreis nennt das Modul, eine zusätzliche Legende gibt es nicht. Der aktive Cluster wird durch einen Bogen außen markiert, nicht durch Vergrößern (sonst verrutschen die Symbole).
+- Personenkacheln: ohne Symbol, mit Tags der zugehörigen Begriffe, jeweils in der Farbe ihres Rahmenthemas.
 - Kartentexte: Wichtige Fachbegriffe in der Erklärung **fett**. Beispiele gehören ins Feld `beispiel` (grüner Kasten), nicht in Erklärung oder Achtung. `achtung` (orange) nur für echte Fehlerquellen und Verwechslungen. Kritik und Einwände gehören in `positionen`.
 
 ## Fachliche Grundlagen
@@ -38,18 +39,18 @@ Die Lehrkraft (Jazz) arbeitet als Co-Lehrkraft mit Claude: Ergebnisse sollen did
 - Lücken im Unterricht bekommen trotzdem eine normale Karte (Erklärung, ggf. Video), ohne besondere Markierung.
 
 ## Stand (27.11.2026)
-- Ethik ist vollständig (34 Begriffe, 7 Cluster, 7 Personen).
-- Anthropologie ist als Entwurf aufgebaut (31 Begriffe, 7 Cluster, 16 neue Personen): Wesen des Menschen, Leib und Seele, Freiheit und Determinismus (Pflicht); Psychoanalyse (Freud), Hirnforschung, Soziale Rolle (Dahrendorf), Evolutionsbiologie (Wahl). Texte warten auf Freigabe durch die Lehrkraft. Zeitlichkeit (nur eA) ist bewusst nicht enthalten.
-- Wahrheit und Wirklichkeit ist angelegt, aber leer (`aktiv: false`).
+- Ethik ist vollständig (43 Begriffe, 7 Cluster). Neu als Entwurf: Tugendethik aufgeteilt (Eudaimonia, Tugenden, Mesotes, Kardinaltugenden; Link zur Spektrum-Kolumne entfernt, ggf. später Video), Biotechnologie aufgeteilt (Genom-Editierung, PID, Klonen, Embryonenforschung, Embryonenschutzgesetz; Rechtsstand recherchiert November 2026).
+- Anthropologie ist als Entwurf aufgebaut (35 Begriffe, 7 Cluster): Wesen des Menschen, Leib und Seele, Freiheit und Determinismus (Pflicht); Psychoanalyse (Freud), Hirnforschung, Soziale Rolle (Dahrendorf), Evolutionsbiologie (Wahl). Anthropologische Differenz hat eigene Karten für Lenk, Rensch und Kern; Sein-Sollen-Fehlschluss unter Evolutionsbiologie. Texte warten auf Freigabe durch die Lehrkraft. Zeitlichkeit (nur eA) ist bewusst nicht enthalten.
+- Wahrheit und Wirklichkeit ist als Entwurf aufgebaut (16 Begriffe, 5 Cluster, 7 neue Personen): Wahrheit und Wissen, Wahrheitstheorien, Platons Ideenlehre, Wissenschaftliche Erkenntnis (Pflicht); Wahrheit in den Medien (Wahl, läuft gerade erst: bisher Platons Medienkritik, Ontologie und Epistemologie). Übungsklausuren und Erwartungshorizonte sind bewusst nicht verlinkt.
 - Lokale Materialkopien liegen derzeit in `material/` (nicht `materialien/`); beide Ordner sind per .gitignore ausgeschlossen.
 - Lücken gegenüber dem KC, die in der Matrix abgedeckt werden sollen:
   - Anthropologie: erledigt (Monismus, Selbstreflexivität, Indeterminismus, Evolutionsbiologie als Karten; Evolutionsbiologie, Indeterminismus und Handlungs-/Willensfreiheit ohne eigenes Material).
   - Ethik: erledigt (Tugendethik, Legalität/Moralität, PND, Biotechnologie als Karten ohne Material).
-  - Wahrheit und Wirklichkeit: Subjektivität/Objektivität/Intersubjektivität; kultur- und gesellschaftsspezifische Zugänge zu Wahrheit; Medienmodul läuft noch (bisher Platons Medienkritik, Ontologie/Epistemologie).
+  - Wahrheit und Wirklichkeit: Subjektivität/Objektivität/Intersubjektivität und kulturelle Zugänge zu Wahrheit als Karten ohne Material angelegt; Medienmodul mit dem Unterricht ergänzen.
 - Videos: bisher nur wenige; neue Videovorschläge der Lehrkraft zur Freigabe vorlegen.
 
 ## Nächste Schritte
 1. Lehrkraft testet Schülerseite, Lehrerbereich (echter Token) und Materiallinks mit Umlauten.
-2. Anthropologie aus den Materialien in `materialien/` aufbauen (gleiches Schema, eigene Cluster, z. B. Wesen des Menschen, Leib und Seele, Freiheit und Determinismus, Menschenbilder in den Wissenschaften).
-3. Wahrheit und Wirklichkeit ebenso; Medienmodul mit dem Unterricht wachsen lassen.
+2. Lehrkraft prüft und gibt die Entwürfe frei (Anthropologie, neue Ethik-Karten, Wahrheit und Wirklichkeit).
+3. Medienmodul (Wahrheit in den Medien) mit dem Unterricht wachsen lassen.
 4. Brückenbegriffe zwischen Rahmenthemen (z. B. Kant, Menschenwürde, Singer ≠ Wolf Singer) über `links` und Personen sichtbar machen.

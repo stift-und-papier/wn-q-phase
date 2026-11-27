@@ -1,4 +1,4 @@
-import { icon, iconPfad, esc, fmt, hell, FARBEN, MATERIAL_TYPEN } from './icons.js';
+import { icon, iconPfad, esc, fmt, hell, mische, FARBEN, MATERIAL_TYPEN } from './icons.js';
 
 let D = null;            // Daten aus data/matrix.json
 let aktivRT = null;      // id des Rahmenthemas
@@ -71,22 +71,28 @@ function halbkreis(r) {
   const mitText = !schmal();
   const H = 540, cx = 100, cy = H / 2, ri = 96, ra = 172, W = mitText ? 640 : cx + ra + 20;
   const schritt = 180 / n;
-  // Pflichtmodul: kräftige Töne der Themenfarbe. Wahlmodul: hell getönt mit farbigem Rand.
+  // Pflichtmodul: kräftige, dunkle Töne der Themenfarbe. Wahlmodul: helle, volle Töne (Verlauf ohne Rand).
   const pf = cl.filter((c) => c.modul !== 'wahl'), wa = cl.filter((c) => c.modul === 'wahl');
-  const ton = (liste, c, von, bis) => { const k = liste.indexOf(c), m = Math.max(liste.length - 1, 1); return farben[Math.round(von + (k / m) * (bis - von))]; };
+  const skala = [hell(farben[0], 0.55), ...farben];
+  const ton = (liste, c, von, bis) => {
+    const k = liste.indexOf(c), m = Math.max(liste.length - 1, 1), p = liste.length > 1 ? von + (k / m) * (bis - von) : (von + bis) / 2;
+    const u = Math.floor(p);
+    return u >= skala.length - 1 ? skala[skala.length - 1] : mische(skala[u], skala[u + 1], p - u);
+  };
   let s = `<svg class="halbkreis ${mitText ? '' : 'klein'}" viewBox="0 0 ${W} ${H}" role="list" aria-label="Themenbereiche ${esc(r.name)}">`;
   cl.forEach((c, i) => {
     const g0 = -90 + i * schritt + 0.8, g1 = -90 + (i + 1) * schritt - 0.8, gm = (g0 + g1) / 2;
     const wahl = c.modul === 'wahl';
-    const farbe = wahl ? hell(ton(wa, c, 1, 4), 0.72) : ton(pf, c, 2, 5);
-    const linie = wahl ? farben[4] : '#fff';
+    const farbe = wahl ? ton(wa, c, 0.4, 2) : ton(pf, c, 3.4, 6.2);
+    const linie = '#fff';
     const [ix, iy] = polar(cx, cy, (ri + ra) / 2, gm);
     const [px, py] = polar(cx, cy, ra + 14, gm);
     const ly = n === 1 ? cy : 44 + i * ((H - 88) / (n - 1));
     const lx = 300;
     const aktiv = c.id === aktivCluster;
     s += `<g class="seg ${aktiv ? 'aktiv' : ''} ${wahl ? 'wahl' : 'pflicht'}" role="listitem" tabindex="0" data-cluster="${c.id}">
-      <path d="${segment(cx, cy, ri + (wahl ? 1 : 0), ra - (wahl ? 1 : 0), g0 + (wahl ? 0.3 : 0), g1 - (wahl ? 0.3 : 0))}" fill="${farbe}" ${wahl ? `stroke="${farben[3]}" stroke-width="2"` : ''}/>
+      <path class="flaeche" d="${segment(cx, cy, ri, ra, g0, g1)}" fill="${farbe}"/>
+      <path class="markierung" d="${segment(cx, cy, ra + 3, ra + 9, g0, g1)}" fill="${farben[4]}"/>
       <svg x="${ix - 15}" y="${iy - 15}" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="${linie}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${iconPfad(c.icon)}</svg>
       ${mitText ? `<circle cx="${px}" cy="${py}" r="4" class="punkt"/>
       <polyline points="${px},${py} ${lx - 26},${ly} ${lx - 8},${ly}" class="leitung"/>
@@ -109,10 +115,6 @@ function legende(r) {
   return `<ol class="legende">${r.cluster.map((c, i) => `<li><a href="#${r.id}/${c.id}" class="${c.id === aktivCluster ? 'aktiv' : ''} ${c.modul === 'wahl' ? 'wahl' : 'pflicht'}">
     <span class="lnr2" style="color:${f[3]}">${nr2(i + 1)}</span><span><b>${esc(c.name)}</b><small>${anzahl(c.begriffe.length)} · ${c.modul === 'wahl' ? 'Wahl' : 'Pflicht'}</small></span></a></li>`).join('')}</ol>`;
 }
-function modulLegende(r) {
-  const hatWahl = r.cluster.some((c) => c.modul === 'wahl');
-  return `<p class="modlegende"><span class="mk pflicht"></span>Pflichtmodul${hatWahl ? `<span class="mk wahl"></span>Wahlmodul` : ''}</p>`;
-}
 function kurzname(n) { return n.length > 12 ? n.split(' ')[0].toUpperCase() : n.toUpperCase(); }
 
 /* ---------- Ansichten ---------- */
@@ -122,7 +124,7 @@ function zeigeRT(id, clusterId) {
   markiereTab(id);
   document.documentElement.style.setProperty('--rt', FARBEN[r.farbe][3]);
   document.documentElement.style.setProperty('--rt-hell', FARBEN[r.farbe][0] + '22');
-  document.documentElement.style.setProperty('--rt-wahl', hell(FARBEN[r.farbe][2], 0.72));
+  document.documentElement.style.setProperty('--rt-wahl', FARBEN[r.farbe][1]);
   document.documentElement.style.setProperty('--rt-blass', hell(FARBEN[r.farbe][2], 0.93));
   document.documentElement.style.setProperty('--rt-dunkel', FARBEN[r.farbe][5]);
   const m = $('#main');
@@ -138,7 +140,6 @@ function zeigeRT(id, clusterId) {
         <p class="module">${icon('buch')} <b>Pflichtmodul:</b> ${esc(r.pflichtmodul)}${r.wahlmodul ? ` · <b>Wahlmodul:</b> ${esc(r.wahlmodul)}` : ''}</p>
       </div>
       <div class="hk-wrap">${halbkreis(r)}${schmal() ? legende(r) : ''}</div>
-      ${modulLegende(r)}
       <p class="tipp">Tippe auf einen Bereich, um seine Begriffe zu sehen.</p>
     </section>
     <section id="clusterpanel" class="clusterpanel"></section>`;
@@ -167,8 +168,14 @@ function kachel(bid) {
   const b = D.begriffe[bid];
   if (!b) return '';
   const n = b.material?.length || 0;
-  return `<a class="kachel" href="#begriff/${bid}">${icon(b.icon, 'ic gross')}<span class="kname">${esc(b.kurz || b.name)}</span>
-    ${n ? `<span class="kmeta">${icon('ab')}${n}</span>` : ''}</a>`;
+  return `<a class="kachel" href="#begriff/${bid}">${icon(b.icon, 'ic gross')}<span class="ktext"><span class="kname">${trenne(esc(b.kurz || b.name))}</span>
+    ${n ? `<span class="kmeta">${icon('ab')}${n} ${n === 1 ? 'Material' : 'Materialien'}</span>` : ''}</span></a>`;
+}
+
+// Weiche Trennstellen in langen Wörtern, falls der Browser keine deutsche Silbentrennung hat
+const FUGEN = ['schafts', 'schutz', 'gesetz', 'forschung', 'abbruch', 'tugenden', 'theorie', 'gleichnis', 'freiheit', 'modell', 'mechanismus', 'erwartungen', 'biologie', 'unterschied', 'problem', 'reflexiv', 'determinismus', 'fehlschluss', 'editierung', 'argument', 'experiment', 'kultur'];
+function trenne(s) {
+  return s.replace(/[A-Za-zÄÖÜäöüß]{13,}/g, (w) => FUGEN.reduce((t, f) => t.replace(new RegExp('(.{3})(' + f + ')', 'i'), '$1­$2'), w));
 }
 
 function zeigePersonen() {
@@ -176,7 +183,15 @@ function zeigePersonen() {
   markiereTab('personen');
   $('#main').innerHTML = `<section><h2 class="einfach">Philosoph:innen und Positionen</h2>
     <div class="personen">${Object.entries(D.personen).sort((a, b) => a[1].name.split(' ').pop().localeCompare(b[1].name.split(' ').pop()))
-      .map(([id, p]) => `<a class="pkachel" href="#person/${id}">${icon('person', 'ic gross')}<span><b>${esc(p.name)}</b><br><small>${esc(p.daten)}</small></span></a>`).join('')}</div></section>`;
+      .map(([id, p]) => `<a class="pkachel" href="#person/${id}"><span class="pkopf"><b>${esc(p.name)}</b><small>${esc(p.daten)}</small></span>
+        <span class="tags">${(p.begriffe || []).filter((x) => D.begriffe[x]).map((x) => `<span class="tag" style="${tagStil(x)}">${esc(D.begriffe[x].kurz || D.begriffe[x].name)}</span>`).join('')}</span></a>`).join('')}</div></section>`;
+}
+
+// Tags in der Farbe des Rahmenthemas, zu dem der Begriff gehört
+function tagStil(bid) {
+  const lage = clusterVon(bid);
+  const f = FARBEN[lage ? lage.r.farbe : 'blau'];
+  return `--tf:${f[4]};--tb:${hell(f[0], 0.84)};--tr:${hell(f[2], 0.55)}`;
 }
 
 function zeigeAbitur() {
@@ -227,7 +242,7 @@ function oeffneBegriff(bid) {
 function oeffnePerson(pid) {
   const p = D.personen[pid];
   if (!p) return;
-  const chips = (p.begriffe || []).filter((x) => D.begriffe[x]).map((x) => `<a class="chip" href="#begriff/${x}">${icon(D.begriffe[x].icon)}${esc(D.begriffe[x].kurz || D.begriffe[x].name)}</a>`).join('');
+  const chips = (p.begriffe || []).filter((x) => D.begriffe[x]).map((x) => `<a class="chip tag" style="${tagStil(x)}" href="#begriff/${x}">${icon(D.begriffe[x].icon)}${esc(D.begriffe[x].kurz || D.begriffe[x].name)}</a>`).join('');
   dialogZeigen(`
     <div class="dkopf" style="--f:#334155">
       ${icon('person', 'ic riesig')}
